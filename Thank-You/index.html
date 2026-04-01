@@ -1,361 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Palm Grove Montessori Academy offers innovative Montessori education in Plano, TX. Features include swimming classes, multi-age learning areas, and qualified educators. Schedule a tour today."
-    />
-    <meta name="theme-color" content="#ffca00" />
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://palmgrovemontessori.com/" />
-    <meta property="og:title" content="Palm Grove" />
-    <meta
-      property="og:description"
-      content="Welcome to our Palm Grove school, nurturing children with a safe, fun, and educational environment. Explore our programs for early learning and development!"
-    />
-    <meta property="og:image" content="https://palmgrovemontessori.com/img/embd.jpg" />
+<head>
+<link rel="icon" href="/img/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | Palm Grove Montessori Academy</title>
+<meta name="description" content="Thank you for scheduling a tour with Palm Grove Montessori Academy in Plano, TX. We will be in touch with further information.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.palmgroveschool.com/">
+<meta property="og:title" content="Thank You | Palm Grove Montessori Academy">
+<meta property="og:description" content="Thank you for scheduling a tour with Palm Grove Montessori Academy in Plano, TX. We will be in touch with further information.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Thank You | Palm Grove Montessori Academy">
+<meta name="twitter:description" content="Thank you for scheduling a tour with Palm Grove Montessori Academy in Plano, TX. We will be in touch with further information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  ::selection {
+  color: #FEFBF4;
+  background: #f0a030;
+  }
+  :root {
+    --pg-amber: #f0a030;
+    --pg-amber-hover: #d48a1a;
+    --pg-amber-light: #fdf3e0;
+    --pg-heading: #2d2d42;
+    --pg-text: #4a4a5a;
+    --pg-text-light: #6a6a7a;
+    --pg-bg: #faf8f5;
+    --pg-white: #ffffff;
+    --pg-border: #eee8e0;
+    --pg-dark: #2d2d42;
+    --radius-lg: 20px;
+    --shadow-soft: 0 8px 32px rgba(0,0,0,0.07);
+  }
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://palmgrovemontessori.com/" />
-    <meta property="twitter:title" content="Palm Grove" />
-    <meta
-      property="twitter:description"
-      content="Welcome to our Palm Grove school, nurturing children with a safe, fun, and educational environment. Explore our programs for early learning and development!"
-    />
-    <meta property="twitter:image" content="https://palmgrovemontessori.com/img/embd.jpg" />
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: var(--pg-text);
+    background: var(--pg-bg);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  body.nav-open { overflow: hidden; }
+  img { max-width: 100%; display: block; }
+  a { text-decoration: none; }
+  .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 
-    <title>Thank You</title>
-    <link rel="stylesheet" href="/css/home.css" />
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  /* ── NAV ── */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    transition: box-shadow 0.3s, background 0.3s;
+  }
+  .nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.07); }
+  .nav-inner {
+    max-width: 1120px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 18px;
+    padding: 10px 24px;
+  }
+  .nav-logo img { height: 50px; width: auto; }
+  .nav-links { display: flex; align-items: center; gap: 22px; list-style: none; }
+  .nav-links li { display: flex; align-items: center; }
+  .nav-links a {
+    text-decoration: none; color: var(--pg-text);
+    font-weight: 600; font-size: 0.9rem;
+    transition: color 0.2s, opacity 0.2s;
+  }
+  .nav-links a:hover { color: var(--pg-amber); opacity: 1; }
+  .nav-links a:focus-visible {
+    outline: 2px solid rgba(240,160,48,0.55);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+  .nav-cta {
+    background: var(--pg-amber); color: white !important;
+    padding: 10px 22px; border-radius: 50px;
+    font-weight: 700 !important; font-size: 0.88rem !important;
+    transition: all 0.25s;
+    box-shadow: 0 4px 16px rgba(240,160,48,0.25);
+  }
+  .nav-cta:hover { background: var(--pg-amber-hover); transform: translateY(-1px); color: white !important; }
+  .nav-phone-line {
+    display: none;
+    white-space: nowrap;
+  }
+  .nav-phone { color: var(--pg-amber) !important; font-weight: 700 !important; font-size: 0.84rem !important; }
+  .mobile-toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid rgba(45,45,66,0.18);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 8px;
+  }
+  .mobile-toggle span {
+    display: block; width: 24px; height: 2.5px;
+    background: var(--pg-heading); margin: 5px 0;
+    border-radius: 2px; transition: 0.3s;
+  }
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="/js/parallax.js" defer></script>
-    <script src="/js/scroll-animations.js" defer></script>
+  /* ── THANK YOU SECTION ── */
+  .thank-you-section {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 24px 80px;
+    background: linear-gradient(135deg, rgba(240,160,48,0.05) 0%, var(--pg-bg) 50%, rgba(93,171,94,0.05) 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .thank-you-section::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 20%, rgba(240,160,48,0.08) 0%, transparent 40%),
+                radial-gradient(circle at 70% 80%, rgba(93,171,94,0.06) 0%, transparent 35%);
+    pointer-events: none;
+  }
+  .thank-you-content {
+    text-align: center;
+    max-width: 720px;
+    position: relative;
+    z-index: 1;
+  }
+  .thank-you-icon {
+    margin-bottom: 28px;
+  }
+  .thank-you-icon i {
+    font-size: 5rem;
+    color: var(--seed-green);
+    animation: bounceIn 0.8s ease-out;
+  }
+  @keyframes bounceIn {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .thank-you-content h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: var(--pg-heading);
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .thank-you-content p {
+    font-size: 1.1rem;
+    color: var(--pg-text);
+    margin-bottom: 36px;
+    line-height: 1.7;
+  }
+  .thank-you-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .thank-you-card {
+    background: var(--pg-white);
+    border: 1px solid var(--pg-border);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    flex: 1;
+    min-width: 260px;
+    max-width: 320px;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .thank-you-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft);
+  }
+  .thank-you-card h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--pg-heading);
+    margin-bottom: 16px;
+  }
+  .social-links {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+  }
+  .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .social-links a:hover {
+    transform: translateY(-3px);
+  }
+  .social-links a i {
+    font-size: 1.5rem;
+  }
+  .social-facebook i { color: #1877f2; }
+  .social-instagram i { color: #e4405f; }
+  .social-email i { color: var(--pg-amber); }
+  .social-phone i { color: var(--seed-green); }
+  .visit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--pg-amber) 0%, var(--pg-amber-hover) 100%);
+    color: white !important;
+    font-weight: 700;
+    font-size: 1rem;
+    box-shadow: 0 8px 20px rgba(240,160,48,0.25);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .visit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(240,160,48,0.32);
+  }
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
-      rel="stylesheet"
-    />
+  /* ── FOOTER ── */
+  .footer {
+    background: linear-gradient(180deg, #242437 0%, #1f1f2e 100%);
+    color: rgba(255,255,255,0.78);
+    padding: 72px 24px 28px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    position: relative;
+    overflow: hidden;
+  }
+  .footer::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 100%;
+    background: radial-gradient(circle at 18% 0%, rgba(240,160,48,0.18), transparent 55%),
+                radial-gradient(circle at 82% 10%, rgba(85,163,117,0.12), transparent 48%);
+    pointer-events: none;
+  }
+  .footer-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1120px; margin: 0 auto;
+    display: grid; grid-template-columns: 1.45fr 0.95fr 1.05fr;
+    gap: 46px;
+  }
+  .footer h4 {
+    font-family: 'Nunito', sans-serif;
+    color: white; font-size: 0.82rem;
+    font-weight: 800; margin-bottom: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .footer p, .footer a {
+    font-size: 0.9rem; color: rgba(255,255,255,0.68);
+    text-decoration: none; line-height: 1.9;
+  }
+  .footer a:hover { color: var(--pg-amber); }
+  .footer-links { list-style: none; padding: 0; margin: 0; }
+  .footer-links li { margin-bottom: 8px; }
+  .footer-brand-copy {
+    max-width: 360px;
+    margin-bottom: 16px;
+  }
+  .footer-contact-lines {
+    display: grid;
+    gap: 6px;
+  }
+  .footer-contact-label {
+    color: rgba(255,255,255,0.44);
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .footer-contact-value {
+    color: rgba(255,255,255,0.86);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .footer-contact-value a {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.95rem;
+  }
+  .footer-action-card {
+    padding: 18px 18px 16px;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+    margin-bottom: 18px;
+  }
+  .footer-action-card p {
+    margin-bottom: 10px;
+    line-height: 1.75;
+  }
+  .footer-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--pg-amber) 0%, var(--pg-amber-hover) 100%);
+    color: #fff !important;
+    font-weight: 800 !important;
+    box-shadow: 0 12px 24px rgba(240,160,48,0.22);
+  }
+  .footer-cta-btn:hover {
+    color: #fff !important;
+    transform: translateY(-1px);
+  }
+  .footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    margin-top: 12px;
+  }
+  .footer-socials a {
+    color: rgba(255,255,255,0.82);
+    font-weight: 700;
+  }
+  .footer-bottom {
+    position: relative;
+    z-index: 1;
+    max-width: 1120px; margin: 34px auto 0;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.8rem; color: rgba(255,255,255,0.35);
+  }
+  .footer-logo {
+    height: 56px;
+    margin-bottom: 18px;
+    opacity: 0.9;
+  }
 
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-5TML75DQ');
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
+  /* ── RESPONSIVE ── */
+  @media (max-width: 980px) {
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 18px 24px 22px;
+      gap: 14px;
+      border-top: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+    }
+    .nav-links.open li { width: 100%; }
+    .nav-links.open .nav-phone-line { display: flex; white-space: normal; }
+    .mobile-toggle { display: inline-flex; }
+  }
 
-  <body style="overflow-x: hidden">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-5TML75DQ"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- Mobile menu button -->
-    <header
-      id="header"
-      class="fixed top-0 left-0 w-full bg-white py-4 shadow-md transition-all duration-300 z-50"
-    >
-      <div class="container mx-auto flex items-center justify-between px-6">
-        <!-- Logo (Left on Mobile, Centered with Nav on Desktop) -->
-        <a href="/" class="md:hidden">
-          <img src="/img/logo/pglogo.png" alt="Preschool Logo" class="w-16 h-16 md:w-20 md:h-20" />
-        </a>
+  @media (max-width: 960px) {
+    .footer-inner { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+    .footer-brand-copy { margin-left: auto; margin-right: auto; }
+    .footer-contact-lines { justify-items: center; }
+    .footer-action-card { max-width: 420px; margin-left: auto; margin-right: auto; }
+    .footer-socials { justify-content: center; }
+    .footer-bottom { justify-content: center; text-align: center; }
+    .footer-logo {justify-self: center;width: auto;}
+    .thank-you-cards { flex-direction: column; align-items: center; }
+    .thank-you-card { max-width: 400px; width: 100%; }
+  }
 
-        <!-- Wrapper for Navigation & Logo (Centered on Desktop) -->
-        <div class="hidden md:flex items-center justify-center w-full space-x-6">
-          <!-- Logo (Visible on Desktop, Inside Navigation) -->
-          <a href="/">
-            <img
-              src="/img/logo/pglogo.png"
-              alt="Preschool Logo"
-              class="w-16 h-16 md:w-20 md:h-20"
-            />
-          </a>
+  @media (max-width: 560px) {
+    .thank-you-section { padding: 100px 16px 60px; }
+    .thank-you-icon i { font-size: 4rem; }
+    .thank-you-content h1 { font-size: 1.75rem; }
+    .thank-you-content p { font-size: 1rem; }
+    .thank-you-card { padding: 24px 20px; }
+  }
+</style>
+<!-- Google Tag Manager -->
+<script>
+(function (w, d, s, l, i) {
+  w[l] = w[l] || [];
+  w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+  var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s),
+    dl = l != 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+  f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-5TML75DQ');
+</script>
+</head>
+<body>
 
-          <nav>
-            <ul id="nav-menu" class="flex space-x-6 text-[#F03725] font-semibold text-base">
-              <li><a href="/" class="nav-link transition-all duration-300">Home</a></li>
-              <li>
-                <a href="/Our-Program" class="nav-link transition-all duration-300">Our Program</a>
-              </li>
-              <li>
-                <a href="/Our-Promise" class="nav-link transition-all duration-300">Our Promise</a>
-              </li>
-              <li>
-                <a href="/Our-Classroom" class="nav-link transition-all duration-300"
-                  >Our Classroom</a
-                >
-              </li>
-              <li>
-                <a href="/Our-Curriculum" class="nav-link transition-all duration-300"
-                  >Our Curriculum</a
-                >
-              </li>
-              <!-- <li><a href="#" class="nav-link transition-all duration-300 ">Blog</a></li> -->
-              <li>
-                <a href="/Contact-Us" class="nav-link transition-all duration-300">Contact Us</a>
-              </li>
-              <li>
-                <a href="/Schedule-Tour" class="nav-link transition-all duration-300"
-                  >Schedule a Tour</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
+<!-- ═══ NAV ═══ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
+      <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
+      <li><a href="/montessori-classroom-plano">Classroom</a></li>
+      <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
+      <li><a href="/Contact-Us">Contact</a></li>
+      <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
+      <li><a href="/Schedule-Tour" class="nav-cta">Schedule a Tour</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-        <!-- Mobile Menu Button (Right on Mobile) -->
-        <button id="menu-toggle" class="md:hidden flex flex-col">
-          <span class="hamburger w-6 h-1 bg-[#F03725] block"></span>
-          <span class="hamburger w-6 h-1 bg-[#F03725] block -mt-[1px]"></span>
-          <span class="hamburger w-6 h-1 bg-[#F03725] block -mt-[1px]"></span>
-        </button>
-      </div>
-
-      <!-- Mobile Navigation Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden absolute top-16 left-0 w-full bg-white shadow-md md:hidden"
-      >
-        <ul class="flex flex-col items-center space-y-4 py-4 text-[#F03725] font-semibold text-lg">
-          <li><a href="/" class="nav-link transition-all duration-300">Home</a></li>
-          <li>
-            <a href="/Our-Program" class="nav-link transition-all duration-300">Our Program</a>
-          </li>
-          <li>
-            <a href="/Our-Promise" class="nav-link transition-all duration-300">Our Promise</a>
-          </li>
-          <li>
-            <a href="/Our-Classroom" class="nav-link transition-all duration-300">Our Classroom</a>
-          </li>
-          <li>
-            <a href="/Our-Curriculum" class="nav-link transition-all duration-300"
-              >Our Curriculum</a
-            >
-          </li>
-          <!-- <li><a href="#" class="nav-link transition-all duration-300 ">Blog</a></li> -->
-          <li><a href="/Contact-Us" class="nav-link transition-all duration-300">Contact Us</a></li>
-          <li>
-            <a href="/Schedule-Tour" class="nav-link transition-all duration-300"
-              >Schedule a Tour</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-
-    <div class="w-full h-20 bg-[#F0F5EE]"></div>
-    <div class="flex flex-col items-center justify-center text-center w-full relative pb-64">
-      <h3 class="w-fit mx-auto text-5xl mb-16 mt-36 relative z-2">
-        <i class="fa-solid fa-circle-check fa-bounce fa-2xl" style="color: #1dd862"></i>
-      </h3>
-      <h1 class="mt-0 xl:text-5xl md:text-4xl sm:text-3xl text-3xl font-bold mx-4">
-        Thank You For Scheduling A Tour
-      </h1>
-      <p class="mt-8 xl:text-xl md:text-lg sm:text-md text-md font-normal mx-4">
-        We will be in touch with you for furthur information, Feel free to see the website.
-      </p>
-      <div
-        class="mt-16 flex xl:flex-row md:flex-row sm:flex-row flex-col items-center justify-center gap-12"
-      >
-        <div
-          class="shadow-lg flex flex-col gap-8 justify-center items-center px-10 py-8 bg-white rounded-2xl h-48 xl:w-80 md:w-64 w-64"
-        >
-          <h3 class="xl:text-3xl md:text-2xl sm:text-xl text-xl font-bold">Connect With Us</h3>
-          <div class="flex items-center justify-center gap-4 h-fit w-fit">
-            <a
-              class="hover:-translate-y-1 transition-all"
-              href="https://www.facebook.com/profile.php?id=61576811911497"
-              ><i class="w-fit h-fit fa-brands fa-square-facebook fa-2xl" style="color: #086dff"></i
-            ></a>
-            <a
-              class="hover:-translate-y-1 transition-all"
-              href="https://www.instagram.com/palmgrove_montessori_academy"
-              ><i
-                class="w-fit h-1`fit fa-brands fa-square-instagram fa-2xl"
-                style="color: #fc4d1e"
-              ></i
-            ></a>
-            <a class="hover:-translate-y-1 transition-all" href="mailto:admin@palmgroveschool.com"
-              ><i class="w-fit h-1`fit fa-solid fa-envelope fa-2xl" style="color: #ffca00"></i
-            ></a>
-            <a class="hover:-translate-y-1 transition-all" href="tel:+19727812900"
-              ><i class="w-fit h-1`fit fa-solid fa-square-phone fa-2xl" style="color: #1dd862"></i
-            ></a>
-          </div>
-        </div>
-        <div
-          class="shadow-lg flex flex-col gap-8 justify-center items-center px-10 py-8 bg-white rounded-2xl h-48 xl:w-80 md:w-64 w-64"
-        >
-          <h3 class="xl:text-3xl md:text-2xl sm:text-xl text-xl font-bold">Visit Our Website</h3>
-          <a
-            class="hover:-translate-y-1 transition-all w-full py-1 bg-cyan-400 text-white rounded-lg font-semibold text-lg"
-            href="/"
-            >Visit Site</a
-          >
-        </div>
-      </div>
-      <div
-        class="inline-block w-0 h-0 border-solid border-t-[200px] border-r-[200px] xl:border-t-[400px] xl:border-r-[400px] md:border-t-[300px] md:border-r-[300px] sm:border-t-[200px] sm:border-r-[200px] border-l-0 border-b-0 border-l-transparent border-r-transparent border-t-[#699bd2] border-b-transparent absolute z-0 top-0 left-0"
-      ></div>
-      <div
-        class="inline-block w-0 h-0 border-solid border-t-0 border-r-0 border-l-[200px] border-b-[200px] sm:border-l-[200px] sm:border-b-[200px] xl:border-l-[400px] xl:border-b-[400px] md:border-l-[300px] md:border-b-[300px] border-l-transparent border-r-transparent border-t-transparent border-b-[#ffca00] absolute z-0 bottom-0 right-0"
-      ></div>
+<!-- ═══ THANK YOU CONTENT ═══ -->
+<section class="thank-you-section">
+  <div class="thank-you-content">
+    <div class="thank-you-icon">
+      <i class="fa-solid fa-circle-check"></i>
     </div>
-
-    <footer class="text-white py-10 px-6 bg-[#1a1a1a] relative z-10">
-      <div class="max-w-6xl mx-auto">
-        <!-- Footer Content -->
-        <div
-          class="footer-content grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 text-center sm:text-left"
-        >
-          <!-- Logo & Email -->
-          <div
-            class="footer-col flex flex-col justify-center items-center text-center sm:text-left"
-          >
-            <div class="footer-logo flex flex-col justify-center items-center text-center">
-              <h2 class="text-2xl font-bold text-[#F03725]">Montessori Academy</h2>
-              <p class="text-white text-center w-min mt-2">admin@palmgroveschool.com</p>
-            </div>
-            <!-- Logo Below Text -->
-            <div class="footer-logo mt-4">
-              <img
-                src="/img/logo/whitelogo.png"
-                alt="Kids School Logo"
-                class="w-32 mx-auto sm:mx-0"
-              />
-            </div>
-          </div>
-
-          <!-- About Us -->
-          <div class="footer-col">
-            <h3 class="text-xl font-semibold text-[#F03725] mb-3">Contact Us</h3>
-            <div
-              class="contact-info mt-3 text-white text-sm space-y-2 flex flex-col items-center sm:items-start lg:items-start"
-            >
-              <p class="w-fit">
-                <i class="fa fa-map-marker text-yellow-400"></i> 5900 Windhaven Parkway<br />
-                Plano, Texas 75093
-              </p>
-              <p class="w-fit">
-                <i class="fa fa-envelope text-yellow-400"></i>admin@palmgroveschool.com
-              </p>
-              <p class="w-fit">
-                <i class="fa fa-phone text-yellow-400"></i
-                ><a href="tel:+14699919907" class="hover:text-yellow-400 transition-all"
-                  >1 469 991 9907</a
-                >
-                -
-                <a href="tel:+12147243586" class="hover:text-yellow-400 transition-all"
-                  >1 214 724 3586</a
-                >
-              </p>
-            </div>
-          </div>
-
-          <!-- Latest Courses -->
-          <!-- <div class="footer-col">
-                    <h3 class="text-xl font-semibold text-[#F03725] mb-3">Latest Courses</h3>
-                    <div class="latest-courses text-white text-sm space-y-2">
-                        <div class="course-item border-b border-gray-700 pb-2">
-                            <p>Drawing, Painting Lessons</p>
-                            <span class="text-xs">May 10, 2019</span>
-                        </div>
-                        <div class="course-item border-b border-gray-700 pb-2">
-                            <p>HTML5 & CSS3 Lessons</p>
-                            <span class="text-xs">May 10, 2019</span>
-                        </div>
-                        <div class="course-item">
-                            <p>How To Use Computer</p>
-                            <span class="text-xs">May 10, 2019</span>
-                        </div>
-                    </div>
-                </div> -->
-
-          <!-- Social Media -->
-          <div class="footer-col">
-            <h3 class="text-xl font-semibold text-[#F03725] mb-3">Social Media</h3>
-            <div class="social-links flex flex-col space-y-2">
-              <a
-                href="https://www.instagram.com/palmgrove_montessori_academy"
-                class="text-white hover:text-yellow-400 transition"
-                ><i class="fa fa-instagram text-pink-400" aria-hidden="true"></i> &nbsp;Instagram</a
-              >
-              <a
-                href="https://www.facebook.com/profile.php?id=61576811911497"
-                class="text-white hover:text-yellow-400 transition"
-                ><i class="fa fa-facebook text-blue-500" aria-hidden="true"></i> &nbsp;Facebook</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Bottom Section -->
-        <div
-          class="lst flex flex-col sm:flex-row items-center justify-between text-white text-sm mt-8 border-t border-gray-700 pt-4"
-        >
-          <p>© 2024 Preschool. All rights reserved.</p>
-          <div class="footer-links mt-3 sm:mt-0">
-            <ul class="flex flex-wrap justify-center sm:justify-end gap-3">
-              <li><a href="/" class="hover:text-yellow-400 transition">Home</a></li>
-              <li>
-                <a href="/Our-Program" class="hover:text-yellow-400 transition">Our Program</a>
-              </li>
-              <li>
-                <a href="/Our-Promise" class="hover:text-yellow-400 transition">Our Promise</a>
-              </li>
-              <li>
-                <a href="/Our-Classroom" class="hover:text-yellow-400 transition">Our Classroom</a>
-              </li>
-              <li>
-                <a href="/Our-Curriculum" class="hover:text-yellow-400 transition"
-                  >Our Curriculum</a
-                >
-              </li>
-              <li><a href="/Contact-Us" class="hover:text-yellow-400 transition">Contact Us</a></li>
-              <li>
-                <a href="/Schedule-Tour" class="hover:text-yellow-400 transition"
-                  >Schedule a Tour</a
-                >
-              </li>
-            </ul>
-          </div>
+    <h1>Thank You For Scheduling A Tour</h1>
+    <p>We will be in touch with you for further information. Feel free to explore the rest of our website.</p>
+    
+    <div class="thank-you-cards">
+      <div class="thank-you-card">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61576811911497" class="social-facebook" aria-label="Facebook">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/palmgrove_montessori_academy" class="social-instagram" aria-label="Instagram">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a href="mailto:admin@palmgroveschool.com" class="social-email" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="tel:+19727812900" class="social-phone" aria-label="Phone">
+            <i class="fa-solid fa-square-phone"></i>
+          </a>
         </div>
       </div>
-    </footer>
+      
+      <div class="thank-you-card">
+        <h3>Visit Our Website</h3>
+        <a href="/" class="visit-btn">Back to Home</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="/js/optimizations.js" defer></script>
-    <script src="/js/header.js"></script>
-  </body>
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
+      <div class="footer-contact-lines">
+        <div>
+          <div class="footer-contact-label">Visit</div>
+          <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Contact</div>
+          <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a></div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Call</div>
+          <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul class="footer-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
+        <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
+        <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
+        <li><a href="/montessori-classroom-plano">Classroom</a></li>
+        <li><a href="/resources">Resources</a></li>
+        <li><a href="/Contact-Us">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Plan Your Visit</h4>
+      <div class="footer-action-card">
+        <p>Ready to see the classrooms, meet the team, and ask questions in person?</p>
+        <a href="/Schedule-Tour" class="footer-cta-btn">Schedule a Tour</a>
+      </div>
+      <h4>Follow + Legal</h4>
+      <ul class="footer-links">
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
+    <span>Montessori preschool and daycare in Plano, TX.</span>
+  </div>
+</footer>
+
+<script src="/js/nav.js"></script>
+</body>
 </html>

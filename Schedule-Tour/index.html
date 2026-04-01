@@ -1,407 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<link rel="icon" href="/img/favicon.ico">
-<link rel="icon" href="/img/favicon.ico">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Schedule a Tour | Palm Grove Montessori Academy</title>
-<meta name="description" content="Schedule a tour of Palm Grove Montessori Academy in Plano, TX. See our classrooms, meet our teachers, and discover our Montessori approach.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.palmgroveschool.com/Schedule-Tour/">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Schedule a Tour | Palm Grove Montessori Academy">
-<meta property="og:description" content="Schedule a tour of Palm Grove Montessori Academy in Plano, TX. See our classrooms, meet our teachers, and discover our Montessori approach.">
-<meta property="og:url" content="https://www.palmgroveschool.com/Schedule-Tour/">
-<meta property="og:site_name" content="Palm Grove Montessori Academy">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Schedule a Tour | Palm Grove Montessori Academy">
-<meta name="twitter:description" content="Schedule a tour of Palm Grove Montessori Academy in Plano, TX. See our classrooms, meet our teachers, and discover our Montessori approach.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="/css/nav-foot.css">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-  ::selection {
-  color: #FEFBF4;
-  background: #f0a030;
-  }
-  :root {
-    --pg-amber: #f0a030;
-    --pg-amber-hover: #d48a1a;
-    --pg-amber-light: #fdf3e0;
-    --pg-heading: #2d2d42;
-    --pg-text: #4a4a5a;
-    --pg-text-light: #6a6a7a;
-    --pg-bg: #faf8f5;
-    --pg-white: #ffffff;
-    --pg-border: #eee8e0;
-    --pg-dark: #2d2d42;
-    --radius-lg: 20px;
-    --shadow-soft: 0 8px 32px rgba(0,0,0,0.07);
-    --seed-pink: #e88ca5;
-    --seed-red: #d94f4f;
-    --seed-orange: #f0a030;
-    --seed-green: #5dab5e;
-    --seed-blue: #4a90c4;
-    --seed-purple: #8b6db5;
-  }
-
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Nunito', sans-serif;
-    color: var(--pg-text);
-    background: var(--pg-bg);
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
-  }
-  body.nav-open { overflow: hidden; }
-  img { max-width: 100%; display: block; }
-  a { text-decoration: none; }
-  .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-
-  .page-header {
-    padding: 140px 24px 80px;
-    background: linear-gradient(135deg, rgba(240,160,48,0.07) 0%, rgba(240,160,48,0.13) 42%, rgba(253,243,224,0.94) 100%);
-    text-align: center;
-  }
-  .page-header h1 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 800;
-    color: var(--pg-heading);
-    margin-bottom: 16px;
-    letter-spacing: -0.02em;
-  }
-  .page-header p {
-    max-width: 560px;
-    margin: 0 auto;
-    font-size: 1.05rem;
-    color: var(--pg-text);
-    line-height: 1.72;
-  }
-
-  .tour-section {
-    padding: 80px 24px 100px;
-    background: var(--pg-bg);
-  }
-  .tour-inner {
-    max-width: 720px;
-    margin: 0 auto;
-  }
-  .tour-card {
-    background: var(--pg-white);
-    border-radius: var(--radius-lg);
-    padding: 48px 40px;
-    box-shadow: var(--shadow-soft);
-    border: 1px solid var(--pg-border);
-    text-align: center;
-  }
-  .tour-icon {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-  }
-  .tour-card h2 {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--pg-heading);
-    margin-bottom: 16px;
-  }
-  .tour-card > p {
-    color: var(--pg-text);
-    line-height: 1.75;
-    margin-bottom: 32px;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .info-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-bottom: 36px;
-  }
-  .info-item {
-    text-align: center;
-    padding: 20px 16px;
-    background: var(--pg-bg);
-    border-radius: 16px;
-    border: 1px solid var(--pg-border);
-  }
-  .info-item-icon {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  .info-item h3 {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: var(--pg-heading);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 4px;
-  }
-  .info-item p {
-    font-size: 0.9rem;
-    color: var(--pg-text);
-  }
-
-  .tour-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 18px 36px;
-    border-radius: 999px;
-    background: linear-gradient(135deg, var(--pg-amber) 0%, var(--pg-amber-hover) 100%);
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: 0 12px 28px rgba(240,160,48,0.28);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .tour-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 18px 34px rgba(240,160,48,0.34);
-    color: white;
-  }
-
-  .tour-contact {
-    margin-top: 28px;
-    padding-top: 24px;
-    border-top: 1px solid var(--pg-border);
-    font-size: 0.98rem;
-    color: var(--pg-text-light);
-  }
-  .tour-contact a {
-    color: var(--pg-heading);
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .tour-contact a:hover { color: var(--pg-amber); }
-
-  .form-consent {
-    margin-top: 16px;
-    font-size: 0.78rem;
-    color: var(--pg-text-light);
-    line-height: 1.6;
-    text-align: center;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .form-consent a {
-    color: var(--pg-heading);
-    font-weight: 600;
-    text-decoration: underline;
-  }
-  .form-consent a:hover {
-    color: var(--pg-amber);
-  }
-
-  .footer {
-    background: linear-gradient(180deg, #242437 0%, #1f1f2e 100%);
-    color: rgba(255,255,255,0.78);
-    padding: 72px 24px 28px;
-    border-top: 1px solid rgba(255,255,255,0.08);
-    position: relative;
-    overflow: hidden;
-  }
-  .footer::before {
-    content: "";
-    position: absolute;
-    inset: 0 0 auto;
-    height: 100%;
-    background: radial-gradient(circle at 18% 0%, rgba(240,160,48,0.18), transparent 55%),
-                radial-gradient(circle at 82% 10%, rgba(85,163,117,0.12), transparent 48%);
-    pointer-events: none;
-  }
-  .footer-inner {
-    position: relative;
-    z-index: 1;
-    max-width: 1120px; margin: 0 auto;
-    display: grid; grid-template-columns: 1.45fr 0.95fr 1.05fr;
-    gap: 46px;
-  }
-  .footer h4 {
-    font-family: 'Nunito', sans-serif;
-    color: white; font-size: 0.82rem;
-    font-weight: 800; margin-bottom: 16px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-  .footer p, .footer a {
-    font-size: 0.9rem; color: rgba(255,255,255,0.68);
-    text-decoration: none; line-height: 1.9;
-  }
-  .footer a:hover { color: var(--pg-amber); }
-  .footer-links { list-style: none; padding: 0; margin: 0; }
-  .footer-links li { margin-bottom: 8px; }
-  .footer-brand-copy {
-    max-width: 360px;
-    margin-bottom: 16px;
-  }
-  .footer-contact-lines {
-    display: grid;
-    gap: 6px;
-  }
-  .footer-contact-label {
-    color: rgba(255,255,255,0.44);
-    font-size: 0.74rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  .footer-contact-value {
-    color: rgba(255,255,255,0.86);
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
-  .footer-contact-value a {
-    color: rgba(255,255,255,0.9);
-    font-size: 0.95rem;
-  }
-  .footer-action-card {
-    padding: 18px 18px 16px;
-    border-radius: 22px;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
-    margin-bottom: 18px;
-  }
-  .footer-action-card p {
-    margin-bottom: 10px;
-    line-height: 1.75;
-  }
-  .footer-cta-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    border-radius: 999px;
-    background: linear-gradient(135deg, var(--pg-amber) 0%, var(--pg-amber-hover) 100%);
-    color: #fff !important;
-    font-weight: 800 !important;
-    box-shadow: 0 12px 24px rgba(240,160,48,0.22);
-  }
-  .footer-cta-btn:hover {
-    color: #fff !important;
-    transform: translateY(-1px);
-  }
-  .footer-socials {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px 16px;
-    margin-top: 12px;
-  }
-  .footer-socials a {
-    color: rgba(255,255,255,0.82);
-    font-weight: 700;
-  }
-  .footer-bottom {
-    position: relative;
-    z-index: 1;
-    max-width: 1120px; margin: 34px auto 0;
-    padding-top: 18px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    display: flex;
-    justify-content: space-between;
-    gap: 14px;
-    flex-wrap: wrap;
-    align-items: center;
-    font-size: 0.8rem; color: rgba(255,255,255,0.35);
-  }
-
-  @media (max-width: 980px) {
-    .nav-links { display: none; }
-    .nav-links.open {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: #fff;
-      padding: 18px 24px 22px;
-      gap: 14px;
-      border-top: 1px solid rgba(0,0,0,0.06);
-      box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+  <link rel="icon" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule a Tour | Palm Grove Montessori Academy</title>
+  <meta name="description"
+    content="Schedule a tour of Palm Grove Montessori Academy in Plano, TX. See our classrooms, meet our teachers, and discover our Montessori approach.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.palmgroveschool.com/Schedule-Tour/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Schedule a Tour | Palm Grove Montessori Academy">
+  <meta property="og:description"
+    content="Schedule a tour of Palm Grove Montessori Academy in Plano, TX. See our classrooms, meet our teachers, and discover our Montessori approach.">
+  <meta property="og:url" content="https://www.palmgroveschool.com/Schedule-Tour/">
+  <meta property="og:site_name" content="Palm Grove Montessori Academy">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Schedule a Tour | Palm Grove Montessori Academy">
+  <meta name="twitter:description"
+    content="Schedule a tour of Palm Grove Montessori Academy in Plano, TX. See our classrooms, meet our teachers, and discover our Montessori approach.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/css/nav-foot.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    .nav-links.open li { width: 100%; }
-    .nav-links.open .nav-phone-line { display: flex; white-space: normal; }
-    .mobile-toggle { display: inline-flex; }
-  }
 
-  @media (max-width: 860px) {
-    .footer-inner {
-      grid-template-columns: 1fr;
-      gap: 30px;
+    ::selection {
+      color: #FEFBF4;
+      background: #f0a030;
+    }
+
+    :root {
+      --pg-amber: #f0a030;
+      --pg-amber-hover: #d48a1a;
+      --pg-amber-light: #fdf3e0;
+      --pg-heading: #2d2d42;
+      --pg-text: #4a4a5a;
+      --pg-text-light: #6a6a7a;
+      --pg-bg: #faf8f5;
+      --pg-white: #ffffff;
+      --pg-border: #eee8e0;
+      --pg-dark: #2d2d42;
+      --radius-lg: 20px;
+      --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.07);
+      --seed-pink: #e88ca5;
+      --seed-red: #d94f4f;
+      --seed-orange: #f0a030;
+      --seed-green: #5dab5e;
+      --seed-blue: #4a90c4;
+      --seed-purple: #8b6db5;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: var(--pg-text);
+      background: var(--pg-bg);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body.nav-open {
+      overflow: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .page-header {
+      padding: 140px 24px 80px;
+      background: linear-gradient(135deg, rgba(240, 160, 48, 0.07) 0%, rgba(240, 160, 48, 0.13) 42%, rgba(253, 243, 224, 0.94) 100%);
       text-align: center;
     }
-    .footer-brand-copy { margin-left: auto; margin-right: auto; }
-    .footer-contact-lines { justify-items: center; }
-    .footer-action-card { max-width: 420px; margin-left: auto; margin-right: auto; }
-    .footer-socials { justify-content: center; }
-    .footer-bottom { justify-content: center; text-align: center; }
-    .footer-logo {justify-self: center;width: auto;}
+
+    .page-header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--pg-heading);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .page-header p {
+      max-width: 560px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      color: var(--pg-text);
+      line-height: 1.72;
+    }
+
+    .tour-section {
+      padding: 80px 24px 100px;
+      background: var(--pg-bg);
+    }
+
+    .tour-inner {
+      max-width: 1075px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .tour-card {
+      background: var(--pg-white);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--pg-border);
+      text-align: center;
+    }
+
+    .tour-icon {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    .tour-card h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--pg-heading);
+      margin-bottom: 16px;
+    }
+
+    .tour-card>p {
+      color: var(--pg-text);
+      line-height: 1.75;
+      margin-bottom: 32px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     .info-grid {
-      grid-template-columns: 1fr;
-      gap: 16px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 36px;
     }
-  }
 
-  @media (max-width: 560px) {
-    .page-header {
-      padding: 120px 16px 60px;
+    .info-item {
+      text-align: center;
+      padding: 20px 16px;
+      background: var(--pg-bg);
+      border-radius: 16px;
+      border: 1px solid var(--pg-border);
     }
-    .tour-section {
-      padding: 48px 16px 72px;
+
+    .info-item-icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
     }
-    .tour-card {
-      padding: 32px 20px;
+
+    .info-item h3 {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--pg-heading);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
     }
-  }
-</style>
+
+    .info-item p {
+      font-size: 0.9rem;
+      color: var(--pg-text);
+    }
+
+    .tour-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 36px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--pg-amber) 0%, var(--pg-amber-hover) 100%);
+      color: white;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgba(240, 160, 48, 0.28);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .tour-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 34px rgba(240, 160, 48, 0.34);
+      color: white;
+    }
+
+    .tour-contact {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--pg-border);
+      font-size: 0.98rem;
+      color: var(--pg-text-light);
+    }
+
+    .tour-contact a {
+      color: var(--pg-heading);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .tour-contact a:hover {
+      color: var(--pg-amber);
+    }
+
+    .form-consent {
+      margin-top: 16px;
+      font-size: 0.78rem;
+      color: var(--pg-text-light);
+      line-height: 1.6;
+      text-align: center;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-consent a {
+      color: var(--pg-heading);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    .form-consent a:hover {
+      color: var(--pg-amber);
+    }
+
+    .footer {
+      background: linear-gradient(180deg, #242437 0%, #1f1f2e 100%);
+      color: rgba(255, 255, 255, 0.78);
+      padding: 72px 24px 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .footer::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 100%;
+      background: radial-gradient(circle at 18% 0%, rgba(240, 160, 48, 0.18), transparent 55%),
+        radial-gradient(circle at 82% 10%, rgba(85, 163, 117, 0.12), transparent 48%);
+      pointer-events: none;
+    }
+
+    .footer-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.45fr 0.95fr 1.05fr;
+      gap: 46px;
+    }
+
+    .footer h4 {
+      font-family: 'Nunito', sans-serif;
+      color: white;
+      font-size: 0.82rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .footer p,
+    .footer a {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.68);
+      text-decoration: none;
+      line-height: 1.9;
+    }
+
+    .footer a:hover {
+      color: var(--pg-amber);
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 8px;
+    }
+
+    .footer-brand-copy {
+      max-width: 360px;
+      margin-bottom: 16px;
+    }
+
+    .footer-contact-lines {
+      display: grid;
+      gap: 6px;
+    }
+
+    .footer-contact-label {
+      color: rgba(255, 255, 255, 0.44);
+      font-size: 0.74rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .footer-contact-value {
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .footer-contact-value a {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.95rem;
+    }
+
+    .footer-action-card {
+      padding: 18px 18px 16px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+      margin-bottom: 18px;
+    }
+
+    .footer-action-card p {
+      margin-bottom: 10px;
+      line-height: 1.75;
+    }
+
+    .footer-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--pg-amber) 0%, var(--pg-amber-hover) 100%);
+      color: #fff !important;
+      font-weight: 800 !important;
+      box-shadow: 0 12px 24px rgba(240, 160, 48, 0.22);
+    }
+
+    .footer-cta-btn:hover {
+      color: #fff !important;
+      transform: translateY(-1px);
+    }
+
+    .footer-socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 16px;
+      margin-top: 12px;
+    }
+
+    .footer-socials a {
+      color: rgba(255, 255, 255, 0.82);
+      font-weight: 700;
+    }
+
+    .footer-bottom {
+      position: relative;
+      z-index: 1;
+      max-width: 1120px;
+      margin: 34px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .iframe-form {
+      background-color: #fdfdfc;
+      padding: 24px 30px;
+      width: 100%;
+      border: none;
+      height: 500px;
+      box-shadow: 0px 8px 20px 7px #0000002b;
+      border-radius: 28px
+    }
+
+    @media (max-width: 1061px) {
+      .tour-inner{
+        max-width: 100%;
+      }
+      .iframe-form{
+        height: 1300px;
+      }
+    } 
+    @media (max-width: 980px) {
+      .nav-links {
+        display: none;
+      }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 18px 24px 22px;
+        gap: 14px;
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+      }
+
+      .nav-links.open li {
+        width: 100%;
+      }
+
+      .nav-links.open .nav-phone-line {
+        display: flex;
+        white-space: normal;
+      }
+
+      .mobile-toggle {
+        display: inline-flex;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+      }
+
+      .footer-brand-copy {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .footer-contact-lines {
+        justify-items: center;
+      }
+
+      .footer-action-card {
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .footer-socials {
+        justify-content: center;
+      }
+
+      .footer-bottom {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .footer-logo {
+        justify-self: center;
+        width: auto;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .page-header {
+        padding: 120px 16px 60px;
+      }
+
+      .tour-section {
+        padding: 48px 16px 72px;
+      }
+
+      .tour-card {
+        padding: 32px 20px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<!-- ═══ NAV ═══ -->
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo">
-      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
-    </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="/">Home</a></li>
-      <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
-      <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
-      <li><a href="/montessori-classroom-plano">Classroom</a></li>
-      <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
-      <li><a href="/Contact-Us">Contact</a></li>
-      <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
-      <li><a href="/Schedule-Tour" class="nav-cta">Schedule a Tour</a></li>
-    </ul>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
+        <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
+        <li><a href="/montessori-classroom-plano">Classroom</a></li>
+        <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
+        <li><a href="/Contact-Us">Contact</a></li>
+        <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
+        <li><a href="/Schedule-Tour" class="nav-cta">Schedule a Tour</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-<header class="page-header">
-  <h1>Schedule a Tour</h1>
-  <p>Come see our calm classrooms, meet our teachers, and discover what makes Palm Grove special. We'd love to show you around!</p>
-</header>
+  <header class="page-header">
+    <h1>Schedule a Tour</h1>
+    <p>Come see our calm classrooms, meet our teachers, and discover what makes Palm Grove special. We'd love to show
+      you around!</p>
+  </header>
 
-<main class="tour-section">
-  <div class="tour-inner">
-    <div id="iksContainer" class="contact-form"></div>
-    <p class="form-consent">By submitting this form, I agree to receive phone calls, emails, and text messages from Palm Grove Montessori Academy about my inquiry, tour, enrollment interest, availability, reminders, and related school updates. Message frequency varies. Message and data rates may apply. Reply STOP to opt out and HELP for help. Consent is not a condition of enrollment. View our <a href="/privacy-policy">Privacy Policy</a> and <a href="/terms-conditions">Terms & Conditions</a>.</p>
-  </div>
-</main>
+  <main class="tour-section">
+    <div class="tour-inner">
+      <iframe src="https://app.tryplayground.com/b9pv7Oa4y0j2groTKFOe/book/ywnUJpInXbnIT8daIoXq?embed=true"
+        class="iframe-form"
+        frameborder="0" allowfullscreen tabindex="-1"></iframe>
+      <!-- <div id="iksContainer" class="contact-form"></div> -->
+      <p class="form-consent">By submitting this form, I agree to receive phone calls, emails, and text messages from
+        Palm Grove Montessori Academy about my inquiry, tour, enrollment interest, availability, reminders, and related
+        school updates. Message frequency varies. Message and data rates may apply. Reply STOP to opt out and HELP for
+        help. Consent is not a condition of enrollment. View our <a href="/privacy-policy">Privacy Policy</a> and <a
+          href="/terms-conditions">Terms & Conditions</a>.</p>
+    </div>
+  </main>
 
-<script src="https://palmgrovemontessoriacademy.iks.center/embed.js?2"></script>
+  <!-- <script src="https://palmgrovemontessoriacademy.iks.center/embed.js?2"></script>
 <script>
   var myIKS = new IKS({
     url: 'https://palmgrovemontessoriacademy.iks.center/',
@@ -412,7 +562,7 @@
     },
     params: {},
   });
-</script>
+</script> -->
 
   <footer class="footer">
     <div class="footer-inner">
@@ -473,38 +623,53 @@
     </div>
   </footer>
 
-<script>
-(function() {
-  var nav = document.getElementById('nav');
-  var toggle = document.getElementById('mobileToggle');
-  var links = document.getElementById('navLinks');
+  <script>
+    (function () {
+      var nav = document.getElementById('nav');
+      var toggle = document.getElementById('mobileToggle');
+      var links = document.getElementById('navLinks');
 
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 10) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  });
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 10) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      });
 
-  if (toggle && links) {
-    toggle.addEventListener('click', function() {
-      var expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('open');
-      document.body.classList.toggle('nav-open');
-    });
-  }
-})();
-</script>
+      if (toggle && links) {
+        toggle.addEventListener('click', function () {
+          var expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!expanded));
+          links.classList.toggle('open');
+          document.body.classList.toggle('nav-open');
+        });
+      }
+    })();
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5TML75DQ');</script>
-<!-- End Google Tag Manager -->
+    setTimeout(() => {
+      const iframe = document.querySelector('iframe');
+      // Access the document inside the iframe
+      const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+      const target = iframeDoc.querySelector('#body-root');
+      if (target) {
+        target.style.cssText = "background: red !important; color: white;";
+      }
+    }, 5000); // 3 seconds to ensure the internal content has loaded
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5TML75DQ');</script>
+  <!-- End Google Tag Manager -->
 
 </body>
+
 </html>
