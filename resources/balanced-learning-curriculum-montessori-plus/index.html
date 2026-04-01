@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="/img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balanced Learning Curriculum: Montessori + Structure (Simple Explanation)</title>
+    <meta name="description"
+        content="What is a balanced learning curriculum? Learn how Palm Grove in Plano, TX combines Montessori methods with structured learning for optimal growth.">
+    <link rel="canonical" href="/resources/balanced-learning-curriculum-montessori-plus/">
+    <meta property="og:title" content="Balanced Learning Curriculum: Montessori + Structure (Simple Explanation)">
+    <meta property="og:description"
+        content="What is a balanced learning curriculum? Learn how Palm Grove in Plano, TX combines Montessori methods with structured learning for optimal growth.">
+    <meta property="og:url" content="/resources/balanced-learning-curriculum-montessori-plus/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Palm Grove Montessori Academy">
+    <meta property="og:locale" content="en_US">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/nav-foot.css">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --pg-amber: #f0a030;
+            --pg-amber-hover: #d48a1a;
+            --pg-amber-light: #fdf3e0;
+            --pg-heading: #2d2d42;
+            --pg-text: #4a4a5a;
+            --pg-text-light: #6a6a7a;
+            --pg-bg: #faf8f5;
+            --pg-white: #ffffff;
+            --pg-border: #eee8e0;
+            --pg-dark: #2d2d42;
+            --radius-lg: 20px;
+            --radius-md: 14px;
+            --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.07);
+            --seed-pink: #e88ca5;
+            --seed-red: #d94f4f;
+            --seed-orange: #f0a030;
+            --seed-green: #5dab5e;
+            --seed-blue: #4a90c4;
+            --seed-purple: #8b6db5;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--pg-text);
+            background: var(--pg-bg);
+            line-height: 1.72;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--pg-heading);
+            text-decoration-color: rgba(240, 160, 48, 0.5);
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: var(--pg-amber-hover);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(100%, 1120px);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            background: radial-gradient(circle at 12% 22%, rgba(240, 160, 48, 0.18), transparent 28%), radial-gradient(circle at 85% 18%, rgba(232, 140, 165, 0.12), transparent 24%), radial-gradient(circle at 60% 80%, rgba(93, 171, 94, 0.08), transparent 22%), linear-gradient(175deg, #fff9f0 0%, #fef6e8 38%, #fdf3e0 65%, #f8f0e4 100%);
+            color: var(--pg-heading);
+            padding: 56px 0 42px;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: auto 0 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--seed-pink), var(--seed-red), var(--seed-orange), var(--seed-green), var(--seed-blue), var(--seed-purple));
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.82fr);
+            gap: 28px;
+            align-items: start;
+        }
+
+        .section-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--pg-amber);
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .section-tag::before {
+            content: '';
+            display: inline-block;
+            width: 20px;
+            height: 2px;
+            background: var(--pg-amber);
+            margin-right: 10px;
+            vertical-align: middle;
+            border-radius: 2px;
+        }
+
+        .hero-copy h1 {
+            font-size: clamp(2.15rem, 4.4vw, 3.75rem);
+            line-height: 1.06;
+            letter-spacing: -0.03em;
+            color: var(--pg-heading);
+            margin-bottom: 16px;
+        }
+
+        .hero-copy p {
+            font-size: 1.03rem;
+            max-width: 700px;
+            color: var(--pg-text);
+        }
+
+        .meta-card {
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(45, 45, 66, 0.08);
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: var(--shadow-soft);
+            backdrop-filter: blur(10px);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px 24px;
+        }
+
+        .meta-item small {
+            display: block;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--pg-text-light);
+            margin-bottom: 6px;
+        }
+
+        .meta-item div,
+        .meta-item a {
+            color: var(--pg-heading);
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 1.45;
+        }
+
+        .meta-item.full {
+            grid-column: 1 / -1;
+        }
+
+        .article-shell {
+            padding: 42px 0 0;
+        }
+
+        .article-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 760px) 260px;
+            gap: 36px;
+            align-items: start;
+        }
+
+        .article-main {
+            min-width: 0;
+        }
+
+        .jump-card {
+            background: var(--pg-white);
+            border: 1px solid var(--pg-border);
+            border-radius: 18px;
+            box-shadow: var(--shadow-soft);
+            padding: 18px 20px;
+            position: sticky;
+            top: 24px;
+        }
+
+        .jump-card h2 {
+            font-size: 0.98rem;
+            color: var(--pg-heading);
+            margin-bottom: 12px;
+        }
+
+        .jump-card ol {
+            padding-left: 1.1rem;
+        }
+
+        .jump-card li+li {
+            margin-top: 10px;
+        }
+
+        .jump-card a {
+            font-size: 0.94rem;
+            font-weight: 700;
+            line-height: 1.45;
+        }
+
+        .intro-card {
+            margin-bottom: 18px;
+        }
+
+        .summary-card {
+            background: linear-gradient(180deg, #fffaf2 0%, #fffefb 100%);
+            border: 1px solid var(--pg-border);
+            border-radius: 18px;
+            padding: 20px 22px;
+            margin-bottom: 26px;
+        }
+
+        .summary-card h2 {
+            font-size: 1.08rem;
+            color: var(--pg-heading);
+            margin-bottom: 10px;
+        }
+
+        .summary-card ul,
+        .article-section ul,
+        .article-section ol {
+            padding-left: 1.2rem;
+        }
+
+        .summary-card li+li,
+        .article-section li+li {
+            margin-top: 8px;
+        }
+
+        .article-section {
+            padding: 0;
+            margin-bottom: 34px;
+        }
+
+        .article-section h2 {
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
+            line-height: 1.18;
+            color: var(--pg-heading);
+            margin-bottom: 14px;
+        }
+
+        .article-section h3 {
+            font-size: 1.1rem;
+            color: var(--pg-heading);
+            margin: 18px 0 8px;
+        }
+
+        .article-section p,
+        .summary-card p,
+        .intro-card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .article-section p:last-child,
+        .summary-card p:last-child,
+        .intro-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .callout {
+            background: #fffaf0;
+            border-left: 4px solid var(--pg-amber);
+            border-radius: 0 14px 14px 0;
+            padding: 14px 16px;
+            margin: 16px 0;
+        }
+
+        .article-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            overflow: hidden;
+            border-radius: 16px;
+            border: 1px solid var(--pg-border);
+        }
+
+        .article-table th,
+        .article-table td {
+            padding: 14px 14px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid var(--pg-border);
+        }
+
+        .article-table th {
+            background: #fffaf0;
+            color: var(--pg-heading);
+            font-size: 0.94rem;
+        }
+
+        .article-table td {
+            font-size: 0.95rem;
+        }
+
+        .faq-section {
+            padding: 24px 0 0;
+            background: transparent;
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .faq-header h2 {
+            font-size: clamp(1.45rem, 2.8vw, 1.95rem);
+            color: var(--pg-heading);
+            font-weight: 800;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .faq-grid {
+            max-width: 760px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--pg-border);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: border-color 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .faq-item:hover,
+        .faq-item.active {
+            border-color: rgba(240, 160, 48, 0.5);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            text-align: left;
+            padding: 18px 54px 18px 18px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 1.45;
+            color: var(--pg-heading);
+            cursor: pointer;
+            position: relative;
+            min-height: 56px;
+        }
+
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #fff7ea;
+            color: var(--pg-amber);
+            display: grid;
+            place-items: center;
+            font-size: 1.15rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '−';
+        }
+
+        .faq-answer {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.28s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            grid-template-rows: 1fr;
+        }
+
+        .faq-answer-inner {
+            overflow: hidden;
+            padding: 0 18px;
+        }
+
+        .faq-item.active .faq-answer-inner {
+            padding-bottom: 18px;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            font-size: 0.96rem;
+            color: var(--pg-text);
+            line-height: 1.72;
+        }
+
+        .final-cta {
+            padding: 44px 0 88px;
+            background: transparent;
+        }
+
+        .final-cta>.section-inner {
+            background: linear-gradient(135deg, rgba(240, 160, 48, 0.07) 0%, rgba(240, 160, 48, 0.13) 42%, rgba(253, 243, 224, 0.94) 100%);
+            border: 1px solid rgba(240, 160, 48, 0.14);
+            border-radius: 24px;
+            box-shadow: 0 18px 38px rgba(45, 45, 66, 0.08);
+            width: min(100%, 760px);
+            margin: 0 auto;
+            padding: 54px 40px 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+        .final-cta>.section-inner>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta>.section-inner::before {
+            content: '🌴';
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            font-size: 3.35rem;
+            line-height: 1;
+            opacity: 0.14;
+            transform: rotate(6deg);
+            pointer-events: none;
+        }
+
+        .final-cta h2 {
+            max-width: 580px;
+            margin: 0 auto 16px;
+            color: var(--pg-dark);
+            font-size: clamp(1.95rem, 3.5vw, 2.7rem);
+            line-height: 1.18;
+            letter-spacing: -0.02em;
+        }
+
+        .final-cta>.section-inner>p {
+            max-width: 610px;
+            margin: 0 auto 30px;
+            color: var(--pg-text);
+            font-size: 1.04rem;
+            line-height: 1.75;
+        }
+
+        .cta-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 28px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 700;
+            transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background: var(--pg-amber);
+            color: white;
+            box-shadow: 0 14px 30px rgba(240, 160, 48, 0.22);
+        }
+
+        .btn-primary:hover {
+            background: var(--pg-amber-hover);
+            color: white;
+        }
+
+        .btn-secondary {
+            padding: 14px 26px;
+            border: 2px solid var(--pg-dark);
+            color: var(--pg-dark);
+            background: white;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(45, 45, 66, 0.04);
+        }
+
+        @media (max-width: 960px) {
+
+            .hero-grid,
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .jump-card {
+                position: static;
+            }
+
+            .hero {
+                padding: 44px 0 36px;
+            }
+
+            .meta-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .final-cta>.section-inner {
+                padding: 36px 22px 30px;
+                border-radius: 18px;
+            }
+
+            .final-cta>.section-inner::before {
+                top: 14px;
+                right: 14px;
+                font-size: 2.5rem;
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .cta-group>* {
+                width: 100%;
+            }
+        }
+
+        /* Readability refinements for generated long-form content. */
+        .article-main section {
+            scroll-margin-top: 84px;
+        }
+
+        .article-main p {
+            max-width: 74ch;
+        }
+
+        .intro-card p+p,
+        .summary-card p+p,
+        .article-section p+p {
+            margin-top: 0.45rem;
+        }
+
+        .summary-card ul,
+        .summary-card ol,
+        .article-section ul,
+        .article-section ol {
+            margin: 14px 0 20px 1.2rem;
+            display: grid;
+            gap: 0.55rem;
+        }
+
+        .summary-card li,
+        .article-section li {
+            padding-left: 0.12rem;
+            line-height: 1.72;
+        }
+
+        .summary-card li::marker,
+        .article-section li::marker {
+            color: var(--pg-amber);
+        }
+
+        .summary-card ul.checklist,
+        .article-section ul.checklist {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+            gap: 0.75rem;
+        }
+
+        .summary-card ul.checklist li,
+        .article-section ul.checklist li {
+            position: relative;
+            padding: 10px 12px 10px 42px;
+            border: 1px solid rgba(240, 160, 48, 0.2);
+            border-radius: 12px;
+            background: linear-gradient(180deg, #fffefb 0%, #fffaf2 100%);
+        }
+
+        .summary-card ul.checklist li::before,
+        .article-section ul.checklist li::before {
+            content: "✓";
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--pg-amber);
+            color: #fff;
+            font-size: 0.82rem;
+            line-height: 20px;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        .article-section h2 {
+            margin-bottom: 16px;
+        }
+
+        .article-section h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .article-section.callout,
+        .summary-card.callout {
+            margin: 18px 0;
+            box-shadow: 0 6px 18px rgba(240, 160, 48, 0.10);
+        }
+
+        .article-section.callout p,
+        .summary-card.callout p {
+            margin: 0;
+            max-width: 68ch;
+        }
+
+        .quote-card {
+            position: relative;
+            margin: 24px 0;
+            padding: 22px 24px 20px 30px;
+            border: 1px solid rgba(240, 160, 48, 0.28);
+            border-left: 6px solid var(--pg-amber);
+            border-radius: 16px;
+            background: radial-gradient(circle at 12% 14%, rgba(240, 160, 48, 0.14), transparent 36%), linear-gradient(180deg, #fffaf2 0%, #fffdf8 100%);
+            box-shadow: 0 14px 28px rgba(45, 45, 66, 0.08);
+        }
+
+        .quote-card::before {
+            content: "“";
+            position: absolute;
+            top: 8px;
+            left: 12px;
+            font-size: 2.4rem;
+            line-height: 1;
+            color: rgba(240, 160, 48, 0.55);
+            font-weight: 900;
+            pointer-events: none;
+        }
+
+        .quote-card p {
+            margin: 0;
+            max-width: 64ch;
+            font-size: 1.05rem;
+            line-height: 1.78;
+            color: var(--pg-heading);
+            font-weight: 700;
+            letter-spacing: 0.005em;
+        }
+
+        .article-main strong {
+            color: var(--pg-heading);
+        }
+
+        .article-main div[style*="overflow-x: auto"] {
+            margin: 16px 0 24px;
+            border-radius: 16px;
+            box-shadow: 0 10px 24px rgba(45, 45, 66, 0.06);
+            background: var(--pg-white);
+        }
+
+        .article-table {
+            margin-top: 0;
+            border-radius: 16px;
+        }
+
+        .article-table thead th {
+            font-weight: 800;
+            letter-spacing: 0.01em;
+        }
+
+        .article-table tbody tr:nth-child(even) td {
+            background: #fffcf7;
+        }
+
+        @media (max-width: 960px) {
+            .article-main p {
+                max-width: 100%;
+            }
+
+            .article-section ul,
+            .article-section ol,
+            .summary-card ul,
+            .summary-card ol {
+                margin-left: 1.05rem;
+            }
+
+            .quote-card {
+                padding: 18px 16px 16px 24px;
+                margin: 20px 0;
+            }
+
+            .quote-card::before {
+                top: 6px;
+                left: 9px;
+                font-size: 2rem;
+            }
+
+            .quote-card p {
+                font-size: 1rem;
+                line-height: 1.72;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .final-cta {
+                padding: 32px 0 56px;
+            }
+
+            .final-cta h2 {
+                font-size: clamp(1.55rem, 7.5vw, 1.95rem);
+                line-height: 1.22;
+            }
+
+            .final-cta>.section-inner>p {
+                font-size: 0.98rem;
+                line-height: 1.65;
+            }
+
+            .btn {
+                min-height: 48px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "What is balanced learning curriculum?", "acceptedAnswer": { "@type": "Answer", "text": "Balanced learning curriculum is an educational approach that blends Montessori-style, child-led exploration with structured lessons and routines typical of mainstream schools.Children work with hands-on materials in a prepared environment while also participating in group lessons that build academic and social skills.Programs like Palm Grove&#x27;s Modernized Montessori curriculum intentionally combine these elements so children can thrive in both Montessori and traditional settings." } }, { "@type": "Question", "name": "What age is best for balanced learning curriculum?", "acceptedAnswer": { "@type": "Answer", "text": "Most children benefit from balanced learning in the preschool and pre-K years, roughly ages 3–5, when independence and the ability to follow simple routines are both emerging.Mixed-age classrooms, such as those at Palm Grove, support younger children through peer observation and older children through leadership opportunities.The &quot; best&quot; age is when your child shows readiness for a small-group environment and interest in more purposeful activities." } }, { "@type": "Question", "name": "How do I choose balanced learning curriculum in Plano, TX?", "acceptedAnswer": { "@type": "Answer", "text": "Look for schools whose websites and tours clearly describe both Montessori principles and structured academic goals.In Plano, Palm Grove stands out by naming its Modernized Montessori curriculum, highlighting individualized learning paths, collaborative learning, STEM integration, and cultural awareness, all while preparing children for every learning environment.Those are strong markers of a balanced approach." } }, { "@type": "Question", "name": "What questions should I ask on a tour for balanced learning curriculum?", "acceptedAnswer": { "@type": "Answer", "text": "Ask about the length of the Montessori work cycle, the role of group lessons, and how progress is tracked and shared.Questions about STEM, technology use, and social-emotional learning will show how modern and well-rounded the program is.You might also ask how the school supports transitions into both Montessori and traditional elementary schools, which Palm Grove explicitly addresses in its curriculum and promise." } }, { "@type": "Question", "name": "How do I know my child is ready for balanced learning curriculum?", "acceptedAnswer": { "@type": "Answer", "text": "Your child is likely ready if they show curiosity about peers, can follow simple directions, and are beginning to manage basic routines with support.They don&#x27;t need to be perfectly &quot; structured&quot; already; part of balanced learning is practicing those skills in a supportive environment.Teachers in programs like Palm Grove&#x27;s use observation and progress tracking to adjust the level of structure for each child." } }, { "@type": "Question", "name": "How does balanced learning support preschool daily schedule needs?", "acceptedAnswer": { "@type": "Answer", "text": "Balanced learning offers a predictable daily schedule that still leaves room for child-led exploration.Families benefit from knowing there is time for focused work, outdoor play, rest, and group activities, while children experience enough choice to stay engaged.Palm Grove&#x27;s &quot; Our Day&quot; framework—Practical Life, Writing/Reading/Math, Happiness Activities, and reflection—is one example of how a preschool schedule can feel both structured and warm." } }, { "@type": "Question", "name": "Is a balanced learning curriculum good preparation for kindergarteners?", "acceptedAnswer": { "@type": "Answer", "text": "Yes.By blending Montessori independence with structured lessons, children practice skills essential for kindergarten: following a schedule, participating in group learning, focusing on tasks, and meeting early academic expectations.Palm Grove&#x27;s curriculum explicitly aims to prepare children to thrive in both Montessori and traditional learning environments.That makes the pre kindergarten curriculum a strong foundation for a range of kindergarten programs." } }, { "@type": "Question", "name": "How does technology fit into a balanced learning curriculum?", "acceptedAnswer": { "@type": "Answer", "text": "In a balanced approach, technology is used intentionally, not as background noise.Palm Grove integrates tablets, games, and robotics kits into hands-on STEM learning while maintaining Montessori&#x27;s emphasis on exploration and self-discovery.Technology becomes another tool for thinking, problem-solving, and creativity—not a replacement for real-world materials." } } ]
+}
+</script>
+</head>
+
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
+        <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
+        <li><a href="/montessori-classroom-plano">Classroom</a></li>
+        <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
+        <li><a href="/Contact-Us">Contact</a></li>
+        <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
+        <li><a href="/Schedule-Tour" class="nav-cta">Schedule a Tour</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-copy"><span class="section-tag">Daily Schedule &amp; Curriculum</span>
+                    <h1>Balanced Learning Curriculum: Montessori Plus Structure Explained</h1>
+                    <p>What is a balanced learning curriculum? Learn how Palm Grove in Plano, TX combines Montessori
+                        methods with structured learning for optimal growth.</p>
+                </div>
+                <aside class="meta-card" aria-label="Article details">
+                    <div class="meta-grid">
+                        <div class="meta-item"><small>Published</small>
+                            <div>April 6, 2026</div>
+                        </div>
+                        <div class="meta-item"><small>Category</small>
+                            <div>Daily Schedule &amp; Curriculum</div>
+                        </div>
+                        <div class="meta-item"><small>Reading time</small>
+                            <div>11 min read</div>
+                        </div>
+                        <div class="meta-item"><small>Location</small>
+                            <div>Plano, TX</div>
+                        </div>
+                        <div class="meta-item full"><small>Parent guide</small><a
+                                href="/resources/modernized-montessori-curriculum/">Modernized Montessori Curriculum</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <div class="article-shell">
+        <div class="container article-layout">
+            <main class="article-main">
+                <section id="balanced-learning-curriculum-montessori-structure-simple-explanation"
+                    class="article-section">
+                    <h2>Balanced Learning Curriculum: Montessori + Structure (Simple Explanation)</h2>
+                    <p>In a balanced learning curriculum, Montessori freedom and school-like structure are not
+                        opposites—they&#x27;re dance partners. One leads with curiosity, the other keeps the rhythm.
+                        Together, they help young children feel both trusted and securely guided.</p>
+                    <p>Put simply, a balanced learning curriculum gives children long stretches of choice-based,
+                        hands-on Montessori work, paired with short, predictable group lessons that mirror what
+                        they&#x27;ll experience in elementary school. Children still move at their own pace, but they
+                        also practice listening in a group, following a schedule, and working toward mainstream academic
+                        expectations. At Palm Grove, this blend is formalized as a <a
+                            href="/resources/modernized-montessori-curriculum/">Modernized Montessori curriculum</a>
+                        that brings together Montessori independence and essential academic skills for today&#x27;s
+                        classrooms. In other words, balanced learning curriculum means your child doesn&#x27;t have to
+                        choose between a nurturing Montessori environment and solid preparation for &quot; the real
+                        world&quot; of school.</p>
+                </section>
+                <section id="tl-dr" class="summary-card">
+                    <h2>TL;DR</h2>
+                    <ul>
+                        <li>Balanced learning combines Montessori-style choice and hands-on work with predictable group
+                            lessons and routines.</li>
+                        <li>Children build independence, curiosity, and social-emotional skills while also practicing
+                            the structure they&#x27;ll see in elementary school.</li>
+                        <li>At Palm Grove, the Modernized Montessori curriculum explicitly blends Montessori principles
+                            with mainstream academic skills.</li>
+                        <li>A typical day includes self-directed work, small groups, outdoor play, and time for
+                            reflection on individual progress.</li>
+                        <li>Parents can look for prepared environments, consistent schedules, and individualized
+                            learning paths when choosing a program in Plano.</li>
+                    </ul>
+                </section>
+                <section id="what-is-balanced-learning-curriculum" class="article-section">
+                    <h2>What is balanced learning curriculum?</h2>
+                    <p>Balanced learning curriculum is an approach that combines child-led exploration with
+                        teacher-guided structure. Children get meaningful choice in what they work on and for how long,
+                        while also experiencing set times for lessons, stories, or group activities. The goal is to
+                        preserve intrinsic motivation and independence without leaving out the routines and expectations
+                        of modern schooling.</p>
+                    <p>At Palm Grove, this idea shows up in their Modernized Montessori curriculum, which &quot; blends
+                        the timeless principles of Montessori education with essential mainstream academic skills.&quot;
+                        The school embraces the Montessori prepared environment and also includes designated learning
+                        sessions that mimic public school settings. That balance helps children feel comfortable whether
+                        they continue in Montessori or transition to a more traditional kindergarten or elementary
+                        classroom later on.</p>
+                </section>
+                <section id="how-montessori-fits-into-a-balanced-curriculum" class="article-section">
+                    <h2>How Montessori fits into a balanced curriculum</h2>
+                    <p>Montessori brings the &quot; freedom&quot; side of balanced learning. Classrooms are carefully
+                        prepared so that children can choose from shelves of hands-on materials in areas like Practical
+                        Life, Sensorial exploration, Mathematics, and Geometry. Each material is designed to build
+                        concentration, coordination, and a specific concept, from pouring without spilling to
+                        understanding quantity and number.</p>
+                    <p>Palm Grove&#x27;s classrooms feature three dynamic learning zones filled with thoughtfully
+                        designed activities on accessible shelving, encouraging exploration, independence, and
+                        collaboration. Children can move between these interconnected spaces, taking ownership of their
+                        work while teachers observe and introduce new lessons as each child is ready. This Montessori
+                        foundation ensures that a balanced learning curriculum doesn&#x27;t just add more &quot;
+                        structure&quot;—it starts from rich, child-centered learning and layers structure on top.</p>
+                </section>
+                <section id="where-structure-shows-up-the-in-montessori" class="article-section">
+                    <h2>Where structure shows up: the &quot;+&quot; in Montessori +</h2>
+                    <p>Structure in a balanced learning curriculum is not about rigid control; it&#x27;s about
+                        predictable rhythms and clear expectations. Children experience set times for group lessons,
+                        transitions, and reflection, which gives them practice with the routines they&#x27;ll meet in
+                        kindergarten and beyond.</p>
+                    <p>Palm Grove adds structure in several ways:</p>
+                    <ul>
+                        <li>Designated learning sessions: Alongside open work time, children participate in designated
+                            learning sessions that mirror public school lessons, helping them practice group listening
+                            and participation.</li>
+                        <li>Collaborative learning: The program emphasizes collaborative learning—even in larger groups
+                            than traditional Montessori—to build social-emotional skillsets needed in K–12 environments.
+                        </li>
+                        <li>Progress tracking: Teachers track each child&#x27;s progress to analyze strengths and
+                            struggles, then tailor learning experiences so that structure supports, rather than
+                            flattens, individuality.</li>
+                        <li>Daily anchors: Palm Grove&#x27;s &quot; Our Day&quot; highlights Practical Life, Writing,
+                            Reading and Math, Happiness Activities, and time for reflecting on individual progress,
+                            providing a consistent backbone to the schedule</li>
+                    </ul>
+                </section>
+                <section id="a-day-in-a-balanced-montessori-classroom" class="article-section">
+                    <h2>A day in a balanced Montessori classroom</h2>
+                    <p>While exact times vary, a balanced learning day tends to follow a recognizable pattern. Here is a
+                        simple example of how those Montessori and structured pieces can fit together.</p>
+                    <h3>Sample daily flow (illustrative)</h3>
+                    <ul>
+                        <li>Arrival and welcome: Calm greetings, children hang up belongings and settle into the
+                            classroom.</li>
+                        <li>Morning work cycle: Extended Montessori work period where children choose tasks from
+                            Practical Life, Sensorial, Language, and Math areas.</li>
+                        <li>Short group time: Circle for songs, stories, calendar, or a brief lesson aligned with
+                            mainstream academic goals.</li>
+                        <li>Outdoor play and gross motor: Playground time for movement, social play, and fresh air.</li>
+                        <li>Lunch and care routines: Children practice independence with eating, cleaning up, and
+                            personal care.</li>
+                        <li>Rest or quiet work: Rest time for younger children; quiet reading or light work for older
+                            ones.</li>
+                        <li>Afternoon focused lessons: Small-group or individual lessons that may include STEM or
+                            technology, such as tablets or robotics kits, integrated with hands-on learning.</li>
+                        <li>Reflection and closing: Simple &quot; what I worked on today&quot; reflections, connecting
+                            back to Palm Grove&#x27;s focus on reflecting on individual progress.</li>
+                    </ul>
+                </section>
+                <section id="palm-grove-s-modernized-montessori-example" class="article-section">
+                    <h2>Palm Grove&#x27;s Modernized Montessori example</h2>
+                    <p>Palm Grove&#x27;s curriculum page describes a Modernized Montessori curriculum designed to
+                        nurture independence, creativity, and critical thinking while preparing students to thrive in
+                        both Montessori and traditional environments. This is a textbook example of a balanced learning
+                        curriculum in action.</p>
+                    <p>Four elements on the program page highlight how Palm Grove brings balance to life:</p>
+                    <ul>
+                        <li>Individualized learning paths: Progress tracking helps teachers tailor work to each
+                            child&#x27;s needs and future learning environments.</li>
+                        <li>Collaborative learning and social-emotional development: Children work in small and larger
+                            groups to build the social skills they&#x27;ll need in K–12 settings.</li>
+                        <li>STEM and technology integration: STEM, games, tablets, and robotics are woven into hands-on
+                            learning, maintaining Montessori-style exploration while reflecting modern tools.</li>
+                        <li>Cultural awareness and global citizenship: Themes like sustainability and international
+                            cooperation give structure and purpose to projects, connecting daily work to the wider
+                            world.</li>
+                    </ul>
+                </section>
+                <section id="checklist-is-a-curriculum-truly-balanced" class="article-section">
+                    <h2>Checklist: Is a curriculum truly &quot; balanced&quot;?</h2>
+                    <p>Use this quick checklist when you visit schools or read about their pre-k curriculum or
+                        kindergarten learning.</p>
+                    <p>A balanced learning curriculum should show:</p>
+                    <ul>
+                        <li>Child-led work blocks where children can choose tasks from clearly prepared shelves.</li>
+                        <li>A predictable daily rhythm that includes group lessons, outdoor time, and reflection.</li>
+                        <li>Hands-on materials for early literacy, math, and sensorial learning rather than mostly
+                            worksheets.</li>
+                        <li>Teachers who talk about both independence and meeting mainstream academic benchmarks.</li>
+                        <li>Evidence of collaboration and social-emotional learning woven into the day, not treated as
+                            an extra.</li>
+                        <li>Progress tracking that informs individualized lessons instead of pushing every child at the
+                            same pace.</li>
+                    </ul>
+                    <p>If a school in Plano emphasizes both a prepared Montessori environment and designated learning
+                        sessions that mirror public schooling, as Palm Grove does, you&#x27;re likely looking at a
+                        genuinely balanced approach.</p>
+                </section>
+                <section id="what-age-is-best-for-a-balanced-learning-curriculum" class="article-section">
+                    <h2>What age is best for a balanced learning curriculum?</h2>
+                    <p>Balanced learning can benefit children as soon as they&#x27;re ready for a small-group classroom
+                        environment—often around ages 3–5. At these ages, children are eager to explore independently
+                        but also starting to handle short group activities and simple schedules.</p>
+                    <p>Montessori programs commonly serve mixed-age groups in this range, giving younger children the
+                        chance to observe older peers and older children opportunities to lead. Palm Grove&#x27;s
+                        multi-age learning areas are designed to encourage interaction across age groups, fostering a
+                        collaborative learning environment that supports both independence and structure. This makes the
+                        preschool and pre-K years a natural time to introduce balanced learning.</p>
+                </section>
+                <section id="how-to-choose-a-balanced-learning-curriculum-in-plano-tx" class="article-section">
+                    <h2>How to choose a balanced learning curriculum in Plano, TX</h2>
+                    <p>In a city with multiple preschool options, look for schools whose philosophy and daily schedule
+                        match your child&#x27;s temperament and your family&#x27;s goals. For balanced learning, that
+                        usually means:</p>
+                    <ul>
+                        <li>A clearly articulated curriculum that names both Montessori principles and mainstream
+                            academic skills, as Palm Grove&#x27;s Modernized Montessori curriculum does.</li>
+                        <li>Classrooms described as &quot; prepared environments&quot; with child-sized furniture and
+                            accessible learning materials.</li>
+                        <li>Mention of collaborative learning, STEM or technology integration, and cultural/global
+                            themes.</li>
+                        <li>A promise to prepare children for &quot; every learning environment,&quot; suggesting
+                            attention to future elementary expectations.</li>
+                        <li>Palm Grove&#x27;s website notes that the school is &quot; far from traditional, but also
+                            very Classical Montessori,&quot; embracing the prepared environment while exposing children
+                            to designated learning sessions similar to public schooling. That kind of language is a good
+                            sign you&#x27;re seeing a balanced learning curriculum rather than a purely traditional or
+                            purely free-form program.</li>
+                    </ul>
+                </section>
+                <section id="questions-to-ask-on-a-tour-about-balance" class="article-section">
+                    <h2>Questions to ask on a tour about balance</h2>
+                    <p>When you <a href="/Schedule-Tour">tour</a> a school, your questions can help you see how
+                        Montessori and structure actually show up in the day. Here are some to consider:</p>
+                    <ul>
+                        <li>&quot; How much of the day is self-directed Montessori work, and how much is
+                            teacher-led?&quot;</li>
+                        <li>&quot; Can you walk me through a typical daily schedule for a 3–5-year-old here?&quot;</li>
+                        <li>&quot; How do you track each child&#x27;s progress and use it to plan lessons?&quot;</li>
+                        <li>&quot; What kinds of group activities do children do together—stories, projects, STEM
+                            work?&quot;</li>
+                        <li>&quot; How does your curriculum prepare children for both Montessori and traditional
+                            elementary schools?&quot;</li>
+                        <li>&quot; Where do I see your focus on social-emotional development in the classroom?&quot;
+                        </li>
+                        <li>In Palm Grove&#x27;s learning zones, you&#x27;ll notice practical life activities, sensorial
+                            materials, and math tools all visible on low shelves. Pair that with the school&#x27;s
+                            emphasis on collaborative learning and designated sessions, and you can observe the &quot;
+                            balanced&quot; part of the curriculum as you walk through.</li>
+                    </ul>
+                </section>
+                <section id="how-to-know-your-child-is-ready-for-balanced-learning" class="article-section">
+                    <h2>How to know your child is ready for balanced learning</h2>
+                    <p>A child is generally ready for a balanced learning curriculum when they&#x27;re curious about
+                        other children, can handle short transitions, and are beginning to manage simple routines. They
+                        don&#x27;t need perfect self-control—just enough emerging independence and resilience that
+                        structure will feel supportive rather than overwhelming.</p>
+                    <p>Signs of readiness include:</p>
+                    <ul>
+                        <li>Interest in choosing their own activities and finishing them.</li>
+                        <li>Ability to separate from caregivers with a warm, predictable routine.</li>
+                        <li>Growing independence with basic self-care and classroom tasks.</li>
+                        <li>Curiosity about letters, numbers, stories, or &quot; school-like&quot; play.</li>
+                    </ul>
+                    <p>Because Palm Grove tracks progress and tailors experiences, teachers can meet children where they
+                        are, offering more guidance for those who need help with transitions and more freedom for those
+                        who are eager to stretch. That flexibility is one of the strengths of a truly balanced learning
+                        curriculum.</p>
+                </section>
+                <section id="key-takeaways" class="article-section">
+                    <h2>Key takeaways</h2>
+                    <ul>
+                        <li>A balanced learning curriculum combines Montessori independence with structured lessons and
+                            routines.</li>
+                        <li>Palm Grove&#x27;s Modernized Montessori curriculum is a clear example, blending timeless
+                            Montessori principles with mainstream academic skills and collaborative learning</li>
+                        <li>Classrooms feature prepared environments, dynamic learning zones, and multi-age groups that
+                            support exploration and social growth.</li>
+                        <li>Daily schedules balance long, child-led work periods with group lessons, outdoor play, and
+                            reflection on progress.</li>
+                        <li>The right time to choose balanced learning is when your child is ready for small-group life
+                            and curious about more purposeful activities.</li>
+                    </ul>
+                    <p>If you&#x27;d like to see how a balanced learning curriculum looks and feels in real time,
+                        visiting Palm Grove Montessori Academy in Plano is a meaningful next step. A tour offers the
+                        chance to watch children move between Montessori work and structured moments, and to imagine how
+                        this blend could support your own child&#x27;s growth.</p>
+                    <p>Additional resource: <a href="/montessori-curriculum-plano">Our Curriculum</a>.</p>
+                </section>
+                <section class="faq-section" id="faq">
+                    <div class="faq-header"><span class="section-tag">Common Questions</span>
+                        <h2>Frequently Asked Questions</h2>
+                    </div>
+                    <div class="faq-grid">
+                        <div class="faq-item active"><button id="faq-q-1" class="faq-question" type="button"
+                                aria-expanded="true" aria-controls="faq-a-1">What is balanced learning
+                                curriculum?</button>
+                            <div id="faq-a-1" class="faq-answer" role="region" aria-labelledby="faq-q-1">
+                                <div class="faq-answer-inner">
+                                    <p>Balanced learning curriculum is an educational approach that blends
+                                        Montessori-style, child-led exploration with structured lessons and routines
+                                        typical of mainstream schools. Children work with hands-on materials in a
+                                        prepared environment while also participating in group lessons that build
+                                        academic and social skills. Programs like Palm Grove&#x27;s Modernized
+                                        Montessori curriculum intentionally combine these elements so children can
+                                        thrive in both Montessori and traditional settings.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item"><button id="faq-q-2" class="faq-question" type="button"
+                                aria-expanded="false" aria-controls="faq-a-2">What age is best for balanced learning
+                                curriculum?</button>
+                            <div id="faq-a-2" class="faq-answer" role="region" aria-labelledby="faq-q-2" hidden>
+                                <div class="faq-answer-inner">
+                                    <p>Most children benefit from balanced learning in the preschool and pre-K years,
+                                        roughly ages 3–5, when independence and the ability to follow simple routines
+                                        are both emerging. Mixed-age classrooms, such as those at Palm Grove, support
+                                        younger children through peer observation and older children through leadership
+                                        opportunities. The &quot; best&quot; age is when your child shows readiness for
+                                        a small-group environment and interest in more purposeful activities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item"><button id="faq-q-3" class="faq-question" type="button"
+                                aria-expanded="false" aria-controls="faq-a-3">How do I choose balanced learning
+                                curriculum in Plano, TX?</button>
+                            <div id="faq-a-3" class="faq-answer" role="region" aria-labelledby="faq-q-3" hidden>
+                                <div class="faq-answer-inner">
+                                    <p>Look for schools whose websites and tours clearly describe both Montessori
+                                        principles and structured academic goals. In Plano, Palm Grove stands out by
+                                        naming its Modernized Montessori curriculum, highlighting individualized
+                                        learning paths, collaborative learning, STEM integration, and cultural
+                                        awareness, all while preparing children for every learning environment. Those
+                                        are strong markers of a balanced approach.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item"><button id="faq-q-4" class="faq-question" type="button"
+                                aria-expanded="false" aria-controls="faq-a-4">What questions should I ask on a tour for
+                                balanced learning curriculum?</button>
+                            <div id="faq-a-4" class="faq-answer" role="region" aria-labelledby="faq-q-4" hidden>
+                                <div class="faq-answer-inner">
+                                    <p>Ask about the length of the Montessori work cycle, the role of group lessons, and
+                                        how progress is tracked and shared. Questions about STEM, technology use, and
+                                        social-emotional learning will show how modern and well-rounded the program is.
+                                        You might also ask how the school supports transitions into both Montessori and
+                                        traditional elementary schools, which Palm Grove explicitly addresses in its
+                                        curriculum and promise.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item"><button id="faq-q-5" class="faq-question" type="button"
+                                aria-expanded="false" aria-controls="faq-a-5">How do I know my child is ready for
+                                balanced learning curriculum?</button>
+                            <div id="faq-a-5" class="faq-answer" role="region" aria-labelledby="faq-q-5" hidden>
+                                <div class="faq-answer-inner">
+                                    <p>Your child is likely ready if they show curiosity about peers, can follow simple
+                                        directions, and are beginning to manage basic routines with support. They
+                                        don&#x27;t need to be perfectly &quot; structured&quot; already; part of
+                                        balanced learning is practicing those skills in a supportive environment.
+                                        Teachers in programs like Palm Grove&#x27;s use observation and progress
+                                        tracking to adjust the level of structure for each child.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item"><button id="faq-q-6" class="faq-question" type="button"
+                                aria-expanded="false" aria-controls="faq-a-6">How does balanced learning support
+                                preschool daily schedule needs?</button>
+                            <div id="faq-a-6" class="faq-answer" role="region" aria-labelledby="faq-q-6" hidden>
+                                <div class="faq-answer-inner">
+                                    <p>Balanced learning offers a predictable daily schedule that still leaves room for
+                                        child-led exploration. Families benefit from knowing there is time for focused
+                                        work, outdoor play, rest, and group activities, while children experience enough
+                                        choice to stay engaged. Palm Grove&#x27;s &quot; Our Day&quot;
+                                        framework—Practical Life, Writing/Reading/Math, Happiness Activities, and
+                                        reflection—is one example of how a preschool schedule can feel both structured
+                                        and warm.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item"><button id="faq-q-7" class="faq-question" type="button"
+                                aria-expanded="false" aria-controls="faq-a-7">Is a balanced learning curriculum good
+                                preparation for kindergarteners?</button>
+                            <div id="faq-a-7" class="faq-answer" role="region" aria-labelledby="faq-q-7" hidden>
+                                <div class="faq-answer-inner">
+                                    <p>Yes. By blending Montessori independence with structured lessons, children
+                                        practice skills essential for kindergarten: following a schedule, participating
+                                        in group learning, focusing on tasks, and meeting early academic expectations.
+                                        Palm Grove&#x27;s curriculum explicitly aims to prepare children to thrive in
+                                        both Montessori and traditional learning environments. That makes the pre
+                                        kindergarten curriculum a strong foundation for a range of kindergarten
+                                        programs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-item"><button id="faq-q-8" class="faq-question" type="button"
+                                aria-expanded="false" aria-controls="faq-a-8">How does technology fit into a balanced
+                                learning curriculum?</button>
+                            <div id="faq-a-8" class="faq-answer" role="region" aria-labelledby="faq-q-8" hidden>
+                                <div class="faq-answer-inner">
+                                    <p>In a balanced approach, technology is used intentionally, not as background
+                                        noise. Palm Grove integrates tablets, games, and robotics kits into hands-on
+                                        STEM learning while maintaining Montessori&#x27;s emphasis on exploration and
+                                        self-discovery. Technology becomes another tool for thinking, problem-solving,
+                                        and creativity—not a replacement for real-world materials.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <aside class="jump-card" aria-label="In this article">
+                <h2>In this article</h2>
+                <ol>
+                    <li><a href="#balanced-learning-curriculum-montessori-structure-simple-explanation">Balanced
+                            Learning Curriculum: Montessori + Structure (Simple Explanation)</a></li>
+                    <li><a href="#tl-dr">TL;DR</a></li>
+                    <li><a href="#what-is-balanced-learning-curriculum">What is balanced learning curriculum?</a></li>
+                    <li><a href="#how-montessori-fits-into-a-balanced-curriculum">How Montessori fits into a balanced
+                            curriculum</a></li>
+                    <li><a href="#where-structure-shows-up-the-in-montessori">Where structure shows up: the
+                            &quot;+&quot; in Montessori +</a></li>
+                    <li><a href="#a-day-in-a-balanced-montessori-classroom">A day in a balanced Montessori classroom</a>
+                    </li>
+                    <li><a href="#palm-grove-s-modernized-montessori-example">Palm Grove&#x27;s Modernized Montessori
+                            example</a></li>
+                    <li><a href="#checklist-is-a-curriculum-truly-balanced">Checklist: Is a curriculum truly &quot;
+                            balanced&quot;?</a></li>
+                    <li><a href="#what-age-is-best-for-a-balanced-learning-curriculum">What age is best for a balanced
+                            learning curriculum?</a></li>
+                    <li><a href="#how-to-choose-a-balanced-learning-curriculum-in-plano-tx">How to choose a balanced
+                            learning curriculum in Plano, TX</a></li>
+                    <li><a href="#questions-to-ask-on-a-tour-about-balance">Questions to ask on a tour about balance</a>
+                    </li>
+                    <li><a href="#how-to-know-your-child-is-ready-for-balanced-learning">How to know your child is ready
+                            for balanced learning</a></li>
+                    <li><a href="#key-takeaways">Key takeaways</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                </ol>
+            </aside>
+        </div>
+    </div>
+    <section class="final-cta cta-section">
+        <div class="section-inner">
+            <h2>Ready to find the right next step for your child?</h2>
+            <p>Tour Palm Grove, meet the educators, and get practical guidance tailored to your family’s goals.</p>
+            <div class="cta-group"><a href="/Schedule-Tour" class="btn btn-primary">Schedule a Tour</a></div>
+        </div>
+    </section>
+    <script>
+        (function () {
+            const buttons = document.querySelectorAll('.faq-question'); buttons.forEach(function (btn) { btn.addEventListener('click', function () { const item = btn.closest('.faq-item'); const panelId = btn.getAttribute('aria-controls'); const panel = panelId ? document.getElementById(panelId) : null; const expand = btn.getAttribute('aria-expanded') !== 'true'; document.querySelectorAll('.faq-item').forEach(function (node) { node.classList.remove('active'); }); document.querySelectorAll('.faq-question').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); }); document.querySelectorAll('.faq-answer').forEach(function (a) { a.setAttribute('hidden', 'hidden'); }); if (expand) { btn.setAttribute('aria-expanded', 'true'); if (panel) { panel.removeAttribute('hidden'); } if (item) { item.classList.add('active'); } } }); });
+        })();
+    </script>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+        <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family
+          communication for Plano-area families.</p>
+        <div class="footer-contact-lines">
+          <div>
+            <div class="footer-contact-label">Visit</div>
+            <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
+          </div>
+          <div>
+            <div class="footer-contact-label">Contact</div>
+            <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-contact-label">Call</div>
+            <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
+          <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
+          <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
+          <li><a href="/montessori-classroom-plano">Classroom</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/Contact-Us">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Plan Your Visit</h4>
+        <div class="footer-action-card">
+          <p>Ready to see the classrooms, meet the team, and ask questions in person?</p>
+          <a href="/Schedule-Tour" class="footer-cta-btn">Schedule a Tour</a>
+        </div>
+        <h4>Follow + Legal</h4>
+        <ul class="footer-links">
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+        </ul>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank"
+            rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank"
+            rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
+      <span>Montessori preschool and daycare in Plano, TX.</span>
+    </div>
+  </footer>
+
+  <script src="/js/nav.js"></script>
+</body>
+
+</html>
