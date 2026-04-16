@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="icon" href="/img/favicon.ico">
-<link rel="icon" href="/img/favicon.ico">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Terms &amp; Conditions | Palm Grove Montessori Academy</title>
 <meta name="description" content="Read the Palm Grove Montessori Academy Terms & Conditions for website use, inquiries, tour requests, and SMS communications.">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="/terms-and-conditions">
+<link rel="canonical" href="https://www.palmgroveschool.com/terms-and-conditions/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Terms &amp; Conditions | Palm Grove Montessori Academy">
 <meta property="og:description" content="Read the Palm Grove Montessori Academy Terms & Conditions for website use, inquiries, tour requests, and SMS communications.">
-<meta property="og:url" content="/terms-and-conditions">
+<meta property="og:url" content="https://www.palmgroveschool.com/terms-and-conditions/">
 <meta property="og:site_name" content="Palm Grove Montessori Academy">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Terms &amp; Conditions | Palm Grove Montessori Academy">
 <meta name="twitter:description" content="Read the Palm Grove Montessori Academy Terms & Conditions for website use, inquiries, tour requests, and SMS communications.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="/css/nav-foot.css">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0;padding: 0;}
-    ::selection {
-  color: #FEFBF4;
-  background: #f0a030;
-  }
+  *, *::before, *::after { box-sizing: border-box; }
   :root {
     --pg-amber: #f0a030;
     --pg-amber-hover: #d48a1a;
@@ -47,12 +40,60 @@
     font-family: 'Nunito', sans-serif;
     color: var(--pg-text);
     background: linear-gradient(180deg, #fffaf1 0%, var(--pg-bg) 100%);
-    line-height: 1.7;
+    line-height: 1.75;
     -webkit-font-smoothing: antialiased;
   }
   a { color: var(--seed-blue); text-decoration: none; }
   a:hover { color: var(--pg-amber); }
   .container { width: min(100%, 1100px); margin: 0 auto; padding: 0 24px; }
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 12px 24px;
+    width: min(100%, 1100px);
+    margin: 0 auto;
+  }
+  .nav-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--pg-heading);
+    font-weight: 800;
+  }
+  .nav-brand img { height: 48px; width: auto; }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .nav-links a {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--pg-text);
+  }
+  .nav-links .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 12px 20px;
+    background: var(--pg-amber);
+    color: #fff;
+    box-shadow: 0 12px 24px rgba(240,160,48,0.22);
+  }
+  .nav-links .nav-cta:hover { background: var(--pg-amber-hover); color: #fff; }
   .hero {
     padding: 82px 0 34px;
   }
@@ -184,36 +225,69 @@
     padding-left: 18px;
   }
   .aside-card li + li { margin-top: 8px; }
+  .footer {
+    background: linear-gradient(180deg, #242437 0%, #1f1f2e 100%);
+    color: rgba(255,255,255,0.78);
+    padding: 58px 24px 28px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-inner {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 40px;
+  }
+  .footer h4 {
+    margin: 0 0 14px;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .footer p, .footer a {
+    color: rgba(255,255,255,0.72);
+    font-size: 0.92rem;
+    line-height: 1.9;
+  }
+  .footer a:hover { color: var(--pg-amber); }
+  .footer-links { list-style: none; margin: 0; padding: 0; }
+  .footer-links li + li { margin-top: 6px; }
+  .footer-logo { height: 48px; width: auto; margin-bottom: 16px; }
+  .footer-bottom {
+    width: min(100%, 1100px);
+    margin: 28px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.82rem;
+  }
   @media (max-width: 900px) {
     .legal-grid { grid-template-columns: 1fr; }
     .legal-aside { position: static; }
+    .footer-inner { grid-template-columns: 1fr; gap: 28px; }
   }
   @media (max-width: 720px) {
+    .nav-inner { flex-direction: column; align-items: flex-start; }
+    .nav-links { justify-content: flex-start; }
     .hero { padding-top: 64px; }
     .hero-shell, .legal-main { padding: 30px 22px; }
+    .footer { padding-left: 16px; padding-right: 16px; }
   }
 </style>
 </head>
 <body>
-<!-- ═══ NAV ═══ -->
-<nav class="nav" id="nav">
+<nav class="nav">
   <div class="nav-inner">
-    <a href="/" class="nav-logo">
-      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+    <a class="nav-brand" href="https://www.palmgroveschool.com/">
+      <img src="https://www.palmgroveschool.com/img/logo/logo.png" alt="Palm Grove Montessori Academy logo">
+      <span>Palm Grove Montessori Academy</span>
     </a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="/">Home</a></li>
-      <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
-      <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
-      <li><a href="/montessori-classroom-plano">Classroom</a></li>
-      <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
-      <li><a href="/Contact-Us">Contact</a></li>
-      <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
-      <li><a href="/Schedule-Tour" class="nav-cta">Schedule a Tour</a></li>
-    </ul>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-links">
+      <a href="https://www.palmgroveschool.com/">Home</a>
+      <a href="https://www.palmgroveschool.com/Our-Program/">Our Program</a>
+      <a href="https://www.palmgroveschool.com/Contact-Us/">Contact Us</a>
+      <a href="https://www.palmgroveschool.com/Schedule-Tour/" class="nav-cta">Schedule a Tour</a>
+    </div>
   </div>
 </nav>
 
@@ -236,7 +310,7 @@
   <div class="container legal-grid">
     <article class="legal-main">
       <p>Welcome to <strong>Palm Grove Montessori Academy</strong> ("Palm Grove," "we," "us," or "our"). These Terms &amp; Conditions govern your use of <a href="https://www.palmgroveschool.com/">https://www.palmgroveschool.com/</a>, including our website content, forms, contact tools, tour requests, and communications you request from us.</p>
-      <p>By using our website, submitting a form, requesting information, scheduling a tour, or communicating with us, you agree to these Terms &amp; Conditions and our <a href="/privacy-policy">Privacy Policy</a>.</p>
+      <p>By using our website, submitting a form, requesting information, scheduling a tour, or communicating with us, you agree to these Terms &amp; Conditions and our <a href="https://www.palmgroveschool.com/privacy-policy/">Privacy Policy</a>.</p>
 
       <h2>1. Use of Our Website</h2>
       <p>You may use our website only for lawful purposes related to learning about Palm Grove Montessori Academy, requesting information, scheduling a tour, or communicating with us.</p>
@@ -293,7 +367,7 @@
       <p>You represent that you are the subscriber or authorized user of the phone number you provide and that you are at least 18 years old or otherwise legally authorized to consent to communications regarding your child or inquiry.</p>
 
       <h2>5. Privacy</h2>
-      <p>Your use of our website is also governed by our <a href="/privacy-policy">Privacy Policy</a>, which explains how we collect, use, and protect information.</p>
+      <p>Your use of our website is also governed by our <a href="https://www.palmgroveschool.com/privacy-policy/">Privacy Policy</a>, which explains how we collect, use, and protect information.</p>
 
       <h2>6. Intellectual Property</h2>
       <p>All content on this website, including text, graphics, logos, design, images, layout, and other materials, is owned by or used with permission by Palm Grove Montessori Academy and is protected by applicable intellectual property laws.</p>
@@ -327,17 +401,17 @@
       <p><strong>Palm Grove Montessori Academy</strong><br>5900 Windhaven Parkway<br>Plano, Texas 75093</p>
       <p>Email: <a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a></p>
       <p>Phone: <a href="tel:+14094035040">(409) 403-5040</a></p>
-      <p>Please also review our <a href="/privacy-policy">Privacy Policy</a>.</p>
+      <p>Please also review our <a href="https://www.palmgroveschool.com/privacy-policy/">Privacy Policy</a>.</p>
     </article>
 
     <aside class="legal-aside">
       <div class="aside-card">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="/privacy-policy">Privacy Policy</a></li>
-          <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-          <li><a href="/Schedule-Tour">Schedule a Tour</a></li>
-          <li><a href="/Contact-Us">Contact Us</a></li>
+          <li><a href="https://www.palmgroveschool.com/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="https://www.palmgroveschool.com/terms-and-conditions/">Terms &amp; Conditions</a></li>
+          <li><a href="https://www.palmgroveschool.com/Schedule-Tour/">Schedule a Tour</a></li>
+          <li><a href="https://www.palmgroveschool.com/Contact-Us/">Contact Us</a></li>
         </ul>
       </div>
       <div class="aside-card">
@@ -354,58 +428,29 @@
 
 <footer class="footer">
   <div class="footer-inner">
-    <div class="footer-brand">
-      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
-      <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
-      <div class="footer-contact-lines">
-        <div>
-          <div class="footer-contact-label">Visit</div>
-          <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
-        </div>
-        <div>
-          <div class="footer-contact-label">Contact</div>
-          <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a></div>
-        </div>
-        <div>
-          <div class="footer-contact-label">Call</div>
-          <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
-        </div>
-      </div>
+    <div>
+      <img src="https://www.palmgroveschool.com/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <p>5900 Windhaven Parkway<br>Plano, Texas 75093</p>
+      <p><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a><br><a href="tel:+14094035040">(409) 403-5040</a></p>
     </div>
     <div>
-      <h4>Explore</h4>
+      <h4>Quick Links</h4>
       <ul class="footer-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
-        <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
-        <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
-        <li><a href="/montessori-classroom-plano">Classroom</a></li>
-        <li><a href="/resources">Resources</a></li>
-        <li><a href="/Contact-Us">Contact Us</a></li>
+        <li><a href="https://www.palmgroveschool.com/">Home</a></li>
+        <li><a href="https://www.palmgroveschool.com/Our-Program/">Our Program</a></li>
+        <li><a href="https://www.palmgroveschool.com/Contact-Us/">Contact Us</a></li>
+        <li><a href="https://www.palmgroveschool.com/Schedule-Tour/">Schedule a Tour</a></li>
       </ul>
     </div>
     <div>
-      <h4>Plan Your Visit</h4>
-      <div class="footer-action-card">
-        <p>Ready to see the classrooms, meet the team, and ask questions in person?</p>
-        <a href="/Schedule-Tour" class="footer-cta-btn">Schedule a Tour</a>
-      </div>
-      <h4>Follow + Legal</h4>
+      <h4>Legal</h4>
       <ul class="footer-links">
-        <li><a href="/privacy-policy">Privacy Policy</a></li>
-        <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="https://www.palmgroveschool.com/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="https://www.palmgroveschool.com/terms-and-conditions/">Terms &amp; Conditions</a></li>
       </ul>
-      <div class="footer-socials">
-        <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank" rel="noopener noreferrer">Facebook</a>
-      </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
-    <span>Montessori preschool and daycare in Plano, TX.</span>
-  </div>
+  <div class="footer-bottom">Copyright 2026 Palm Grove Montessori Academy. All rights reserved.</div>
 </footer>
-<script src="/js/nav.js"></script>
 </body>
 </html>

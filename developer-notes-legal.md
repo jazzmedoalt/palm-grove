@@ -26,7 +26,7 @@ Updated files:
 ## Important: Untouched Form Pages Are Not In This Workspace
 The actual website pages for:
 - `https://www.palmgroveschool.com/Contact-Us/`
-- `/Schedule-Tour`
+- `https://www.palmgroveschool.com/Schedule-Tour/`
 
 were not present in this local package, so the form markup on those pages could not be patched directly here.
 

@@ -1,1212 +1,427 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="icon" href="/img/favicon.ico">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Part-Time Infant Daycare: Pros, Cons, and Best Schedules</title>
-    <meta name="description"
-        content="Need part time infant daycare? Explore the pros, cons, and flexible schedules to see how this option supports babies and parents at Palm Grove.">
-    <link rel="canonical" href="/resources/part-time-infant-daycare/">
-    <meta property="og:title" content="Part-Time Infant Daycare: Pros, Cons, and Best Schedules">
-    <meta property="og:description"
-        content="Need part time infant daycare? Explore the pros, cons, and flexible schedules to see how this option supports babies and parents at Palm Grove.">
-    <meta property="og:url" content="/resources/part-time-infant-daycare/">
-    <meta property="og:type" content="article">
-    <meta property="og:site_name" content="Palm Grove Montessori Academy">
-    <meta property="og:locale" content="en_US">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/nav-foot.css">
-    <style>
-        *,
-        *::before,
-        *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --pg-amber: #f0a030;
-            --pg-amber-hover: #d48a1a;
-            --pg-amber-light: #fdf3e0;
-            --pg-heading: #2d2d42;
-            --pg-text: #4a4a5a;
-            --pg-text-light: #6a6a7a;
-            --pg-bg: #faf8f5;
-            --pg-white: #ffffff;
-            --pg-border: #eee8e0;
-            --pg-dark: #2d2d42;
-            --radius-lg: 20px;
-            --radius-md: 14px;
-            --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.07);
-            --seed-pink: #e88ca5;
-            --seed-red: #d94f4f;
-            --seed-orange: #f0a030;
-            --seed-green: #5dab5e;
-            --seed-blue: #4a90c4;
-            --seed-purple: #8b6db5;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Nunito', sans-serif;
-            color: var(--pg-text);
-            background: var(--pg-bg);
-            line-height: 1.72;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        a {
-            color: var(--pg-heading);
-            text-decoration-color: rgba(240, 160, 48, 0.5);
-            text-underline-offset: 3px;
-        }
-
-        a:hover {
-            color: var(--pg-amber-hover);
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        .container {
-            width: min(100%, 1120px);
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        .hero {
-            position: relative;
-            overflow: hidden;
-            background: radial-gradient(circle at 12% 22%, rgba(240, 160, 48, 0.18), transparent 28%), radial-gradient(circle at 85% 18%, rgba(232, 140, 165, 0.12), transparent 24%), radial-gradient(circle at 60% 80%, rgba(93, 171, 94, 0.08), transparent 22%), linear-gradient(175deg, #fff9f0 0%, #fef6e8 38%, #fdf3e0 65%, #f8f0e4 100%);
-            color: var(--pg-heading);
-            padding: 56px 0 42px;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            inset: auto 0 0;
-            height: 5px;
-            background: linear-gradient(90deg, var(--seed-pink), var(--seed-red), var(--seed-orange), var(--seed-green), var(--seed-blue), var(--seed-purple));
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.82fr);
-            gap: 28px;
-            align-items: start;
-        }
-
-        .section-tag {
-            display: inline-block;
-            font-size: 0.7rem;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: var(--pg-amber);
-            margin-bottom: 12px;
-            line-height: 1.2;
-        }
-
-        .section-tag::before {
-            content: '';
-            display: inline-block;
-            width: 20px;
-            height: 2px;
-            background: var(--pg-amber);
-            margin-right: 10px;
-            vertical-align: middle;
-            border-radius: 2px;
-        }
-
-        .hero-copy h1 {
-            font-size: clamp(2.15rem, 4.4vw, 3.75rem);
-            line-height: 1.06;
-            letter-spacing: -0.03em;
-            color: var(--pg-heading);
-            margin-bottom: 16px;
-        }
-
-        .hero-copy p {
-            font-size: 1.03rem;
-            max-width: 700px;
-            color: var(--pg-text);
-        }
-
-        .meta-card {
-            background: rgba(255, 255, 255, 0.92);
-            border: 1px solid rgba(45, 45, 66, 0.08);
-            border-radius: 24px;
-            padding: 24px;
-            box-shadow: var(--shadow-soft);
-            backdrop-filter: blur(10px);
-        }
-
-        .meta-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px 24px;
-        }
-
-        .meta-item small {
-            display: block;
-            font-size: 0.78rem;
-            font-weight: 800;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--pg-text-light);
-            margin-bottom: 6px;
-        }
-
-        .meta-item div,
-        .meta-item a {
-            color: var(--pg-heading);
-            font-size: 1rem;
-            font-weight: 800;
-            line-height: 1.45;
-        }
-
-        .meta-item.full {
-            grid-column: 1 / -1;
-        }
-
-        .article-shell {
-            padding: 42px 0 0;
-        }
-
-        .article-layout {
-            display: grid;
-            grid-template-columns: minmax(0, 760px) 260px;
-            gap: 36px;
-            align-items: start;
-        }
-
-        .article-main {
-            min-width: 0;
-        }
-
-        .jump-card {
-            background: var(--pg-white);
-            border: 1px solid var(--pg-border);
-            border-radius: 18px;
-            box-shadow: var(--shadow-soft);
-            padding: 18px 20px;
-            position: sticky;
-            top: 24px;
-        }
-
-        .jump-card h2 {
-            font-size: 0.98rem;
-            color: var(--pg-heading);
-            margin-bottom: 12px;
-        }
-
-        .jump-card ol {
-            padding-left: 1.1rem;
-        }
-
-        .jump-card li+li {
-            margin-top: 10px;
-        }
-
-        .jump-card a {
-            font-size: 0.94rem;
-            font-weight: 700;
-            line-height: 1.45;
-        }
-
-        .intro-card {
-            margin-bottom: 18px;
-        }
-
-        .summary-card {
-            background: linear-gradient(180deg, #fffaf2 0%, #fffefb 100%);
-            border: 1px solid var(--pg-border);
-            border-radius: 18px;
-            padding: 20px 22px;
-            margin-bottom: 26px;
-        }
-
-        .summary-card h2 {
-            font-size: 1.08rem;
-            color: var(--pg-heading);
-            margin-bottom: 10px;
-        }
-
-        .summary-card ul,
-        .article-section ul,
-        .article-section ol {
-            padding-left: 1.2rem;
-        }
-
-        .summary-card li+li,
-        .article-section li+li {
-            margin-top: 8px;
-        }
-
-        .article-section {
-            padding: 0;
-            margin-bottom: 34px;
-        }
-
-        .article-section h2 {
-            font-size: clamp(1.5rem, 2.5vw, 2rem);
-            line-height: 1.18;
-            color: var(--pg-heading);
-            margin-bottom: 14px;
-        }
-
-        .article-section h3 {
-            font-size: 1.1rem;
-            color: var(--pg-heading);
-            margin: 18px 0 8px;
-        }
-
-        .article-section p,
-        .summary-card p,
-        .intro-card p {
-            font-size: 1rem;
-            margin-bottom: 15px;
-        }
-
-        .article-section p:last-child,
-        .summary-card p:last-child,
-        .intro-card p:last-child {
-            margin-bottom: 0;
-        }
-
-        .callout {
-            background: #fffaf0;
-            border-left: 4px solid var(--pg-amber);
-            border-radius: 0 14px 14px 0;
-            padding: 14px 16px;
-            margin: 16px 0;
-        }
-
-        .article-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-            overflow: hidden;
-            border-radius: 16px;
-            border: 1px solid var(--pg-border);
-        }
-
-        .article-table th,
-        .article-table td {
-            padding: 14px 14px;
-            text-align: left;
-            vertical-align: top;
-            border-bottom: 1px solid var(--pg-border);
-        }
-
-        .article-table th {
-            background: #fffaf0;
-            color: var(--pg-heading);
-            font-size: 0.94rem;
-        }
-
-        .article-table td {
-            font-size: 0.95rem;
-        }
-
-        .faq-section {
-            padding: 24px 0 0;
-            background: transparent;
-        }
-
-        .faq-header {
-            text-align: center;
-            margin-bottom: 24px;
-        }
-
-        .faq-header h2 {
-            font-size: clamp(1.45rem, 2.8vw, 1.95rem);
-            color: var(--pg-heading);
-            font-weight: 800;
-            max-width: 640px;
-            margin: 0 auto;
-        }
-
-        .faq-grid {
-            max-width: 760px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .faq-item {
-            background: rgba(255, 255, 255, 0.9);
-            border: 1px solid var(--pg-border);
-            border-radius: 16px;
-            overflow: hidden;
-            transition: border-color 0.25s ease, box-shadow 0.25s ease;
-        }
-
-        .faq-item:hover,
-        .faq-item.active {
-            border-color: rgba(240, 160, 48, 0.5);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-        }
-
-        .faq-question {
-            width: 100%;
-            background: transparent;
-            border: 0;
-            text-align: left;
-            padding: 18px 54px 18px 18px;
-            font-family: 'Nunito', sans-serif;
-            font-size: 1rem;
-            font-weight: 800;
-            line-height: 1.45;
-            color: var(--pg-heading);
-            cursor: pointer;
-            position: relative;
-            min-height: 56px;
-        }
-
-        .faq-question::after {
-            content: '+';
-            position: absolute;
-            top: 50%;
-            right: 16px;
-            transform: translateY(-50%);
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background: #fff7ea;
-            color: var(--pg-amber);
-            display: grid;
-            place-items: center;
-            font-size: 1.15rem;
-            font-weight: 700;
-            line-height: 1;
-        }
-
-        .faq-item.active .faq-question::after {
-            content: '−';
-        }
-
-        .faq-answer {
-            display: grid;
-            grid-template-rows: 0fr;
-            transition: grid-template-rows 0.28s ease;
-        }
-
-        .faq-item.active .faq-answer {
-            grid-template-rows: 1fr;
-        }
-
-        .faq-answer-inner {
-            overflow: hidden;
-            padding: 0 18px;
-        }
-
-        .faq-item.active .faq-answer-inner {
-            padding-bottom: 18px;
-        }
-
-        .faq-answer p {
-            margin: 0;
-            font-size: 0.96rem;
-            color: var(--pg-text);
-            line-height: 1.72;
-        }
-
-        .final-cta {
-            padding: 44px 0 88px;
-            background: transparent;
-        }
-
-        .final-cta>.section-inner {
-            background: linear-gradient(135deg, rgba(240, 160, 48, 0.07) 0%, rgba(240, 160, 48, 0.13) 42%, rgba(253, 243, 224, 0.94) 100%);
-            border: 1px solid rgba(240, 160, 48, 0.14);
-            border-radius: 24px;
-            box-shadow: 0 18px 38px rgba(45, 45, 66, 0.08);
-            width: min(100%, 760px);
-            margin: 0 auto;
-            padding: 54px 40px 48px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            isolation: isolate;
-        }
-
-        .final-cta>.section-inner>* {
-            position: relative;
-            z-index: 1;
-        }
-
-        .final-cta>.section-inner::before {
-            content: '🌴';
-            position: absolute;
-            top: 18px;
-            right: 18px;
-            font-size: 3.35rem;
-            line-height: 1;
-            opacity: 0.14;
-            transform: rotate(6deg);
-            pointer-events: none;
-        }
-
-        .final-cta h2 {
-            max-width: 580px;
-            margin: 0 auto 16px;
-            color: var(--pg-dark);
-            font-size: clamp(1.95rem, 3.5vw, 2.7rem);
-            line-height: 1.18;
-            letter-spacing: -0.02em;
-        }
-
-        .final-cta>.section-inner>p {
-            max-width: 610px;
-            margin: 0 auto 30px;
-            color: var(--pg-text);
-            font-size: 1.04rem;
-            line-height: 1.75;
-        }
-
-        .cta-group {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 14px;
-            margin: 0 auto;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px 28px;
-            border-radius: 999px;
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 700;
-            transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-        }
-
-        .btn-primary {
-            background: var(--pg-amber);
-            color: white;
-            box-shadow: 0 14px 30px rgba(240, 160, 48, 0.22);
-        }
-
-        .btn-primary:hover {
-            background: var(--pg-amber-hover);
-            color: white;
-        }
-
-        .btn-secondary {
-            padding: 14px 26px;
-            border: 2px solid var(--pg-dark);
-            color: var(--pg-dark);
-            background: white;
-        }
-
-        .btn-secondary:hover {
-            background: rgba(45, 45, 66, 0.04);
-        }
-
-        @media (max-width: 960px) {
-
-            .hero-grid,
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-
-            .jump-card {
-                position: static;
-            }
-
-            .hero {
-                padding: 44px 0 36px;
-            }
-
-            .meta-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .final-cta>.section-inner {
-                padding: 36px 22px 30px;
-                border-radius: 18px;
-            }
-
-            .final-cta>.section-inner::before {
-                top: 14px;
-                right: 14px;
-                font-size: 2.5rem;
-            }
-
-            .cta-group {
-                flex-direction: column;
-            }
-
-            .cta-group>* {
-                width: 100%;
-            }
-        }
-
-        /* Readability refinements for generated long-form content. */
-        .article-main section {
-            scroll-margin-top: 84px;
-        }
-
-        .article-main p {
-            max-width: 74ch;
-        }
-
-        .intro-card p+p,
-        .summary-card p+p,
-        .article-section p+p {
-            margin-top: 0.45rem;
-        }
-
-        .summary-card ul,
-        .summary-card ol,
-        .article-section ul,
-        .article-section ol {
-            margin: 14px 0 20px 1.2rem;
-            display: grid;
-            gap: 0.55rem;
-        }
-
-        .summary-card li,
-        .article-section li {
-            padding-left: 0.12rem;
-            line-height: 1.72;
-        }
-
-        .summary-card li::marker,
-        .article-section li::marker {
-            color: var(--pg-amber);
-        }
-
-        .summary-card ul.checklist,
-        .article-section ul.checklist {
-            list-style: none;
-            margin-left: 0;
-            padding-left: 0;
-            gap: 0.75rem;
-        }
-
-        .summary-card ul.checklist li,
-        .article-section ul.checklist li {
-            position: relative;
-            padding: 10px 12px 10px 42px;
-            border: 1px solid rgba(240, 160, 48, 0.2);
-            border-radius: 12px;
-            background: linear-gradient(180deg, #fffefb 0%, #fffaf2 100%);
-        }
-
-        .summary-card ul.checklist li::before,
-        .article-section ul.checklist li::before {
-            content: "✓";
-            position: absolute;
-            left: 12px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: var(--pg-amber);
-            color: #fff;
-            font-size: 0.82rem;
-            line-height: 20px;
-            text-align: center;
-            font-weight: 900;
-        }
-
-        .article-section h2 {
-            margin-bottom: 16px;
-        }
-
-        .article-section h3 {
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        .article-section.callout,
-        .summary-card.callout {
-            margin: 18px 0;
-            box-shadow: 0 6px 18px rgba(240, 160, 48, 0.10);
-        }
-
-        .article-section.callout p,
-        .summary-card.callout p {
-            margin: 0;
-            max-width: 68ch;
-        }
-
-        .quote-card {
-            position: relative;
-            margin: 24px 0;
-            padding: 22px 24px 20px 30px;
-            border: 1px solid rgba(240, 160, 48, 0.28);
-            border-left: 6px solid var(--pg-amber);
-            border-radius: 16px;
-            background: radial-gradient(circle at 12% 14%, rgba(240, 160, 48, 0.14), transparent 36%), linear-gradient(180deg, #fffaf2 0%, #fffdf8 100%);
-            box-shadow: 0 14px 28px rgba(45, 45, 66, 0.08);
-        }
-
-        .quote-card::before {
-            content: "“";
-            position: absolute;
-            top: 8px;
-            left: 12px;
-            font-size: 2.4rem;
-            line-height: 1;
-            color: rgba(240, 160, 48, 0.55);
-            font-weight: 900;
-            pointer-events: none;
-        }
-
-        .quote-card p {
-            margin: 0;
-            max-width: 64ch;
-            font-size: 1.05rem;
-            line-height: 1.78;
-            color: var(--pg-heading);
-            font-weight: 700;
-            letter-spacing: 0.005em;
-        }
-
-        .article-main strong {
-            color: var(--pg-heading);
-        }
-
-        .article-main div[style*="overflow-x: auto"] {
-            margin: 16px 0 24px;
-            border-radius: 16px;
-            box-shadow: 0 10px 24px rgba(45, 45, 66, 0.06);
-            background: var(--pg-white);
-        }
-
-        .article-table {
-            margin-top: 0;
-            border-radius: 16px;
-        }
-
-        .article-table thead th {
-            font-weight: 800;
-            letter-spacing: 0.01em;
-        }
-
-        .article-table tbody tr:nth-child(even) td {
-            background: #fffcf7;
-        }
-
-        @media (max-width: 960px) {
-            .article-main p {
-                max-width: 100%;
-            }
-
-            .article-section ul,
-            .article-section ol,
-            .summary-card ul,
-            .summary-card ol {
-                margin-left: 1.05rem;
-            }
-
-            .quote-card {
-                padding: 18px 16px 16px 24px;
-                margin: 20px 0;
-            }
-
-            .quote-card::before {
-                top: 6px;
-                left: 9px;
-                font-size: 2rem;
-            }
-
-            .quote-card p {
-                font-size: 1rem;
-                line-height: 1.72;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .final-cta {
-                padding: 32px 0 56px;
-            }
-
-            .final-cta h2 {
-                font-size: clamp(1.55rem, 7.5vw, 1.95rem);
-                line-height: 1.22;
-            }
-
-            .final-cta>.section-inner>p {
-                font-size: 0.98rem;
-                line-height: 1.65;
-            }
-
-            .btn {
-                min-height: 48px;
-            }
-        }
-    </style>
-    <script type="application/ld+json">
-{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "What is part time infant daycare?", "acceptedAnswer": { "@type": "Answer", "text": "Part-time infant daycare is regular, scheduled care for babies in a licensed program for less than a full week or full day.It might be a few mornings or a couple of full days weekly, giving families support while preserving significant home time." } }, { "@type": "Question", "name": "What age is best for part time infant daycare?", "acceptedAnswer": { "@type": "Answer", "text": "Many families start between 3–12 months, depending on parental leave and baby temperament.Programs like Palm Grove&#x27;s Infant Class (6 weeks–12 months) and Mobile Infant Class (12–18 months) are designed to meet babies&#x27;needs across that whole span." } }, { "@type": "Question", "name": "How do I choose part time infant daycare in Plano, TX?", "acceptedAnswer": { "@type": "Answer", "text": "Compare how programs talk about infants: their environments, daily rhythms, caregiver training, and communication with parents.Palm Grove&#x27;s Infant Program description—emphasizing the Absorbent Mind, sensory exploration, and intentionally designed environments—offers a helpful example of the level of detail to look for." } }, { "@type": "Question", "name": "What questions should I ask on a tour for part time infant daycare?", "acceptedAnswer": { "@type": "Answer", "text": "Ask about schedules, nap/feeding routines, caregiver ratios, training, and how they help new babies settle in.Questions about how they handle crying, illness, and parent communication will reveal how they operate on less-than-perfect days." } }, { "@type": "Question", "name": "How do I know my child is ready for part time infant daycare?", "acceptedAnswer": { "@type": "Answer", "text": "Readiness is more about your family&#x27;s needs and the program&#x27;s capacity to support your baby than about specific milestones.If you have a consistent routine at home and choose a nurturing, responsive program, most infants can adapt well with a gradual introduction." } }, { "@type": "Question", "name": "How does Montessori influence infant daycare?", "acceptedAnswer": { "@type": "Answer", "text": "Montessori infant programs emphasize a calm, orderly environment; lots of floor time; freedom of movement; and respect for the baby&#x27;s pace.Palm Grove&#x27;s Infant Program follows these principles, focusing on sensory exploration, language, movement, and emotional connection in a carefully prepared space." } } ]
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Part-Time Infant Daycare: Pros, Cons, and Best Schedules</title><meta name="description" content="Need part time infant daycare? Explore the pros, cons, and flexible schedules to see how this option supports babies and parents at Palm Grove."><link rel="canonical" href="https://www.palmgroveschool.com/resources/part-time-infant-daycare/"><meta property="og:title" content="Part-Time Infant Daycare: Pros, Cons, and Best Schedules"><meta property="og:description" content="Need part time infant daycare? Explore the pros, cons, and flexible schedules to see how this option supports babies and parents at Palm Grove."><meta property="og:url" content="https://www.palmgroveschool.com/resources/part-time-infant-daycare/"><meta property="og:type" content="article"><meta property="og:site_name" content="Palm Grove Montessori Academy"><meta property="og:locale" content="en_US"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"><style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }:root { --pg-amber: #f0a030; --pg-amber-hover: #d48a1a; --pg-amber-light: #fdf3e0; --pg-heading: #2d2d42; --pg-text: #4a4a5a; --pg-text-light: #6a6a7a; --pg-bg: #faf8f5; --pg-white: #ffffff; --pg-border: #eee8e0; --pg-dark: #2d2d42; --radius-lg: 20px; --radius-md: 14px; --shadow-soft: 0 8px 32px rgba(0,0,0,0.07); --seed-pink: #e88ca5; --seed-red: #d94f4f; --seed-orange: #f0a030; --seed-green: #5dab5e; --seed-blue: #4a90c4; --seed-purple: #8b6db5; } html { scroll-behavior: smooth; } body { font-family: 'Nunito', sans-serif; color: var(--pg-text); background: var(--pg-bg); line-height: 1.72; -webkit-font-smoothing: antialiased; } a { color: var(--pg-heading); text-decoration-color: rgba(240,160,48,0.5); text-underline-offset: 3px; } a:hover { color: var(--pg-amber-hover); } img { max-width: 100%; display: block; }.container { width: min(100%, 1120px); margin: 0 auto; padding: 0 24px; }.hero { position: relative; overflow: hidden; background: radial-gradient(circle at 12% 22%, rgba(240,160,48,0.18), transparent 28%), radial-gradient(circle at 85% 18%, rgba(232,140,165,0.12), transparent 24%), radial-gradient(circle at 60% 80%, rgba(93,171,94,0.08), transparent 22%), linear-gradient(175deg, #fff9f0 0%, #fef6e8 38%, #fdf3e0 65%, #f8f0e4 100%); color: var(--pg-heading); padding: 56px 0 42px; }.hero::after { content: ''; position: absolute; inset: auto 0 0; height: 5px; background: linear-gradient(90deg, var(--seed-pink), var(--seed-red), var(--seed-orange), var(--seed-green), var(--seed-blue), var(--seed-purple)); }.hero-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.82fr); gap: 28px; align-items: start; }.section-tag { display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--pg-amber); margin-bottom: 12px; line-height: 1.2; }.section-tag::before { content: ''; display: inline-block; width: 20px; height: 2px; background: var(--pg-amber); margin-right: 10px; vertical-align: middle; border-radius: 2px; }.hero-copy h1 { font-size: clamp(2.15rem, 4.4vw, 3.75rem); line-height: 1.06; letter-spacing: -0.03em; color: var(--pg-heading); margin-bottom: 16px; }.hero-copy p { font-size: 1.03rem; max-width: 700px; color: var(--pg-text); }.meta-card { background: rgba(255,255,255,0.92); border: 1px solid rgba(45,45,66,0.08); border-radius: 24px; padding: 24px; box-shadow: var(--shadow-soft); backdrop-filter: blur(10px); }.meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 24px; }.meta-item small { display: block; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pg-text-light); margin-bottom: 6px; }.meta-item div,.meta-item a { color: var(--pg-heading); font-size: 1rem; font-weight: 800; line-height: 1.45; }.meta-item.full { grid-column: 1 / -1; }.article-shell { padding: 42px 0 0; }.article-layout { display: grid; grid-template-columns: minmax(0, 760px) 260px; gap: 36px; align-items: start; }.article-main { min-width: 0; }.jump-card { background: var(--pg-white); border: 1px solid var(--pg-border); border-radius: 18px; box-shadow: var(--shadow-soft); padding: 18px 20px; position: sticky; top: 24px; }.jump-card h2 { font-size: 0.98rem; color: var(--pg-heading); margin-bottom: 12px; }.jump-card ol { padding-left: 1.1rem; }.jump-card li + li { margin-top: 10px; }.jump-card a { font-size: 0.94rem; font-weight: 700; line-height: 1.45; }.intro-card { margin-bottom: 18px; }.summary-card { background: linear-gradient(180deg, #fffaf2 0%, #fffefb 100%); border: 1px solid var(--pg-border); border-radius: 18px; padding: 20px 22px; margin-bottom: 26px; }.summary-card h2 { font-size: 1.08rem; color: var(--pg-heading); margin-bottom: 10px; }.summary-card ul,.article-section ul,.article-section ol { padding-left: 1.2rem; }.summary-card li + li,.article-section li + li { margin-top: 8px; }.article-section { padding: 0; margin-bottom: 34px; }.article-section h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); line-height: 1.18; color: var(--pg-heading); margin-bottom: 14px; }.article-section h3 { font-size: 1.1rem; color: var(--pg-heading); margin: 18px 0 8px; }.article-section p,.summary-card p,.intro-card p { font-size: 1rem; margin-bottom: 15px; }.article-section p:last-child,.summary-card p:last-child,.intro-card p:last-child { margin-bottom: 0; }.callout { background: #fffaf0; border-left: 4px solid var(--pg-amber); border-radius: 0 14px 14px 0; padding: 14px 16px; margin: 16px 0; }.article-table { width: 100%; border-collapse: collapse; margin-top: 10px; overflow: hidden; border-radius: 16px; border: 1px solid var(--pg-border); }.article-table th,.article-table td { padding: 14px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--pg-border); }.article-table th { background: #fffaf0; color: var(--pg-heading); font-size: 0.94rem; }.article-table td { font-size: 0.95rem; }.faq-section { padding: 24px 0 0; background: transparent; }.faq-header { text-align: center; margin-bottom: 24px; }.faq-header h2 { font-size: clamp(1.45rem, 2.8vw, 1.95rem); color: var(--pg-heading); font-weight: 800; max-width: 640px; margin: 0 auto; }.faq-grid { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }.faq-item { background: rgba(255,255,255,0.9); border: 1px solid var(--pg-border); border-radius: 16px; overflow: hidden; transition: border-color 0.25s ease, box-shadow 0.25s ease; }.faq-item:hover,.faq-item.active { border-color: rgba(240,160,48,0.5); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04); }.faq-question { width: 100%; background: transparent; border: 0; text-align: left; padding: 18px 54px 18px 18px; font-family: 'Nunito', sans-serif; font-size: 1rem; font-weight: 800; line-height: 1.45; color: var(--pg-heading); cursor: pointer; position: relative; min-height: 56px; }.faq-question::after { content: '+'; position: absolute; top: 50%; right: 16px; transform: translateY(-50%); width: 28px; height: 28px; border-radius: 50%; background: #fff7ea; color: var(--pg-amber); display: grid; place-items: center; font-size: 1.15rem; font-weight: 700; line-height: 1; }.faq-item.active .faq-question::after { content: '−'; }.faq-answer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.28s ease; }.faq-item.active .faq-answer { grid-template-rows: 1fr; }.faq-answer-inner { overflow: hidden; padding: 0 18px; }.faq-item.active .faq-answer-inner { padding-bottom: 18px; }.faq-answer p { margin: 0; font-size: 0.96rem; color: var(--pg-text); line-height: 1.72; }.final-cta { padding: 44px 0 88px; background: transparent; }.final-cta >.section-inner { background: linear-gradient(135deg, rgba(240,160,48,0.07) 0%, rgba(240,160,48,0.13) 42%, rgba(253,243,224,0.94) 100%); border: 1px solid rgba(240,160,48,0.14); border-radius: 24px; box-shadow: 0 18px 38px rgba(45,45,66,0.08); width: min(100%, 760px); margin: 0 auto; padding: 54px 40px 48px; text-align: center; position: relative; overflow: hidden; isolation: isolate; }.final-cta >.section-inner > * { position: relative; z-index: 1; }.final-cta >.section-inner::before { content: '🌴'; position: absolute; top: 18px; right: 18px; font-size: 3.35rem; line-height: 1; opacity: 0.14; transform: rotate(6deg); pointer-events: none; }.final-cta h2 { max-width: 580px; margin: 0 auto 16px; color: var(--pg-dark); font-size: clamp(1.95rem, 3.5vw, 2.7rem); line-height: 1.18; letter-spacing: -0.02em; }.final-cta >.section-inner > p { max-width: 610px; margin: 0 auto 30px; color: var(--pg-text); font-size: 1.04rem; line-height: 1.75; }.cta-group { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 14px; margin: 0 auto; }.btn { display: inline-flex; align-items: center; justify-content: center; padding: 15px 28px; border-radius: 999px; text-decoration: none; font-size: 0.95rem; font-weight: 700; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }.btn:hover { transform: translateY(-2px); }.btn-primary { background: var(--pg-amber); color: white; box-shadow: 0 14px 30px rgba(240,160,48,0.22); }.btn-primary:hover { background: var(--pg-amber-hover); color: white; }.btn-secondary { padding: 14px 26px; border: 2px solid var(--pg-dark); color: var(--pg-dark); background: white; }.btn-secondary:hover { background: rgba(45,45,66,0.04); } @media (max-width: 960px) {.hero-grid,.article-layout { grid-template-columns: 1fr; }.jump-card { display: none; }.hero { padding: 44px 0 36px; }.meta-grid { grid-template-columns: 1fr; }.final-cta >.section-inner { padding: 36px 22px 30px; border-radius: 18px; }.final-cta >.section-inner::before { top: 14px; right: 14px; font-size: 2.5rem; }.cta-group { flex-direction: column; }.cta-group > * { width: 100%; } } /* Readability refinements for generated long-form content. */.article-main section { scroll-margin-top: 84px; }.article-main p { max-width: 74ch; }.intro-card p + p,.summary-card p + p,.article-section p + p { margin-top: 0.45rem; }.summary-card ul,.summary-card ol,.article-section ul,.article-section ol { margin: 14px 0 20px 1.2rem; display: grid; gap: 0.55rem; }.summary-card li,.article-section li { padding-left: 0.12rem; line-height: 1.72; }.summary-card li::marker,.article-section li::marker { color: var(--pg-amber); }.summary-card ul.checklist,.article-section ul.checklist { list-style: none; margin-left: 0; padding-left: 0; gap: 0.75rem; }.summary-card ul.checklist li,.article-section ul.checklist li { position: relative; padding: 10px 12px 10px 42px; border: 1px solid rgba(240,160,48,0.2); border-radius: 12px; background: linear-gradient(180deg, #fffefb 0%, #fffaf2 100%); }.summary-card ul.checklist li::before,.article-section ul.checklist li::before { content: "✓"; position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; border-radius: 50%; background: var(--pg-amber); color: #fff; font-size: 0.82rem; line-height: 20px; text-align: center; font-weight: 900; }.article-section h2 { margin-bottom: 16px; }.article-section h3 { margin-top: 20px; margin-bottom: 10px; }.article-section.callout,.summary-card.callout { margin: 18px 0; box-shadow: 0 6px 18px rgba(240,160,48,0.10); }.article-section.callout p,.summary-card.callout p { margin: 0; max-width: 68ch; }.quote-card { position: relative; margin: 24px 0; padding: 22px 24px 20px 30px; border: 1px solid rgba(240,160,48,0.28); border-left: 6px solid var(--pg-amber); border-radius: 16px; background: radial-gradient(circle at 12% 14%, rgba(240,160,48,0.14), transparent 36%), linear-gradient(180deg, #fffaf2 0%, #fffdf8 100%); box-shadow: 0 14px 28px rgba(45,45,66,0.08); }.quote-card::before { content: "“"; position: absolute; top: 8px; left: 12px; font-size: 2.4rem; line-height: 1; color: rgba(240,160,48,0.55); font-weight: 900; pointer-events: none; }.quote-card p { margin: 0; max-width: 64ch; font-size: 1.05rem; line-height: 1.78; color: var(--pg-heading); font-weight: 700; letter-spacing: 0.005em; }.article-main strong { color: var(--pg-heading); }.article-main div[style*="overflow-x: auto"] { margin: 16px 0 24px; border-radius: 16px; box-shadow: 0 10px 24px rgba(45,45,66,0.06); background: var(--pg-white); }.article-table { margin-top: 0; border-radius: 16px; }.article-table thead th { font-weight: 800; letter-spacing: 0.01em; }.article-table tbody tr:nth-child(even) td { background: #fffcf7; }
+@media (max-width: 960px) {.article-main p { max-width: 100%; }.article-section ul,.article-section ol,.summary-card ul,.summary-card ol { margin-left: 1.05rem; }.quote-card { padding: 18px 16px 16px 24px; margin: 20px 0; }.quote-card::before { top: 6px; left: 9px; font-size: 2rem; }.quote-card p { font-size: 1rem; line-height: 1.72; } }
+@media (max-width: 640px) {.final-cta { padding: 32px 0 56px; }.final-cta h2 { font-size: clamp(1.55rem, 7.5vw, 1.95rem); line-height: 1.22; }.final-cta >.section-inner > p { font-size: 0.98rem; line-height: 1.65; }.btn { min-height: 48px; } } body { padding-top: 72px; }
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s, background 0.3s;
 }
-</script>
-</head>
-
-<body>
-
-  <!-- ═══ NAV ═══ -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo">
-        <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
-      </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="/">Home</a></li>
-        <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
-        <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
-        <li><a href="/montessori-classroom-plano">Classroom</a></li>
-        <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
-        <li><a href="/Contact-Us">Contact</a></li>
-        <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
-        <li><a href="/Schedule-Tour" class="nav-cta">Schedule a Tour</a></li>
+.nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.07); }
+.nav-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 10px 24px;
+}
+.nav-logo img { height: 50px; width: auto; }
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+}
+.nav-links li { display: flex; align-items: center; }
+.nav-links a {
+  text-decoration: none;
+  color: var(--pg-text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.2s, opacity 0.2s;
+}
+.nav-links a:hover { color: var(--pg-amber); opacity: 1; }
+.nav-links a:focus-visible {
+  outline: 2px solid rgba(240,160,48,0.55);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+.nav-cta {
+  background: var(--pg-amber);
+  color: white !important;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 700 !important;
+  font-size: 0.88rem !important;
+  transition: all 0.25s;
+  box-shadow: 0 4px 16px rgba(240,160,48,0.25);
+}
+.nav-cta:hover {
+  background: var(--pg-amber-hover);
+  transform: translateY(-1px);
+  color: white !important;
+}
+.nav-phone-line {
+  display: none;
+  white-space: nowrap;
+}
+.nav-phone {
+  color: var(--pg-amber) !important;
+  font-weight: 700 !important;
+  font-size: 0.84rem !important;
+}
+.mobile-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(45,45,66,0.12);
+  border-radius: 14px;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: 0 6px 18px rgba(45,45,66,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.mobile-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(45,45,66,0.12);
+}
+.mobile-toggle:focus-visible {
+  outline: 2px solid rgba(240,160,48,0.4);
+  outline-offset: 3px;
+}
+.mobile-toggle span {
+  display: block;
+  width: 18px;
+  height: 2.5px;
+  background: var(--pg-heading);
+  margin: 0;
+  border-radius: 999px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.mobile-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.mobile-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.mobile-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.rainbow-stripe {
+  height: 4px;
+  background: linear-gradient(90deg, rgba(232,140,165,0.92), rgba(217,79,79,0.9), rgba(240,160,48,0.92), rgba(93,171,94,0.9), rgba(74,144,196,0.9), rgba(139,109,181,0.9));
+  opacity: 0.82;
+}
+.footer {
+  background:
+    radial-gradient(circle at 10% 6%, rgba(240,160,48,0.12), transparent 24%),
+    linear-gradient(90deg, #403735 0%, #34313a 22%, #2b2c3c 54%, #252638 78%, #232437 100%);
+  color: rgba(255,255,255,0.78);
+  padding: 72px 24px 28px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  overflow: hidden;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(240,160,48,0.08), transparent 26%),
+    radial-gradient(circle at 82% 10%, rgba(139,107,174,0.05), transparent 24%),
+    linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.008) 24%, rgba(255,255,255,0) 58%);
+  pointer-events: none;
+}
+.footer-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.45fr 0.95fr 1.05fr;
+  gap: 46px;
+}
+.footer h4 {
+  color: white;
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.footer p,
+.footer a {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.68);
+  text-decoration: none;
+  line-height: 1.9;
+}
+.footer a:hover { color: var(--pg-amber); }
+.footer-links { list-style: none; padding: 0; margin: 0; }
+.footer-links li { margin-bottom: 8px; }
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  align-items: start;
+}
+.footer-brand-copy { max-width: 360px; margin-bottom: 16px; }
+.footer-contact-lines { display: grid; gap: 6px; }
+.footer-contact-label {
+  color: rgba(255,255,255,0.44);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.footer-contact-value {
+  color: rgba(255,255,255,0.86);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+.footer-contact-value a { color: rgba(255,255,255,0.9); font-size: 0.95rem; }
+.footer-action-card {
+  padding: 18px 18px 16px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+  margin-bottom: 18px;
+}
+.footer-action-card p { margin-bottom: 10px; line-height: 1.75; }
+.footer-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--pg-amber) 0%, var(--pg-amber-hover) 100%);
+  color: #fff !important;
+  font-weight: 800 !important;
+  box-shadow: 0 12px 24px rgba(240,160,48,0.22);
+}
+.footer-cta-btn:hover { color: #fff !important; transform: translateY(-1px); }
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  margin-top: 12px;
+}
+.footer-socials a { color: rgba(255,255,255,0.82); font-weight: 700; }
+.footer-bottom {
+  position: relative;
+  z-index: 1;
+  max-width: 1120px;
+  margin: 34px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.35);
+}
+.footer-logo { height: 56px; margin-bottom: 18px; opacity: 0.9; }
+@media (max-width: 980px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 18px 24px 22px;
+    gap: 14px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+  }
+  .nav-links.open li { width: 100%; }
+  .nav-links.open .nav-phone-line { display: flex; white-space: normal; }
+  .mobile-toggle { display: inline-flex; }
+  .footer-inner { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+  .footer-brand-copy { margin-left: auto; margin-right: auto; }
+  .footer-contact-lines { justify-items: center; }
+  .footer-action-card { max-width: 420px; margin-left: auto; margin-right: auto; }
+  .footer-socials { justify-content: center; }
+  .footer-bottom { justify-content: center; text-align: center; }
+  .footer-links.footer-links--explore {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+@media (max-width: 720px) {
+  body { padding-top: 68px; }
+  .footer {
+    padding: 56px 20px 24px;
+  }
+  .footer-inner {
+    gap: 24px;
+  }
+  .footer-brand-copy {
+    max-width: 320px;
+    margin-bottom: 12px;
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+  .footer-contact-lines {
+    gap: 4px;
+  }
+  .footer-contact-label {
+    font-size: 0.72rem;
+  }
+  .footer-contact-value,
+  .footer-contact-value a,
+  .footer p,
+  .footer a {
+    font-size: 0.88rem;
+    line-height: 1.75;
+  }
+  .footer h4 {
+    margin-bottom: 12px;
+  }
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 28px;
+    row-gap: 6px;
+    max-width: 340px;
+    text-align: left;
+  }
+  .footer-action-card {
+    max-width: 320px;
+    padding: 14px 14px 12px;
+    border-radius: 18px;
+    margin-bottom: 14px;
+  }
+  .footer-action-card p {
+    margin-bottom: 8px;
+  }
+  .footer-cta-btn {
+    padding: 11px 18px;
+  }
+  .footer-socials {
+    justify-content: center;
+    gap: 10px 14px;
+  }
+  .footer-bottom {
+    margin-top: 24px;
+    padding-top: 14px;
+    gap: 8px;
+    font-size: 0.78rem;
+  }
+  .footer-logo {
+    height: 50px;
+    margin-bottom: 14px;
+  }
+}
+</style><script type="application/ld+json">
+{ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "What is part time infant daycare?", "acceptedAnswer": { "@type": "Answer", "text": "Part-time infant daycare is regular, scheduled care for babies in a licensed program for less than a full week or full day.It might be a few mornings or a couple of full days weekly, giving families support while preserving significant home time." } }, { "@type": "Question", "name": "What age is best for part time infant daycare?", "acceptedAnswer": { "@type": "Answer", "text": "Many families start between 3–12 months, depending on parental leave and baby temperament.Programs like Palm Grove&#x27;s Infant Class (6 weeks–12 months) and Mobile Infant Class (12–18 months) are designed to meet babies&#x27;needs across that whole span." } }, { "@type": "Question", "name": "How do I choose part time infant daycare in Plano, TX?", "acceptedAnswer": { "@type": "Answer", "text": "Compare how programs talk about infants: their environments, daily rhythms, caregiver training, and communication with parents.Palm Grove&#x27;s Infant Program description—emphasizing the Absorbent Mind, sensory exploration, and intentionally designed environments—offers a helpful example of the level of detail to look for." } }, { "@type": "Question", "name": "What questions should I ask on a tour for part time infant daycare?", "acceptedAnswer": { "@type": "Answer", "text": "Ask about schedules, nap/feeding routines, caregiver ratios, training, and how they help new babies settle in.Questions about how they handle crying, illness, and parent communication will reveal how they operate on less-than-perfect days." } }, { "@type": "Question", "name": "How do I know my child is ready for part time infant daycare?", "acceptedAnswer": { "@type": "Answer", "text": "Readiness is more about your family&#x27;s needs and the program&#x27;s capacity to support your baby than about specific milestones.If you have a consistent routine at home and choose a nurturing, responsive program, most infants can adapt well with a gradual introduction." } }, { "@type": "Question", "name": "How does Montessori influence infant daycare?", "acceptedAnswer": { "@type": "Answer", "text": "Montessori infant programs emphasize a calm, orderly environment; lots of floor time; freedom of movement; and respect for the baby&#x27;s pace.Palm Grove&#x27;s Infant Program follows these principles, focusing on sensory exploration, language, movement, and emotional connection in a carefully prepared space." } } ] }
+</script></head><body>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="https://www.palmgroveschool.com/" class="nav-logo">
+      <img src="https://www.palmgroveschool.com/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="https://www.palmgroveschool.com/">Home</a></li>
+      <li><a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/">Our Program</a></li>
+      <li><a href="https://www.palmgroveschool.com/montessori-education-philosophy-plano/">Our Promise</a></li>
+      <li><a href="https://www.palmgroveschool.com/montessori-classroom-plano/">Classroom</a></li>
+      <li><a href="https://www.palmgroveschool.com/montessori-curriculum-plano/">Curriculum</a></li>
+      <li><a href="https://www.palmgroveschool.com/summer-camps-plano-tx/">Summer Camp</a></li>
+      
+      <li><a href="https://www.palmgroveschool.com/Contact-Us/">Contact</a></li>
+      <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
+      <li><a href="https://www.palmgroveschool.com/Schedule-Tour/" class="nav-cta">Schedule a Tour</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<section class="hero"><div class="container"><div class="hero-grid"><div class="hero-copy"><span class="section-tag">Infant Care</span><h1>Part-Time Infant Daycare: Pros, Cons, and Flexible Schedules</h1><p>Need part time infant daycare? Explore the pros, cons, and flexible schedules to see how this option supports babies and parents at Palm Grove.</p></div><aside class="meta-card" aria-label="Article details"><div class="meta-grid"><div class="meta-item"><small>Published</small><div>April 1, 2026</div></div><div class="meta-item"><small>Category</small><div>Infant Care</div></div><div class="meta-item"><small>Reading time</small><div>9 min read</div></div><div class="meta-item"><small>Location</small><div>Plano, TX</div></div><div class="meta-item full"><small>Parent guide</small><a href="https://www.palmgroveschool.com/resources/infant-care-plano-guide/">Infant Care Plano Guide</a></div></div></aside></div></div></section><div class="article-shell"><div class="container article-layout"><main class="article-main"><section id="part-time-infant-daycare-pros-cons-and-best-schedules" class="article-section"><h2>Part-Time Infant Daycare: Pros, Cons, and Best Schedules</h2><p>Handing your baby to someone else—even for a few hours—can feel like handing over the universe. Choosing part time infant daycare is really about balancing your baby&#x27;s need for secure attachment with your family&#x27;s need for rest, work time, and support.</p><p>In simple terms, part-time infant daycare means your baby attends a licensed infant program on a limited schedule (fewer days per week or shorter days), instead of full-time, five-days-a-week care. When it works well, you get professional support with routines and development while still protecting lots of at-home bonding.</p><p>At Palm Grove Montessori Academy in Plano, TX, the Infant and Mobile Infant classes are purpose-built for babies 6 weeks–18 months, with environments intentionally designed around sensory exploration, movement, and secure attachment, guided by the Montessori principle of the Absorbent Mind.</p></section><section id="tl-dr" class="summary-card"><h2>TL;DR</h2><ul><li>Part-time infant daycare offers professional care and social stimulation while preserving large blocks of home time.</li><li>Pros: predictable routines, exposure to rich environments, support for motor and language development, and parent breathing room.</li><li>Cons: more transitions, limited availability on popular schedules, and the need to coordinate naps/feeding between home and school.</li><li>Palm Grove&#x27;s Infant (6 weeks–12 months) and Mobile Infant (12–18 months) classes focus on sensory exploration, gentle routines, and early independence in a carefully prepared Montessori environment.</li><li>Best schedules are the ones your baby can predict and your family can sustain—consistency matters more than the exact hours.</li></ul></section><section id="what-is-part-time-infant-daycare" class="article-section"><h2>What is part-time infant daycare?</h2><p>Part-time infant daycare is licensed care for babies that does not run all day, every weekday. It might be three mornings a week, two full days, or another repeating pattern. The key is that your baby has regular, recurring time in a shared environment with trained caregivers and other babies.</p><p>In a Montessori setting, part-time infant care still honors the same principles as full-time: a calm, prepared space; respect for the baby&#x27;s rhythm; and lots of opportunities for movement and exploration. Palm Grove&#x27;s Infant Program describes a nurturing environment where babies are encouraged to explore the world through their senses, with every detail intentionally designed to foster trust, security, and early independence.</p></section><section id="pros-of-part-time-infant-daycare" class="article-section"><h2>Pros of part-time infant daycare</h2><p>Part-time care can be an elegant compromise between being home full-time and enrolling in five-day care. Here&#x27;s what it tends to offer.</p><ul><li><strong>Shared caregiving load</strong><strong><br></strong> You get reliable blocks of time for work, rest, or caregiving for older siblings, without being &quot; on&quot; 24/7. A predictable schedule can reduce stress for parents and improve the quality of time you do spend with your baby.</li><li><strong>Professional support for development</strong><br>High-quality infant programs track milestones and set up environments that are just-right for each stage—rolling, crawling, pulling up. Palm Grove&#x27;s Infant and Mobile Infant classes are specifically structured around sensory exploration, motor development, and gentle routines aligned with Montessori principles.</li><li><strong>Early comfort with others</strong><strong><br></strong> Short, consistent experiences with other caregivers and babies can help your child gradually get used to new faces and environments, which often makes later transitions (like toddler classrooms or preschool) smoother.</li><li><strong>Separation practice in small doses</strong><strong><br></strong> Part-time schedules give your baby practice separating and reuniting with you in manageable chunks, which can be easier on everyone than jumping straight to full-time care.</li></ul></section><section id="cons-and-challenges-to-watch-for" class="article-section"><h2>Cons and challenges to watch for</h2><p>Part-time care isn&#x27;t perfect. Knowing the potential downsides helps you plan for them.</p><ul><li><strong>More transitions</strong><br>If schedules change day to day, babies can have a harder time predicting what&#x27;s happening. That&#x27;s why keeping daycare days consistent (for example, every Monday/Wednesday/Friday) is often easier than a different pattern each week.</li><li><strong>Limited schedule options</strong><br>Many programs build staffing around full-time slots, so part-time options may be fewer or on set days only. You may need to be flexible, or join a waitlist for the specific pattern you want.</li><li><strong>Nap and feeding coordination</strong><br>Babies, especially under 12 months, live by rhythms. Misaligned naps or feeds between home and school can create overtired evenings. Good communication with teachers about your baby&#x27;s sleep and feeding cues helps minimize this.</li><li><strong>Over-scheduling parents</strong><br>When parents try to &quot; do it all&quot; on part-time days—stacking appointments, errands, and work—those days can become overly hectic. Protecting some margin helps everyone stay regulated.</li></ul></section><section id="what-age-is-best-for-part-time-infant-daycare" class="article-section"><h2>What age is best for part-time infant daycare?</h2><p>There&#x27;s no universal &quot; right&quot; age to start; it depends on your baby, your leave situation, and your support network. Some families begin part-time care around 3–6 months, once feeding and sleep are somewhat predictable. Others wait until closer to 9–12 months when babies are eager to move and explore more varied environments.</p><p>Palm Grove&#x27;s curriculum distinguishes between Infant Class (6 weeks–12 months) and Mobile Infant Class (12–18 months). The Infant Class emphasizes secure attachment, gentle routines, and sensory exploration, while the Mobile Infant Class supports early motor development, curiosity, and independence in a carefully prepared space. Those distinctions can help you think about when your baby might benefit most from time in a group setting.</p></section><section id="best-part-time-infant-daycare-schedules-with-examples" class="article-section"><h2>Best part-time infant daycare schedules (with examples)</h2><p>There isn&#x27;t a single best schedule; there are a few patterns that tend to work well for babies and parents.</p><ul><li>Three short days (e. g., Mon/Wed/Fri, 8:30–12:30)</li><li>Good for: Very young infants, parents working part-time, or families wanting lots of afternoon home time.</li><li>Why it works: Enough repetition for babies to recognize caregivers and routines, but generous home time for naps and bonding.</li><li>Two full days (e. g., Tues/Thurs, 8:30–3:30)</li><li>Good for: Parents with block-scheduled workdays, or those who prefer fewer drop-off days.</li><li>Why it works: Deep, uninterrupted time for parents and longer stretches in the classroom for babies to settle into routines.</li><li>Four half days (e. g., Mon–Thurs mornings)</li><li>Good for: Families moving gradually toward full-time care, or babies who thrive on daily repetition.</li><li>Why it works: Babies see the same environment almost every weekday, which can reduce separation anxiety.</li></ul><p>Whatever schedule you choose, consistency is key. Babies in Palm Grove&#x27;s Infant Program benefit from intentionally designed environments where routines are predictable and aligned with Montessori&#x27;s view of the Absorbent Mind. A steady weekly pattern helps them absorb those rhythms more easily.</p></section><section id="how-to-choose-part-time-infant-daycare-in-plano-tx" class="article-section"><h2>How to choose part-time infant daycare in Plano, TX</h2><p>Plano has a wide range of options: home-based providers, traditional daycare centers, church-based programs, and Montessori schools like Palm Grove. For infants, focus less on the brand name and more on how the environment and adults support secure attachment and development.</p><p>Look for:</p><ul><li>A clearly described infant program (not just &quot; we also take babies&quot;)</li><li>Ratios appropriate for infants and caregivers who know babies&#x27;cues</li><li>Spaces set up for floor time and exploration—not just swings and containers</li><li>Calm, responsive caregivers who talk with babies, not just about them</li><li>A philosophy that acknowledges infants as active learners</li></ul><p>Palm Grove&#x27;s Infant Program states that &quot; every detail of the environment is intentionally designed to support their development, fostering trust, security, and early independence,&quot; guided by the Montessori principle of the Absorbent Mind. If that resonates, you can use it as a benchmark when comparing other programs in Plano.</p></section><section id="questions-to-ask-on-a-tour-about-part-time-infant-care" class="article-section"><h2>Questions to ask on a tour about part-time infant care</h2><p>Bring a short list; you&#x27;ll absorb more by listening than by juggling a script. These questions will give you the clearest picture:</p><ul><li>&quot; What does a typical morning look like for infants here?&quot;</li><li>&quot; How do you handle naps, especially for babies with their own rhythms?&quot;</li><li>&quot; How do you support babies who are new to part-time care and still adjusting to separations?&quot;</li><li>&quot; How do you communicate with parents each day about feeding, diapers, sleep, and mood?&quot;</li><li>&quot; What training do your infant teachers have, and how long do they typically stay?&quot;</li><li>&quot; How do you incorporate Montessori principles (or your philosophy) into infant care specifically?&quot;</li></ul><p>At Palm Grove, you can expect to hear about sensory exploration, gentle routines, and environments designed around movement and attachment for the Infant and Mobile Infant classes. You&#x27;ll also see that the broader program emphasizes collaborative learning, individualized paths, and a modernized Montessori approach as children grow.</p></section><section id="how-to-know-your-baby-is-ready-for-part-time-infant-daycare" class="article-section"><h2>How to know your baby is ready for part-time infant daycare</h2><p>Infants don&#x27;t &quot; prepare&quot; for daycare the way toddlers do, but a few signs can suggest they&#x27;re likely to handle the transition with support:</p><ul><li>Some predictability in feeding and sleep (even if not perfectly on schedule)</li><li>Ability to be comforted by a familiar adult who isn&#x27;t always the primary caregiver</li><li>Curiosity about the environment—looking around, tracking people, engaging with toys</li><li>Parents ready to establish a consistent drop-off routine (your calm helps their calm)</li></ul><p>Remember, crying at drop-off is normal, even in very young babies. What matters is how quickly the baby can be soothed and whether, over time, they show signs of comfort and engagement in the environment. A program grounded in respect for the whole child—as Palm Grove&#x27;s promise describes—will approach separation as something to support, not minimize.</p></section><section id="key-takeaways" class="article-section"><h2>Key takeaways</h2><ul><li>Part-time infant daycare can give your family breathing room while honoring your baby&#x27;s need for attachment and consistent routines.</li><li>Pros include shared caregiving, developmental support, and gentle separation practice; cons include more transitions and the need to coordinate naps and feeding.</li><li>Palm Grove&#x27;s Infant and Mobile Infant classes offer Montessori-aligned environments, intentionally designed around the Absorbent Mind and early independence.</li><li>The best schedule is one your baby can predict and your family can sustain, whether that&#x27;s a few mornings or a couple of full days.</li><li>A thoughtful <a href="https://www.palmgroveschool.com/Schedule-Tour/">tour</a>—with good questions and careful observation—will tell you more than any brochure about whether a program is ready to support your baby.</li></ul><p>When you&#x27;re ready to see how part-time infant care looks in real life, scheduling a tour at Palm Grove Montessori Academy can help you picture your baby in their Infant or Mobile Infant environments and decide what rhythm would work best for your family.</p><p>For a broader parent guide, read <a href="https://www.palmgroveschool.com/resources/infant-care-plano-guide/">Infant Care Plano Guide</a>. For a related topic, read <a href="https://www.palmgroveschool.com/resources/part-time-daycare-pros-cons/">Part Time Daycare Pros Cons</a>. Learn more about age-level options in <a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/">our program overview</a>.</p><p>If you're weighing schedules and daily rhythm, <a href="https://www.palmgroveschool.com/infant-care-plano-tx/">See our Infant Care in Plano</a> to understand how the program supports babies from the very beginning.</p></section><section class="faq-section" id="faq"><div class="faq-header"><span class="section-tag">Common Questions</span><h2>Frequently Asked Questions</h2></div><div class="faq-grid"><div class="faq-item active"><button id="faq-q-1" class="faq-question" type="button" aria-expanded="true" aria-controls="faq-a-1">What is part time infant daycare?</button><div id="faq-a-1" class="faq-answer" role="region" aria-labelledby="faq-q-1"><div class="faq-answer-inner"><p>Part-time infant daycare is regular, scheduled care for babies in a licensed program for less than a full week or full day. It might be a few mornings or a couple of full days weekly, giving families support while preserving significant home time.</p></div></div></div><div class="faq-item"><button id="faq-q-2" class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a-2">What age is best for part time infant daycare?</button><div id="faq-a-2" class="faq-answer" role="region" aria-labelledby="faq-q-2" hidden><div class="faq-answer-inner"><p>Many families start between 3–12 months, depending on parental leave and baby temperament. Programs like Palm Grove&#x27;s Infant Class (6 weeks–12 months) and Mobile Infant Class (12–18 months) are designed to meet babies&#x27;needs across that whole span.</p></div></div></div><div class="faq-item"><button id="faq-q-3" class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a-3">How do I choose part time infant daycare in Plano, TX?</button><div id="faq-a-3" class="faq-answer" role="region" aria-labelledby="faq-q-3" hidden><div class="faq-answer-inner"><p>Compare how programs talk about infants: their environments, daily rhythms, caregiver training, and communication with parents. Palm Grove&#x27;s Infant Program description—emphasizing the Absorbent Mind, sensory exploration, and intentionally designed environments—offers a helpful example of the level of detail to look for.</p></div></div></div><div class="faq-item"><button id="faq-q-4" class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a-4">What questions should I ask on a tour for part time infant daycare?</button><div id="faq-a-4" class="faq-answer" role="region" aria-labelledby="faq-q-4" hidden><div class="faq-answer-inner"><p>Ask about schedules, nap/feeding routines, caregiver ratios, training, and how they help new babies settle in. Questions about how they handle crying, illness, and parent communication will reveal how they operate on less-than-perfect days.</p></div></div></div><div class="faq-item"><button id="faq-q-5" class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a-5">How do I know my child is ready for part time infant daycare?</button><div id="faq-a-5" class="faq-answer" role="region" aria-labelledby="faq-q-5" hidden><div class="faq-answer-inner"><p>Readiness is more about your family&#x27;s needs and the program&#x27;s capacity to support your baby than about specific milestones. If you have a consistent routine at home and choose a nurturing, responsive program, most infants can adapt well with a gradual introduction.</p></div></div></div><div class="faq-item"><button id="faq-q-6" class="faq-question" type="button" aria-expanded="false" aria-controls="faq-a-6">How does Montessori influence infant daycare?</button><div id="faq-a-6" class="faq-answer" role="region" aria-labelledby="faq-q-6" hidden><div class="faq-answer-inner"><p>Montessori infant programs emphasize a calm, orderly environment; lots of floor time; freedom of movement; and respect for the baby&#x27;s pace. Palm Grove&#x27;s Infant Program follows these principles, focusing on sensory exploration, language, movement, and emotional connection in a carefully prepared space.</p></div></div></div></div></section></main><aside class="jump-card" aria-label="In this article"><h2>In this article</h2><ol><li><a href="#part-time-infant-daycare-pros-cons-and-best-schedules">Part-Time Infant Daycare: Pros, Cons, and Best Schedules</a></li><li><a href="#tl-dr">TL;DR</a></li><li><a href="#what-is-part-time-infant-daycare">What is part-time infant daycare?</a></li><li><a href="#pros-of-part-time-infant-daycare">Pros of part-time infant daycare</a></li><li><a href="#cons-and-challenges-to-watch-for">Cons and challenges to watch for</a></li><li><a href="#what-age-is-best-for-part-time-infant-daycare">What age is best for part-time infant daycare?</a></li><li><a href="#best-part-time-infant-daycare-schedules-with-examples">Best part-time infant daycare schedules (with examples)</a></li><li><a href="#how-to-choose-part-time-infant-daycare-in-plano-tx">How to choose part-time infant daycare in Plano, TX</a></li><li><a href="#questions-to-ask-on-a-tour-about-part-time-infant-care">Questions to ask on a tour about part-time infant care</a></li><li><a href="#how-to-know-your-baby-is-ready-for-part-time-infant-daycare">How to know your baby is ready for part-time infant daycare</a></li><li><a href="#key-takeaways">Key takeaways</a></li><li><a href="#faq">FAQs</a></li></ol></aside></div></div><section class="final-cta cta-section"><div class="section-inner"><h2>See what calm, responsive infant care looks like in person.</h2><p>Tour the campus and meet the team to understand routines, communication, and how we support your baby each day.</p><div class="cta-group"><a href="https://www.palmgroveschool.com/Schedule-Tour/" class="btn btn-primary">Schedule a Tour</a><a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/" class="btn btn-secondary">Explore Our Program</a></div></div></section><div class="rainbow-stripe"></div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="https://www.palmgroveschool.com/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
+      <div class="footer-contact-lines">
+        <div>
+          <div class="footer-contact-label">Visit</div>
+          <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Contact</div>
+          <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a></div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Call</div>
+          <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul class="footer-links footer-links--explore">
+        <li><a href="https://www.palmgroveschool.com/">Home</a></li>
+        <li><a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/">Our Program</a></li>
+        <li><a href="https://www.palmgroveschool.com/infant-care-plano-tx/">Infant Care</a></li>
+        <li><a href="https://www.palmgroveschool.com/summer-camps-plano-tx/">Summer Camp</a></li>
+        <li><a href="https://www.palmgroveschool.com/montessori-education-philosophy-plano/">Our Promise</a></li>
+        <li><a href="https://www.palmgroveschool.com/montessori-curriculum-plano/">Curriculum</a></li>
+        <li><a href="https://www.palmgroveschool.com/montessori-classroom-plano/">Classroom</a></li>
+        
+        <li><a href="https://www.palmgroveschool.com/resources/">Resources</a></li>
+        <li><a href="https://www.palmgroveschool.com/faq/">FAQ</a></li>
+        <li><a href="https://www.palmgroveschool.com/Contact-Us/">Contact Us</a></li>
       </ul>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-  </nav>
-
-    <section class="hero">
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-copy"><span class="section-tag">Infant Care</span>
-                    <h1>Part-Time Infant Daycare: Pros, Cons, and Flexible Schedules</h1>
-                    <p>Need part time infant daycare? Explore the pros, cons, and flexible schedules to see how this
-                        option supports babies and parents at Palm Grove.</p>
-                </div>
-                <aside class="meta-card" aria-label="Article details">
-                    <div class="meta-grid">
-                        <div class="meta-item"><small>Published</small>
-                            <div>April 16, 2026</div>
-                        </div>
-                        <div class="meta-item"><small>Category</small>
-                            <div>Infant Care</div>
-                        </div>
-                        <div class="meta-item"><small>Reading time</small>
-                            <div>9 min read</div>
-                        </div>
-                        <div class="meta-item"><small>Location</small>
-                            <div>Plano, TX</div>
-                        </div>
-                        <div class="meta-item full"><small>Parent guide</small><a
-                                href="/resources/infant-care-plano-guide/">Infant Care Plano Guide</a></div>
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </section>
-    <div class="article-shell">
-        <div class="container article-layout">
-            <main class="article-main">
-                <section id="part-time-infant-daycare-pros-cons-and-best-schedules" class="article-section">
-                    <h2>Part-Time Infant Daycare: Pros, Cons, and Best Schedules</h2>
-                    <p>Handing your baby to someone else—even for a few hours—can feel like handing over the universe.
-                        Choosing part time infant daycare is really about balancing your baby&#x27;s need for secure
-                        attachment with your family&#x27;s need for rest, work time, and support.</p>
-                    <p>In simple terms, part-time infant daycare means your baby attends a licensed infant program on a
-                        limited schedule (fewer days per week or shorter days), instead of full-time, five-days-a-week
-                        care. When it works well, you get professional support with routines and development while still
-                        protecting lots of at-home bonding.</p>
-                    <p>At Palm Grove Montessori Academy in Plano, TX, the Infant and Mobile Infant classes are
-                        purpose-built for babies 6 weeks–18 months, with environments intentionally designed around
-                        sensory exploration, movement, and secure attachment, guided by the Montessori principle of the
-                        Absorbent Mind.</p>
-                </section>
-                <section id="tl-dr" class="summary-card">
-                    <h2>TL;DR</h2>
-                    <ul>
-                        <li>Part-time infant daycare offers professional care and social stimulation while preserving
-                            large blocks of home time.</li>
-                        <li>Pros: predictable routines, exposure to rich environments, support for motor and language
-                            development, and parent breathing room.</li>
-                        <li>Cons: more transitions, limited availability on popular schedules, and the need to
-                            coordinate naps/feeding between home and school.</li>
-                        <li>Palm Grove&#x27;s Infant (6 weeks–12 months) and Mobile Infant (12–18 months) classes focus
-                            on sensory exploration, gentle routines, and early independence in a carefully prepared
-                            Montessori environment.</li>
-                        <li>Best schedules are the ones your baby can predict and your family can sustain—consistency
-                            matters more than the exact hours.</li>
-                    </ul>
-                </section>
-                <section id="what-is-part-time-infant-daycare" class="article-section">
-                    <h2>What is part-time infant daycare?</h2>
-                    <p>Part-time infant daycare is licensed care for babies that does not run all day, every weekday. It
-                        might be three mornings a week, two full days, or another repeating pattern. The key is that
-                        your baby has regular, recurring time in a shared environment with trained caregivers and other
-                        babies.</p>
-                    <p>In a Montessori setting, part-time infant care still honors the same principles as full-time: a
-                        calm, prepared space; respect for the baby&#x27;s rhythm; and lots of opportunities for movement
-                        and exploration. Palm Grove&#x27;s Infant Program describes a nurturing environment where babies
-                        are encouraged to explore the world through their senses, with every detail intentionally
-                        designed to foster trust, security, and early independence.</p>
-                </section>
-                <section id="pros-of-part-time-infant-daycare" class="article-section">
-                    <h2>Pros of part-time infant daycare</h2>
-                    <p>Part-time care can be an elegant compromise between being home full-time and enrolling in
-                        five-day care. Here&#x27;s what it tends to offer.</p>
-                    <ul>
-                        <li><strong>Shared caregiving load</strong><strong><br></strong> You get reliable blocks of time
-                            for work, rest, or caregiving for older siblings, without being &quot; on&quot; 24/7. A
-                            predictable schedule can reduce stress for parents and improve the quality of time you do
-                            spend with your baby.</li>
-                        <li><strong>Professional support for development</strong><br>High-quality infant programs track
-                            milestones and set up environments that are just-right for each stage—rolling, crawling,
-                            pulling up. Palm Grove&#x27;s Infant and Mobile Infant classes are specifically structured
-                            around sensory exploration, motor development, and gentle routines aligned with Montessori
-                            principles.</li>
-                        <li><strong>Early comfort with others</strong><strong><br></strong> Short, consistent
-                            experiences with other caregivers and babies can help your child gradually get used to new
-                            faces and environments, which often makes later transitions (like toddler classrooms or
-                            preschool) smoother.</li>
-                        <li><strong>Separation practice in small doses</strong><strong><br></strong> Part-time schedules
-                            give your baby practice separating and reuniting with you in manageable chunks, which can be
-                            easier on everyone than jumping straight to full-time care.</li>
-                    </ul>
-                </section>
-                <section id="cons-and-challenges-to-watch-for" class="article-section">
-                    <h2>Cons and challenges to watch for</h2>
-                    <p>Part-time care isn&#x27;t perfect. Knowing the potential downsides helps you plan for them.</p>
-                    <ul>
-                        <li><strong>More transitions</strong><br>If schedules change day to day, babies can have a
-                            harder time predicting what&#x27;s happening. That&#x27;s why keeping daycare days
-                            consistent (for example, every Monday/Wednesday/Friday) is often easier than a different
-                            pattern each week.</li>
-                        <li><strong>Limited schedule options</strong><br>Many programs build staffing around full-time
-                            slots, so part-time options may be fewer or on set days only. You may need to be flexible,
-                            or join a waitlist for the specific pattern you want.</li>
-                        <li><strong>Nap and feeding coordination</strong><br>Babies, especially under 12 months, live by
-                            rhythms. Misaligned naps or feeds between home and school can create overtired evenings.
-                            Good communication with teachers about your baby&#x27;s sleep and feeding cues helps
-                            minimize this.</li>
-                        <li><strong>Over-scheduling parents</strong><br>When parents try to &quot; do it all&quot; on
-                            part-time days—stacking appointments, errands, and work—those days can become overly hectic.
-                            Protecting some margin helps everyone stay regulated.</li>
-                    </ul>
-                </section>
-                <section id="what-age-is-best-for-part-time-infant-daycare" class="article-section">
-                    <h2>What age is best for part-time infant daycare?</h2>
-                    <p>There&#x27;s no universal &quot; right&quot; age to start; it depends on your baby, your leave
-                        situation, and your support network. Some families begin part-time care around 3–6 months, once
-                        feeding and sleep are somewhat predictable. Others wait until closer to 9–12 months when babies
-                        are eager to move and explore more varied environments.</p>
-                    <p>Palm Grove&#x27;s curriculum distinguishes between Infant Class (6 weeks–12 months) and Mobile
-                        Infant Class (12–18 months). The Infant Class emphasizes secure attachment, gentle routines, and
-                        sensory exploration, while the Mobile Infant Class supports early motor development, curiosity,
-                        and independence in a carefully prepared space. Those distinctions can help you think about when
-                        your baby might benefit most from time in a group setting.</p>
-                </section>
-                <section id="best-part-time-infant-daycare-schedules-with-examples" class="article-section">
-                    <h2>Best part-time infant daycare schedules (with examples)</h2>
-                    <p>There isn&#x27;t a single best schedule; there are a few patterns that tend to work well for
-                        babies and parents.</p>
-                    <ul>
-                        <li>Three short days (e. g., Mon/Wed/Fri, 8:30–12:30)</li>
-                        <li>Good for: Very young infants, parents working part-time, or families wanting lots of
-                            afternoon home time.</li>
-                        <li>Why it works: Enough repetition for babies to recognize caregivers and routines, but
-                            generous home time for naps and bonding.</li>
-                        <li>Two full days (e. g., Tues/Thurs, 8:30–3:30)</li>
-                        <li>Good for: Parents with block-scheduled workdays, or those who prefer fewer drop-off days.
-                        </li>
-                        <li>Why it works: Deep, uninterrupted time for parents and longer stretches in the classroom for
-                            babies to settle into routines.</li>
-                        <li>Four half days (e. g., Mon–Thurs mornings)</li>
-                        <li>Good for: Families moving gradually toward full-time care, or babies who thrive on daily
-                            repetition.</li>
-                        <li>Why it works: Babies see the same environment almost every weekday, which can reduce
-                            separation anxiety.</li>
-                    </ul>
-                    <p>Whatever schedule you choose, consistency is key. Babies in Palm Grove&#x27;s Infant Program
-                        benefit from intentionally designed environments where routines are predictable and aligned with
-                        Montessori&#x27;s view of the Absorbent Mind. A steady weekly pattern helps them absorb those
-                        rhythms more easily.</p>
-                </section>
-                <section id="how-to-choose-part-time-infant-daycare-in-plano-tx" class="article-section">
-                    <h2>How to choose part-time infant daycare in Plano, TX</h2>
-                    <p>Plano has a wide range of options: home-based providers, traditional daycare centers,
-                        church-based programs, and Montessori schools like Palm Grove. For infants, focus less on the
-                        brand name and more on how the environment and adults support secure attachment and development.
-                    </p>
-                    <p>Look for:</p>
-                    <ul>
-                        <li>A clearly described infant program (not just &quot; we also take babies&quot;)</li>
-                        <li>Ratios appropriate for infants and caregivers who know babies&#x27;cues</li>
-                        <li>Spaces set up for floor time and exploration—not just swings and containers</li>
-                        <li>Calm, responsive caregivers who talk with babies, not just about them</li>
-                        <li>A philosophy that acknowledges infants as active learners</li>
-                    </ul>
-                    <p>Palm Grove&#x27;s Infant Program states that &quot; every detail of the environment is
-                        intentionally designed to support their development, fostering trust, security, and early
-                        independence,&quot; guided by the Montessori principle of the Absorbent Mind. If that resonates,
-                        you can use it as a benchmark when comparing other programs in Plano.</p>
-                </section>
-                <section id="questions-to-ask-on-a-tour-about-part-time-infant-care" class="article-section">
-                    <h2>Questions to ask on a tour about part-time infant care</h2>
-                    <p>Bring a short list; you&#x27;ll absorb more by listening than by juggling a script. These
-                        questions will give you the clearest picture:</p>
-                    <ul>
-                        <li>&quot; What does a typical morning look like for infants here?&quot;</li>
-                        <li>&quot; How do you handle naps, especially for babies with their own rhythms?&quot;</li>
-                        <li>&quot; How do you support babies who are new to part-time care and still adjusting to
-                            separations?&quot;</li>
-                        <li>&quot; How do you communicate with parents each day about feeding, diapers, sleep, and
-                            mood?&quot;</li>
-                        <li>&quot; What training do your infant teachers have, and how long do they typically
-                            stay?&quot;</li>
-                        <li>&quot; How do you incorporate Montessori principles (or your philosophy) into infant care
-                            specifically?&quot;</li>
-                    </ul>
-                    <p>At Palm Grove, you can expect to hear about sensory exploration, gentle routines, and
-                        environments designed around movement and attachment for the Infant and Mobile Infant classes.
-                        You&#x27;ll also see that the broader program emphasizes collaborative learning, individualized
-                        paths, and a modernized Montessori approach as children grow.</p>
-                </section>
-                <section id="how-to-know-your-baby-is-ready-for-part-time-infant-daycare" class="article-section">
-                    <h2>How to know your baby is ready for part-time infant daycare</h2>
-                    <p>Infants don&#x27;t &quot; prepare&quot; for daycare the way toddlers do, but a few signs can
-                        suggest they&#x27;re likely to handle the transition with support:</p>
-                    <ul>
-                        <li>Some predictability in feeding and sleep (even if not perfectly on schedule)</li>
-                        <li>Ability to be comforted by a familiar adult who isn&#x27;t always the primary caregiver</li>
-                        <li>Curiosity about the environment—looking around, tracking people, engaging with toys</li>
-                        <li>Parents ready to establish a consistent drop-off routine (your calm helps their calm)</li>
-                    </ul>
-                    <p>Remember, crying at drop-off is normal, even in very young babies. What matters is how quickly
-                        the baby can be soothed and whether, over time, they show signs of comfort and engagement in the
-                        environment. A program grounded in respect for the whole child—as Palm Grove&#x27;s promise
-                        describes—will approach separation as something to support, not minimize.</p>
-                </section>
-                <section id="key-takeaways" class="article-section">
-                    <h2>Key takeaways</h2>
-                    <ul>
-                        <li>Part-time infant daycare can give your family breathing room while honoring your baby&#x27;s
-                            need for attachment and consistent routines.</li>
-                        <li>Pros include shared caregiving, developmental support, and gentle separation practice; cons
-                            include more transitions and the need to coordinate naps and feeding.</li>
-                        <li>Palm Grove&#x27;s Infant and Mobile Infant classes offer Montessori-aligned environments,
-                            intentionally designed around the Absorbent Mind and early independence.</li>
-                        <li>The best schedule is one your baby can predict and your family can sustain, whether
-                            that&#x27;s a few mornings or a couple of full days.</li>
-                        <li>A thoughtful <a href="/Schedule-Tour">tour</a>—with good questions and careful
-                            observation—will tell you more than any brochure about whether a program is ready to support
-                            your baby.</li>
-                    </ul>
-                    <p>When you&#x27;re ready to see how part-time infant care looks in real life, scheduling a tour at
-                        Palm Grove Montessori Academy can help you picture your baby in their Infant or Mobile Infant
-                        environments and decide what rhythm would work best for your family.</p>
-                    <p>For a broader parent guide, read <a href="/resources/infant-care-plano-guide/">Infant Care Plano
-                            Guide</a>. For a related topic, read <a href="/resources/part-time-daycare-pros-cons/">Part
-                            Time Daycare Pros Cons</a>. Learn more about age-level options in <a
-                            href="/preschool-programs-plano-tx">our program overview</a>.</p>
-                </section>
-                <section class="faq-section" id="faq">
-                    <div class="faq-header"><span class="section-tag">Common Questions</span>
-                        <h2>Frequently Asked Questions</h2>
-                    </div>
-                    <div class="faq-grid">
-                        <div class="faq-item active"><button id="faq-q-1" class="faq-question" type="button"
-                                aria-expanded="true" aria-controls="faq-a-1">What is part time infant daycare?</button>
-                            <div id="faq-a-1" class="faq-answer" role="region" aria-labelledby="faq-q-1">
-                                <div class="faq-answer-inner">
-                                    <p>Part-time infant daycare is regular, scheduled care for babies in a licensed
-                                        program for less than a full week or full day. It might be a few mornings or a
-                                        couple of full days weekly, giving families support while preserving significant
-                                        home time.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="faq-item"><button id="faq-q-2" class="faq-question" type="button"
-                                aria-expanded="false" aria-controls="faq-a-2">What age is best for part time infant
-                                daycare?</button>
-                            <div id="faq-a-2" class="faq-answer" role="region" aria-labelledby="faq-q-2" hidden>
-                                <div class="faq-answer-inner">
-                                    <p>Many families start between 3–12 months, depending on parental leave and baby
-                                        temperament. Programs like Palm Grove&#x27;s Infant Class (6 weeks–12 months)
-                                        and Mobile Infant Class (12–18 months) are designed to meet babies&#x27;needs
-                                        across that whole span.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="faq-item"><button id="faq-q-3" class="faq-question" type="button"
-                                aria-expanded="false" aria-controls="faq-a-3">How do I choose part time infant daycare
-                                in Plano, TX?</button>
-                            <div id="faq-a-3" class="faq-answer" role="region" aria-labelledby="faq-q-3" hidden>
-                                <div class="faq-answer-inner">
-                                    <p>Compare how programs talk about infants: their environments, daily rhythms,
-                                        caregiver training, and communication with parents. Palm Grove&#x27;s Infant
-                                        Program description—emphasizing the Absorbent Mind, sensory exploration, and
-                                        intentionally designed environments—offers a helpful example of the level of
-                                        detail to look for.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="faq-item"><button id="faq-q-4" class="faq-question" type="button"
-                                aria-expanded="false" aria-controls="faq-a-4">What questions should I ask on a tour for
-                                part time infant daycare?</button>
-                            <div id="faq-a-4" class="faq-answer" role="region" aria-labelledby="faq-q-4" hidden>
-                                <div class="faq-answer-inner">
-                                    <p>Ask about schedules, nap/feeding routines, caregiver ratios, training, and how
-                                        they help new babies settle in. Questions about how they handle crying, illness,
-                                        and parent communication will reveal how they operate on less-than-perfect days.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="faq-item"><button id="faq-q-5" class="faq-question" type="button"
-                                aria-expanded="false" aria-controls="faq-a-5">How do I know my child is ready for part
-                                time infant daycare?</button>
-                            <div id="faq-a-5" class="faq-answer" role="region" aria-labelledby="faq-q-5" hidden>
-                                <div class="faq-answer-inner">
-                                    <p>Readiness is more about your family&#x27;s needs and the program&#x27;s capacity
-                                        to support your baby than about specific milestones. If you have a consistent
-                                        routine at home and choose a nurturing, responsive program, most infants can
-                                        adapt well with a gradual introduction.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="faq-item"><button id="faq-q-6" class="faq-question" type="button"
-                                aria-expanded="false" aria-controls="faq-a-6">How does Montessori influence infant
-                                daycare?</button>
-                            <div id="faq-a-6" class="faq-answer" role="region" aria-labelledby="faq-q-6" hidden>
-                                <div class="faq-answer-inner">
-                                    <p>Montessori infant programs emphasize a calm, orderly environment; lots of floor
-                                        time; freedom of movement; and respect for the baby&#x27;s pace. Palm
-                                        Grove&#x27;s Infant Program follows these principles, focusing on sensory
-                                        exploration, language, movement, and emotional connection in a carefully
-                                        prepared space.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <aside class="jump-card" aria-label="In this article">
-                <h2>In this article</h2>
-                <ol>
-                    <li><a href="#part-time-infant-daycare-pros-cons-and-best-schedules">Part-Time Infant Daycare: Pros,
-                            Cons, and Best Schedules</a></li>
-                    <li><a href="#tl-dr">TL;DR</a></li>
-                    <li><a href="#what-is-part-time-infant-daycare">What is part-time infant daycare?</a></li>
-                    <li><a href="#pros-of-part-time-infant-daycare">Pros of part-time infant daycare</a></li>
-                    <li><a href="#cons-and-challenges-to-watch-for">Cons and challenges to watch for</a></li>
-                    <li><a href="#what-age-is-best-for-part-time-infant-daycare">What age is best for part-time infant
-                            daycare?</a></li>
-                    <li><a href="#best-part-time-infant-daycare-schedules-with-examples">Best part-time infant daycare
-                            schedules (with examples)</a></li>
-                    <li><a href="#how-to-choose-part-time-infant-daycare-in-plano-tx">How to choose part-time infant
-                            daycare in Plano, TX</a></li>
-                    <li><a href="#questions-to-ask-on-a-tour-about-part-time-infant-care">Questions to ask on a tour
-                            about part-time infant care</a></li>
-                    <li><a href="#how-to-know-your-baby-is-ready-for-part-time-infant-daycare">How to know your baby is
-                            ready for part-time infant daycare</a></li>
-                    <li><a href="#key-takeaways">Key takeaways</a></li>
-                    <li><a href="#faq">FAQs</a></li>
-                </ol>
-            </aside>
-        </div>
-    </div>
-    <section class="final-cta cta-section">
-        <div class="section-inner">
-            <h2>See what calm, responsive infant care looks like in person.</h2>
-            <p>Tour the campus and meet the team to understand routines, communication, and how we support your baby
-                each day.</p>
-            <div class="cta-group"><a href="/Schedule-Tour" class="btn btn-primary">Schedule a Tour</a><a
-                    href="/preschool-programs-plano-tx" class="btn btn-secondary">Explore Our Program</a></div>
-        </div>
-    </section>
-    <script>
-        (function () {
-            const buttons = document.querySelectorAll('.faq-question'); buttons.forEach(function (btn) { btn.addEventListener('click', function () { const item = btn.closest('.faq-item'); const panelId = btn.getAttribute('aria-controls'); const panel = panelId ? document.getElementById(panelId) : null; const expand = btn.getAttribute('aria-expanded') !== 'true'; document.querySelectorAll('.faq-item').forEach(function (node) { node.classList.remove('active'); }); document.querySelectorAll('.faq-question').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); }); document.querySelectorAll('.faq-answer').forEach(function (a) { a.setAttribute('hidden', 'hidden'); }); if (expand) { btn.setAttribute('aria-expanded', 'true'); if (panel) { panel.removeAttribute('hidden'); } if (item) { item.classList.add('active'); } } }); });
-        })();
-    </script>
-
-  <!-- ═══ FOOTER ═══ -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
-        <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family
-          communication for Plano-area families.</p>
-        <div class="footer-contact-lines">
-          <div>
-            <div class="footer-contact-label">Visit</div>
-            <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
-          </div>
-          <div>
-            <div class="footer-contact-label">Contact</div>
-            <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a>
-            </div>
-          </div>
-          <div>
-            <div class="footer-contact-label">Call</div>
-            <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
-          </div>
-        </div>
+    <div>
+      <h4>Plan Your Visit</h4>
+      <div class="footer-action-card">
+        <p>Ready to tour Palm Grove in person and ask questions face to face?</p>
+        <a href="https://www.palmgroveschool.com/Schedule-Tour/" class="footer-cta-btn">Schedule a Tour</a>
       </div>
-      <div>
-        <h4>Explore</h4>
-        <ul class="footer-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
-          <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
-          <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
-          <li><a href="/montessori-classroom-plano">Classroom</a></li>
-          <li><a href="/resources">Resources</a></li>
-          <li><a href="/Contact-Us">Contact Us</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Plan Your Visit</h4>
-        <div class="footer-action-card">
-          <p>Ready to see the classrooms, meet the team, and ask questions in person?</p>
-          <a href="/Schedule-Tour" class="footer-cta-btn">Schedule a Tour</a>
-        </div>
-        <h4>Follow + Legal</h4>
-        <ul class="footer-links">
-          <li><a href="/privacy-policy">Privacy Policy</a></li>
-          <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-        </ul>
-        <div class="footer-socials">
-          <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank"
-            rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank"
-            rel="noopener noreferrer">Facebook</a>
-        </div>
+      <h4>Follow + Legal</h4>
+      <ul class="footer-links">
+        <li><a href="https://www.palmgroveschool.com/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="https://www.palmgroveschool.com/terms-and-conditions/">Terms &amp; Conditions</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank" rel="noopener noreferrer">Facebook</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
-      <span>Montessori preschool and daycare in Plano, TX.</span>
-    </div>
-  </footer>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
+    <span>Montessori preschool and daycare in Plano, TX.</span>
+  </div>
+</footer>
 
-  <script src="/js/nav.js"></script>
-</body>
+<script>
+(function() {
+  const nav = document.getElementById('nav');
+  const toggle = document.getElementById('mobileToggle');
+  const navLinks = document.getElementById('navLinks');
 
-</html>
+  window.addEventListener('scroll', () => {
+    if (nav) nav.classList.toggle('scrolled', window.scrollY > 20);
+  });
+
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  }
+})();
+</script>
+
+<script>
+(function () { const buttons = document.querySelectorAll('.faq-question'); buttons.forEach(function (btn) { btn.addEventListener('click', function () { const item = btn.closest('.faq-item'); const panelId = btn.getAttribute('aria-controls'); const panel = panelId? document.getElementById(panelId): null; const expand = btn.getAttribute('aria-expanded')!== 'true'; document.querySelectorAll('.faq-item').forEach(function (node) { node.classList.remove('active'); }); document.querySelectorAll('.faq-question').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); }); document.querySelectorAll('.faq-answer').forEach(function (a) { a.setAttribute('hidden', 'hidden'); }); if (expand) { btn.setAttribute('aria-expanded', 'true'); if (panel) { panel.removeAttribute('hidden'); } if (item) { item.classList.add('active'); } } }); }); })();
+</script></body></html>
