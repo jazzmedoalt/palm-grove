@@ -12,11 +12,11 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.palmgroveschool.com/montessori-education-philosophy-plano/">
 <meta property="og:site_name" content="Palm Grove Montessori Academy">
-<meta property="og:image" content="https://www.palmgroveschool.com/Our-Promise/img/prom/proms.jpg">
+<meta property="og:image" content="https://www.palmgroveschool.com/montessori-education-philosophy-plano/img/prom/proms.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Montessori Education &amp; Child Development in Plano, TX | Palm Grove">
 <meta name="twitter:description" content="Discover the Montessori education philosophy and benefits at Palm Grove in Plano, TX. Supporting early childhood development through purposeful learning. Schedule a tour.">
-<meta name="twitter:image" content="https://www.palmgroveschool.com/Our-Promise/img/prom/proms.jpg">
+<meta name="twitter:image" content="https://www.palmgroveschool.com/montessori-education-philosophy-plano/img/prom/proms.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -77,6 +77,7 @@
     overflow-x: hidden;
     line-height: var(--pg-line-height-base);
   }
+  body.nav-open { overflow: hidden; }
 
   h1, h2, h3 { font-family: 'Nunito', sans-serif; color: var(--pg-heading); font-weight: 800; }
   h4 { font-family: 'Nunito', sans-serif; font-weight: 700; color: var(--pg-heading); }
@@ -85,6 +86,111 @@
   .container-narrow { max-width: 900px; margin: 0 auto; padding: 0 var(--pg-space-24); }
 
   img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    transition: box-shadow 0.3s, background 0.3s;
+  }
+  .nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.07); }
+  .nav-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 10px 24px;
+  }
+  .nav-logo img { height: 50px; width: auto; }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style: none;
+  }
+  .nav-links li { display: flex; align-items: center; }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--pg-text);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s, opacity 0.2s;
+  }
+  .nav-links a:hover { color: var(--pg-amber); opacity: 1; }
+  .nav-links a:focus-visible {
+    outline: 2px solid rgba(240,160,48,0.55);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+  .nav-cta {
+    background: var(--pg-amber);
+    color: white !important;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 700 !important;
+    font-size: 0.88rem !important;
+    transition: all 0.25s;
+    box-shadow: 0 4px 16px rgba(240,160,48,0.25);
+  }
+  .nav-cta:hover { background: var(--pg-amber-hover); transform: translateY(-1px); color: white !important; }
+  .nav-phone-line {
+    display: none;
+    white-space: nowrap;
+  }
+  .nav-phone {
+    color: var(--pg-amber) !important;
+    font-weight: 700 !important;
+    font-size: 0.84rem !important;
+  }
+  .mobile-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    background: rgba(255,255,255,0.92);
+    border: 1px solid rgba(45,45,66,0.12);
+    border-radius: 14px;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 6px 18px rgba(45,45,66,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+  .mobile-toggle:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(45,45,66,0.12);
+  }
+  .mobile-toggle:focus-visible {
+    outline: 2px solid rgba(240,160,48,0.4);
+    outline-offset: 3px;
+  }
+  .mobile-toggle span {
+    display: block;
+    width: 18px;
+    height: 2.5px;
+    background: var(--pg-heading);
+    margin: 0;
+    border-radius: 999px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+  .mobile-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+  }
+  .mobile-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+  .mobile-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg);
+  }
 
   /* ── SHARED ── */
   .section-tag {
@@ -148,7 +254,7 @@
      ═══════════════════════════════════════════════════ */
   .promise-hero {
     background: var(--pg-white);
-    padding: 72px 0 80px;
+    padding: 138px 0 80px;
     position: relative;
     overflow: hidden;
   }
@@ -999,6 +1105,146 @@
 }
 .faq-answer strong { color: var(--pg-heading); }
 
+  .footer {
+    background:
+      radial-gradient(circle at 10% 6%, rgba(240,160,48,0.12), transparent 24%),
+      linear-gradient(90deg, #403735 0%, #34313a 22%, #2b2c3c 54%, #252638 78%, #232437 100%);
+    color: rgba(255,255,255,0.78);
+    padding: 72px 24px 28px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    position: relative;
+    overflow: hidden;
+  }
+  .footer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 18% 0%, rgba(240,160,48,0.08), transparent 26%),
+      radial-gradient(circle at 82% 10%, rgba(139,107,174,0.05), transparent 24%),
+      linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.008) 24%, rgba(255,255,255,0) 58%);
+    pointer-events: none;
+  }
+  .footer-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.45fr 0.95fr 1.05fr;
+    gap: 46px;
+  }
+  .footer h4 {
+    color: white;
+    font-size: 0.82rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .footer p,
+  .footer a {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.68);
+    text-decoration: none;
+    line-height: 1.9;
+  }
+  .footer a:hover { color: var(--pg-amber); }
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-links li { margin-bottom: 8px; }
+  .footer-links.footer-links--explore {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 20px;
+  }
+  .footer-brand-copy {
+    max-width: 360px;
+    margin-bottom: 16px;
+  }
+  .footer-contact-lines {
+    display: grid;
+    gap: 6px;
+  }
+  .footer-contact-label {
+    color: rgba(255,255,255,0.44);
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .footer-contact-value {
+    color: rgba(255,255,255,0.86);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .footer-contact-value a {
+    color: rgba(255,255,255,0.9);
+    font-size: 0.95rem;
+  }
+  .footer-action-card {
+    padding: 18px 18px 16px;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+    margin-bottom: 18px;
+  }
+  .footer-action-card p {
+    margin-bottom: 10px;
+    line-height: 1.75;
+  }
+  .footer-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, var(--pg-amber) 0%, var(--pg-amber-hover) 100%);
+    color: #fff !important;
+    font-weight: 800 !important;
+    box-shadow: 0 12px 24px rgba(240,160,48,0.22);
+  }
+  .footer-cta-btn:hover {
+    color: #fff !important;
+    transform: translateY(-1px);
+  }
+  .footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    margin-top: 12px;
+  }
+  .footer-socials a {
+    color: rgba(255,255,255,0.82);
+    font-weight: 700;
+  }
+  .footer-bottom {
+    position: relative;
+    z-index: 1;
+    max-width: 1120px;
+    margin: 34px auto 0;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.35);
+  }
+  .footer-logo {
+    display: block;
+    height: 56px;
+    width: auto;
+    margin-bottom: 18px;
+    opacity: 0.9;
+  }
+
 /* ═══════════════════════════════════════════════════
      SEEDS SECTION — Six Magical Seeds story
      ═══════════════════════════════════════════════════ */
@@ -1198,6 +1444,43 @@
   }
 }
 
+@media (max-width: 980px) {
+  .nav-links { display: none; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 18px 24px 22px;
+    gap: 14px;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+  }
+  .nav-links.open li { width: 100%; }
+  .nav-links.open .nav-phone-line { display: flex; white-space: normal; }
+  .mobile-toggle { display: inline-flex; }
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  .footer-brand-copy { margin-left: auto; margin-right: auto; }
+  .footer-contact-lines { justify-items: center; }
+  .footer-action-card { max-width: 420px; margin-left: auto; margin-right: auto; }
+  .footer-socials { justify-content: center; }
+  .footer-bottom { justify-content: center; text-align: center; }
+  .footer-links.footer-links--explore {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
 /* ── RESPONSIVE ── */
   @media (max-width: 992px) {
     .philosophy-cards { grid-template-columns: 1fr; margin-top: -32px; }
@@ -1269,13 +1552,70 @@
   }
 
   @media (max-width: 720px) {
+    .promise-hero {
+      padding: 118px 0 64px;
+    }
+    .footer {
+      padding: 56px 16px 24px;
+    }
+    .footer-inner {
+      gap: 22px;
+    }
+    .footer h4 {
+      margin-bottom: 12px;
+      font-size: 0.78rem;
+    }
+    .footer-brand-copy {
+      margin-bottom: 12px;
+      font-size: 0.88rem;
+      line-height: 1.75;
+    }
+    .footer-contact-lines { gap: 10px; }
+    .footer-contact-label { font-size: 0.7rem; }
+    .footer-contact-value,
+    .footer-contact-value a,
+    .footer p,
+    .footer a {
+      font-size: 0.88rem;
+      line-height: 1.75;
+    }
+    .footer-links li { margin-bottom: 4px; }
+    .footer-links.footer-links--explore {
+      max-width: 320px;
+      column-gap: 18px;
+      row-gap: 2px;
+    }
+    .footer-action-card {
+      padding: 14px 14px 12px;
+      border-radius: 18px;
+      margin-bottom: 14px;
+    }
+    .footer-action-card p {
+      margin-bottom: 8px;
+      font-size: 0.86rem;
+      line-height: 1.65;
+    }
+    .footer-cta-btn {
+      padding: 11px 18px;
+      font-size: 0.9rem !important;
+    }
+    .footer-socials {
+      gap: 8px 14px;
+      margin-top: 8px;
+    }
+    .footer-bottom {
+      margin-top: 24px;
+      padding-top: 14px;
+      gap: 6px;
+      flex-direction: column;
+    }
     .section-tag {
       font-size: 0.65rem;
       margin-bottom: 10px;
     }
   }
 
-  /* OFFICIAL BUTTON SYSTEM (Classroom standard) */
+  /* OFFICIAL BUTTON SYSTEAM (Classroom standard) */
   .btn,
   .btn-primary,
   .btn-secondary,
@@ -1463,7 +1803,7 @@
   }
 
 
-/* OFFICIAL CTA CARD SYSTEM (Classroom standard) */
+/* OFFICIAL CTA CARD SYSTEAM (Classroom standard) */
 .final-cta {
   padding: 0 24px 88px !important;
   background: transparent !important;
@@ -1739,6 +2079,213 @@ section.cta-box {
   }
 }
 
+
+
+/* Footer Explore consistency: one column on desktop, two neat columns on mobile. */
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  max-width: 220px;
+}
+
+@media (max-width: 720px) {
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 320px;
+    column-gap: 18px;
+    row-gap: 2px;
+    text-align: left;
+  }
+}
+
+
+/* Mobile footer logo alignment consistency. */
+@media (max-width: 720px) {
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* Unified FAQ component: warm cards, consistent spacing, consistent plus/minus. */
+.faq-section .faq-grid,
+.faq-section .faq-list,
+.faq-wrap,
+.program-faq-list,
+.faq-card {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-section .faq-grid,
+.faq-section .faq-list,
+.faq-wrap,
+.program-faq-list,
+.faq-card {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.faq-section .faq-item,
+.faq-card .faq-item,
+.faq-wrap .faq-item,
+.program-faq-item {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(255,250,241,0.96) 100%);
+  border: 1px solid rgba(240,160,48,0.16);
+  border-radius: 22px;
+  box-shadow: 0 12px 26px rgba(45,45,66,0.06);
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.faq-section .faq-item:hover,
+.faq-section .faq-item.active,
+.faq-section .faq-item.open,
+.faq-card .faq-item:hover,
+.faq-card .faq-item.open,
+.faq-wrap .faq-item:hover,
+.faq-wrap .faq-item.active,
+.program-faq-item:hover,
+.program-faq-item[open] {
+  border-color: rgba(240,160,48,0.34);
+  box-shadow: 0 16px 34px rgba(45,45,66,0.08);
+}
+
+.faq-question,
+.faq-q,
+.program-faq-item summary {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  padding: 19px 56px 19px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--pg-heading, #2d2d42);
+  cursor: pointer;
+  position: relative;
+  min-height: 58px;
+}
+
+.program-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after,
+.faq-q::after,
+.program-faq-item summary::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(240,160,48,0.28);
+  background: rgba(240,160,48,0.12);
+  color: var(--pg-amber, #f0a030);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.faq-item.active .faq-question::after,
+.faq-item.open .faq-question::after,
+.faq-item.active .faq-q::after,
+.faq-item.open .faq-q::after,
+.program-faq-item[open] summary::after {
+  content: '\2212';
+}
+
+.faq-answer p,
+.faq-a p,
+.program-faq-item p {
+  font-size: 0.94rem;
+  line-height: 1.75;
+  color: var(--pg-text, #4a4a5a);
+}
+
+.faq-answer a,
+.faq-a a,
+.program-faq-item a {
+  color: var(--pg-heading, #2d2d42);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(240,160,48,0.38);
+}
+
+.faq-answer a:hover,
+.faq-a a:hover,
+.program-faq-item a:hover {
+  color: var(--pg-amber, #f0a030);
+  border-bottom-color: rgba(240,160,48,0.65);
+}
+
+@media (max-width: 720px) {
+  .faq-section .faq-grid,
+  .faq-section .faq-list,
+  .faq-wrap,
+  .program-faq-list,
+  .faq-card {
+    gap: 10px;
+  }
+
+  .faq-section .faq-item,
+  .faq-card .faq-item,
+  .faq-wrap .faq-item,
+  .program-faq-item {
+    border-radius: 20px;
+  }
+
+  .faq-question,
+  .faq-q,
+  .program-faq-item summary {
+    padding: 17px 50px 17px 16px;
+    font-size: 0.94rem;
+    min-height: 54px;
+  }
+
+  .faq-question::after,
+  .faq-q::after,
+  .program-faq-item summary::after {
+    right: 14px;
+    width: 26px;
+    height: 26px;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer-inner,
+  .faq-a > p,
+  .program-faq-item p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .faq-answer p,
+  .faq-a p,
+  .program-faq-item p {
+    font-size: 0.9rem;
+    line-height: 1.72;
+  }
+}
 </style>
 <script type="application/ld+json">
 {
@@ -1810,6 +2357,28 @@ section.cta-box {
 </head>
 <body>
 
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="https://www.palmgroveschool.com/" class="nav-logo">
+      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="https://www.palmgroveschool.com/">Home</a></li>
+      <li><a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/">Our Program</a></li>
+      <li><a href="https://www.palmgroveschool.com/montessori-education-philosophy-plano/">Our Promise</a></li>
+      <li><a href="https://www.palmgroveschool.com/montessori-classroom-plano/">Classroom</a></li>
+      <li><a href="https://www.palmgroveschool.com/montessori-curriculum-plano/">Curriculum</a></li>
+      <li><a href="https://www.palmgroveschool.com/summer-camps-plano-tx/">Summer Camp</a></li>
+      <li><a href="https://www.palmgroveschool.com/Contact-Us/">Contact</a></li>
+      <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
+      <li><a href="https://www.palmgroveschool.com/Schedule-Tour/" class="nav-cta">Schedule a Tour</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
 <div class="rainbow-stripe"></div>
 
 <!-- ═══════════════════════════════════════════════════
@@ -1824,7 +2393,7 @@ section.cta-box {
         <p class="reveal visible">At our Palm Grove Academy, we promise to nurture each child's natural curiosity and independence through a thoughtful, child-centered approach to learning. We are committed to providing all the benefits of traditional Montessori theory with a modernized curriculum that prepares your child for every learning environment. Our classrooms are designed to be a safe, respectful, and enriching environment where every child can grow at their own pace and reach their full potential.</p>
         <div class="promise-hero-actions reveal visible">
           <a href="https://www.palmgroveschool.com/Schedule-Tour/" class="btn-amber">Schedule a Tour</a>
-          <a href="https://www.palmgroveschool.com/Our-Program/" class="btn-ghost">Explore Programs</a>
+          <a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/" class="btn-ghost">Explore Programs</a>
         </div>
       </div>
       <div class="promise-hero-mosaic reveal visible">
@@ -2199,7 +2768,7 @@ section.cta-box {
 
         <div class="choose-text-block reveal">
           <p>Families in Plano choose Palm Grove for authentic Montessori education delivered in a safe, nurturing environment where children feel supported every day. We prioritize clear communication with families, respectful discipline, and consistent developmental guidance so each child can build confidence, independence, and a strong sense of self.</p>
-          <p>Our focus goes beyond simple school readiness—we help children grow into capable, secure, and curious learners. <a href="https://www.palmgroveschool.com/Our-Program/">Explore our programs</a> or <a href="https://www.palmgroveschool.com/Schedule-Tour/">schedule a visit</a> to see for yourself.</p>
+          <p>Our focus goes beyond simple school readiness—we help children grow into capable, secure, and curious learners. <a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/">Explore our programs</a> or <a href="https://www.palmgroveschool.com/Schedule-Tour/">schedule a visit</a> to see for yourself.</p>
         </div>
 
         <div class="pgr-grid choose-reviews">
@@ -2254,11 +2823,11 @@ section.cta-box {
         <p>Confidence, independence, and a strong sense of self—experience how we bring it to life.</p>
         <div class="cta-buttons">
           <a href="https://www.palmgroveschool.com/Schedule-Tour/" class="btn-amber">Schedule a Tour</a>
-          <a href="https://www.palmgroveschool.com/Our-Program/" class="btn-ghost">Explore Programs</a>
+          <a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/" class="btn-ghost">Explore Programs</a>
         </div>
         <p class="cta-micro">Tours are 30 min · No commitment required</p>
         <div class="cta-links">
-          <a href="https://www.palmgroveschool.com/Our-Program/">Learn more about our programs →</a>
+          <a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/">Learn more about our programs →</a>
         </div>
       </div>
     </div>
@@ -2321,8 +2890,103 @@ section.cta-box {
   </div>
 </section>
 
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
+      <div class="footer-contact-lines">
+        <div>
+          <div class="footer-contact-label">Visit</div>
+          <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Contact</div>
+          <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a></div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Call</div>
+          <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul class="footer-links footer-links--explore">
+        <li><a href="https://www.palmgroveschool.com/">Home</a></li>
+        <li><a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/">Our Program</a></li>
+        <li><a href="https://www.palmgroveschool.com/infant-care-plano-tx/">Infant Care</a></li>
+        <li><a href="https://www.palmgroveschool.com/summer-camps-plano-tx/">Summer Camp</a></li>
+        <li><a href="https://www.palmgroveschool.com/montessori-education-philosophy-plano/">Our Promise</a></li>
+        <li><a href="https://www.palmgroveschool.com/montessori-curriculum-plano/">Curriculum</a></li>
+        <li><a href="https://www.palmgroveschool.com/montessori-classroom-plano/">Classroom</a></li>
+        <li><a href="https://www.palmgroveschool.com/resources/">Resources</a></li>
+        <li><a href="https://www.palmgroveschool.com/faq/">FAQ</a></li>
+        <li><a href="https://www.palmgroveschool.com/Contact-Us/">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Plan Your Visit</h4>
+      <div class="footer-action-card">
+        <p>Ready to tour Palm Grove in person and ask questions face to face?</p>
+        <a href="https://www.palmgroveschool.com/Schedule-Tour/" class="footer-cta-btn">Schedule a Tour</a>
+      </div>
+      <h4>Follow + Legal</h4>
+      <ul class="footer-links">
+        <li><a href="https://www.palmgroveschool.com/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="https://www.palmgroveschool.com/terms-and-conditions/">Terms &amp; Conditions</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
+    <span>Montessori preschool and daycare in Plano, TX.</span>
+  </div>
+</footer>
 
 <script>
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+});
+
+const toggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+const setNavOpen = (isOpen) => {
+  navLinks.classList.toggle('open', isOpen);
+  toggle.setAttribute('aria-expanded', String(isOpen));
+  toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Menu');
+  document.body.classList.toggle('nav-open', isOpen);
+};
+
+toggle.addEventListener('click', (event) => {
+  event.stopPropagation();
+  setNavOpen(!navLinks.classList.contains('open'));
+});
+
+navLinks.querySelectorAll('a').forEach((link) => {
+  link.addEventListener('click', () => setNavOpen(false));
+});
+
+document.addEventListener('click', (event) => {
+  if (!navLinks.classList.contains('open')) return;
+  if (!nav.contains(event.target)) setNavOpen(false);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') setNavOpen(false);
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 980 && navLinks.classList.contains('open')) {
+    setNavOpen(false);
+  }
+});
+
 const faqItems = Array.from(document.querySelectorAll('.faq-item'));
 const setFaqState = (item, expanded) => {
   const button = item.querySelector('.faq-question');

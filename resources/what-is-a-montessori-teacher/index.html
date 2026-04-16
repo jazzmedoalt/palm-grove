@@ -318,13 +318,43 @@
     margin-bottom: 14px;
   }
 }
+
+
+/* Footer Explore consistency: one column on desktop, two neat columns on mobile. */
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  max-width: 220px;
+}
+
+@media (max-width: 720px) {
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 320px;
+    column-gap: 18px;
+    row-gap: 2px;
+    text-align: left;
+  }
+}
+
+
+/* Mobile footer logo alignment consistency. */
+@media (max-width: 720px) {
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 </style><script type="application/ld+json">
 { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "What is a Montessori teacher?", "acceptedAnswer": { "@type": "Answer", "text": "A Montessori teacher is a trained guide who uses observation and hands-on materials to help children learn independently within a structured environment." } }, { "@type": "Question", "name": "What age is best for Montessori teaching to matter?", "acceptedAnswer": { "@type": "Answer", "text": "Montessori is effective across ages, but many families notice the biggest independence and focus gains in the 3–6 range when children naturally seek mastery and responsibility." } }, { "@type": "Question", "name": "How do I choose a Montessori teacher or school in Plano, TX?", "acceptedAnswer": { "@type": "Answer", "text": "Tour in person, observe classroom calm, and ask how teachers guide behavior, protect concentration, and support independence." } }, { "@type": "Question", "name": "What questions should I ask on a tour?", "acceptedAnswer": { "@type": "Answer", "text": "Ask about teacher training by age level, how observation is used, what the work cycle looks like, and how challenges are handled respectfully." } }, { "@type": "Question", "name": "How do I know my child is ready for Montessori?", "acceptedAnswer": { "@type": "Answer", "text": "If your child shows curiosity, enjoys hands-on activities, benefits from routine, and is developing independence (even in small ways), Montessori is often a strong match." } }, { "@type": "Question", "name": "Do Montessori teachers \"teach academics\"?", "acceptedAnswer": { "@type": "Answer", "text": "Yes—Montessori includes sequenced materials for language and math.The difference is that children learn by doing, often with concrete materials before paper-and-pencil work." } }, { "@type": "Question", "name": "How is a Montessori classroom different?", "acceptedAnswer": { "@type": "Answer", "text": "Montessori classrooms are designed so children can choose meaningful work independently, practice real routines, and build concentration. (You can see Palm Grove&#x27;s classroom overview here: https://www.palmgroveschool.com/montessori-classroom-plano/)" } } ] }
 </script></head><body>
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="https://www.palmgroveschool.com/" class="nav-logo">
-      <img src="https://www.palmgroveschool.com/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="https://www.palmgroveschool.com/">Home</a></li>
@@ -347,7 +377,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="https://www.palmgroveschool.com/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
       <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
       <div class="footer-contact-lines">
         <div>

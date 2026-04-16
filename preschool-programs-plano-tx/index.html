@@ -1054,6 +1054,46 @@
       border-bottom-color: rgba(45,45,66,0.5);
     }
 
+    @media (max-width: 720px) {
+      .program-faq {
+        padding-top: 20px;
+      }
+      .program-faq .section-head {
+        text-align: left;
+        margin-bottom: 22px;
+      }
+      .program-faq-list {
+        gap: 10px;
+      }
+      .program-faq-item {
+        border-radius: 22px;
+        padding: 0 16px;
+        border-color: rgba(240,160,48,0.16);
+        background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(255,250,241,0.96) 100%);
+        box-shadow: 0 12px 26px rgba(45,45,66,0.06);
+      }
+      .program-faq-item summary {
+        padding: 17px 34px 17px 0;
+        font-size: 0.98rem;
+        line-height: 1.35;
+      }
+      .program-faq-item summary::after {
+        top: 14px;
+        width: 26px;
+        height: 26px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 999px;
+        background: rgba(240,160,48,0.12);
+      }
+      .program-faq-item p {
+        padding: 0 0 18px;
+        font-size: 0.92rem;
+        line-height: 1.75;
+      }
+    }
+
     /* ── CTA — warm amber gradient card ── */
     .cta-section {
       padding: 0 0 88px;
@@ -1560,13 +1600,220 @@
     margin-bottom: 14px;
   }
 }
+
+
+/* Footer Explore consistency: one column on desktop, two neat columns on mobile. */
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  max-width: 220px;
+}
+
+@media (max-width: 720px) {
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 320px;
+    column-gap: 18px;
+    row-gap: 2px;
+    text-align: left;
+  }
+}
+
+
+/* Mobile footer logo alignment consistency. */
+@media (max-width: 720px) {
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* Unified FAQ component: warm cards, consistent spacing, consistent plus/minus. */
+.faq-section .faq-grid,
+.faq-section .faq-list,
+.faq-wrap,
+.program-faq-list,
+.faq-card {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-section .faq-grid,
+.faq-section .faq-list,
+.faq-wrap,
+.program-faq-list,
+.faq-card {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.faq-section .faq-item,
+.faq-card .faq-item,
+.faq-wrap .faq-item,
+.program-faq-item {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(255,250,241,0.96) 100%);
+  border: 1px solid rgba(240,160,48,0.16);
+  border-radius: 22px;
+  box-shadow: 0 12px 26px rgba(45,45,66,0.06);
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.faq-section .faq-item:hover,
+.faq-section .faq-item.active,
+.faq-section .faq-item.open,
+.faq-card .faq-item:hover,
+.faq-card .faq-item.open,
+.faq-wrap .faq-item:hover,
+.faq-wrap .faq-item.active,
+.program-faq-item:hover,
+.program-faq-item[open] {
+  border-color: rgba(240,160,48,0.34);
+  box-shadow: 0 16px 34px rgba(45,45,66,0.08);
+}
+
+.faq-question,
+.faq-q,
+.program-faq-item summary {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  padding: 19px 56px 19px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--pg-heading, #2d2d42);
+  cursor: pointer;
+  position: relative;
+  min-height: 58px;
+}
+
+.program-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after,
+.faq-q::after,
+.program-faq-item summary::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(240,160,48,0.28);
+  background: rgba(240,160,48,0.12);
+  color: var(--pg-amber, #f0a030);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.faq-item.active .faq-question::after,
+.faq-item.open .faq-question::after,
+.faq-item.active .faq-q::after,
+.faq-item.open .faq-q::after,
+.program-faq-item[open] summary::after {
+  content: '\2212';
+}
+
+.faq-answer p,
+.faq-a p,
+.program-faq-item p {
+  font-size: 0.94rem;
+  line-height: 1.75;
+  color: var(--pg-text, #4a4a5a);
+}
+
+.faq-answer a,
+.faq-a a,
+.program-faq-item a {
+  color: var(--pg-heading, #2d2d42);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(240,160,48,0.38);
+}
+
+.faq-answer a:hover,
+.faq-a a:hover,
+.program-faq-item a:hover {
+  color: var(--pg-amber, #f0a030);
+  border-bottom-color: rgba(240,160,48,0.65);
+}
+
+@media (max-width: 720px) {
+  .faq-section .faq-grid,
+  .faq-section .faq-list,
+  .faq-wrap,
+  .program-faq-list,
+  .faq-card {
+    gap: 10px;
+  }
+
+  .faq-section .faq-item,
+  .faq-card .faq-item,
+  .faq-wrap .faq-item,
+  .program-faq-item {
+    border-radius: 20px;
+  }
+
+  .faq-question,
+  .faq-q,
+  .program-faq-item summary {
+    padding: 17px 50px 17px 16px;
+    font-size: 0.94rem;
+    min-height: 54px;
+  }
+
+  .faq-question::after,
+  .faq-q::after,
+  .program-faq-item summary::after {
+    right: 14px;
+    width: 26px;
+    height: 26px;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer-inner,
+  .faq-a > p,
+  .program-faq-item p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .faq-answer p,
+  .faq-a p,
+  .program-faq-item p {
+    font-size: 0.9rem;
+    line-height: 1.72;
+  }
+}
 </style>
 </head>
 <body>
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="https://www.palmgroveschool.com/" class="nav-logo">
-        <img src="https://www.palmgroveschool.com/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+        <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="https://www.palmgroveschool.com/">Home</a></li>
@@ -1951,7 +2198,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="https://www.palmgroveschool.com/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+        <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
         <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
         <div class="footer-contact-lines">
           <div>

@@ -318,13 +318,43 @@
     margin-bottom: 14px;
   }
 }
+
+
+/* Footer Explore consistency: one column on desktop, two neat columns on mobile. */
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  max-width: 220px;
+}
+
+@media (max-width: 720px) {
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 320px;
+    column-gap: 18px;
+    row-gap: 2px;
+    text-align: left;
+  }
+}
+
+
+/* Mobile footer logo alignment consistency. */
+@media (max-width: 720px) {
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 </style><script type="application/ld+json">
 { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "What is montessori for 1 year olds?", "acceptedAnswer": { "@type": "Answer", "text": "It&#x27;s an approach focused on a prepared environment and responsive caregiving that supports sensory exploration, movement, language absorption, emotional security, and early independence in tiny steps.Palm Grove describes its infant program this way for ages 6 weeks–18 months." } }, { "@type": "Question", "name": "What age is best for montessori for 1 year olds?", "acceptedAnswer": { "@type": "Answer", "text": "There isn&#x27;t one perfect age.At one year, Montessori can be a great fit when the environment supports safe exploration and caregivers provide calm, consistent responsiveness." } }, { "@type": "Question", "name": "How do I choose montessori for 1 year olds in Plano, TX?", "acceptedAnswer": { "@type": "Answer", "text": "Tour and watch: look for a calm rhythm, freedom of movement, simple materials, and respectful caregiving.Choose the place where your child can feel secure enough to explore." } }, { "@type": "Question", "name": "What questions should I ask on a tour for montessori for 1 year olds?", "acceptedAnswer": { "@type": "Answer", "text": "Ask how they build trust and security, how they support movement and sensory exploration, and how teachers guide children through activities successfully." } }, { "@type": "Question", "name": "How do I know my child is ready for montessori for 1 year olds?", "acceptedAnswer": { "@type": "Answer", "text": "Most children are ready when the setting is ready: safe, predictable, responsive, and designed for exploration. &quot; Readiness&quot; is less about a birthday and more about a respectful environment that meets the child where they are." } }, { "@type": "Question", "name": "Is Montessori for one-year-olds the same as \"preschool for two year olds\"?", "acceptedAnswer": { "@type": "Answer", "text": "Not really.One-year-old Montessori is typically more about sensory, movement, and secure attachment through responsive care; two-year-old programs often add more structured practical life and early language routines. (A good school will match expectations to the child&#x27;s developmental stage.)" } }, { "@type": "Question", "name": "Will my one-year-old do \"Montessori materials\"?", "acceptedAnswer": { "@type": "Answer", "text": "Some, in an age-appropriate way—but the bigger Montessori &quot; materials&quot; at this age are the environment and the caregiver&#x27;s respectful guidance." } }, { "@type": "Question", "name": "What should I expect my child to learn?", "acceptedAnswer": { "@type": "Answer", "text": "Expect growth in movement, confidence, early communication, and independence in small steps—like participating in routines and exploring safely.Palm Grove describes infants absorbing language, movement, and emotional connections as part of the foundation for future learning." } } ] }
 </script></head><body>
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="https://www.palmgroveschool.com/" class="nav-logo">
-      <img src="https://www.palmgroveschool.com/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="https://www.palmgroveschool.com/">Home</a></li>
@@ -347,7 +377,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="https://www.palmgroveschool.com/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
       <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
       <div class="footer-contact-lines">
         <div>

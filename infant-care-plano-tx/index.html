@@ -128,7 +128,7 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.palmgroveschool.com/" },
-    { "@type": "ListItem", "position": 2, "name": "Our Program", "item": "https://www.palmgroveschool.com/Our-Program/" },
+    { "@type": "ListItem", "position": 2, "name": "Our Program", "item": "https://www.palmgroveschool.com/preschool-programs-plano-tx/" },
     { "@type": "ListItem", "position": 3, "name": "Infant Care", "item": "https://www.palmgroveschool.com/infant-care-plano-tx/" }
   ]
 }
@@ -1621,8 +1621,75 @@ section.cta-box {
 }
 
 </style>
+<link rel="stylesheet" href="/css/nav-foot.css">
+
+<style>
+.hero { margin-top: 72px; }
+
+@media (max-width: 720px) {
+  .hero {
+    margin-top: 64px;
+    padding: 60px 16px 56px;
+  }
+}
+
+
+/* Footer Explore consistency: one column on desktop, two neat columns on mobile. */
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  max-width: 220px;
+}
+
+@media (max-width: 720px) {
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 320px;
+    column-gap: 18px;
+    row-gap: 2px;
+    text-align: left;
+  }
+}
+
+
+/* Mobile footer logo alignment consistency. */
+@media (max-width: 720px) {
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+</style>
 </head>
 <body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/preschool-programs-plano-tx/">Our Program</a></li>
+      <li><a href="/montessori-education-philosophy-plano/">Our Promise</a></li>
+      <li><a href="/montessori-classroom-plano/">Classroom</a></li>
+      <li><a href="/montessori-curriculum-plano/">Curriculum</a></li>
+      <li><a href="/summer-camps-plano-tx/">Summer Camp</a></li>
+      <li><a href="/Contact-Us/">Contact</a></li>
+      <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
+      <li><a href="/Schedule-Tour/" class="nav-cta">Schedule a Tour</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="rainbow-stripe"></div>
+
 
 <!-- ═══ 1. HERO ═══ -->
 <section class="hero">
@@ -1632,7 +1699,7 @@ section.cta-box {
       <h1>Infant Care in Plano, TX<span>6 Weeks – 18 Months</span></h1>
       <p>You're not just picking a place—you're trusting people with your baby's comfort, routine, and sense of security. Our Montessori-inspired infant program is designed to feel calm, predictable, and nurturing—with dedicated classrooms for non-mobile and mobile infants.</p>
       <div class="hero-actions">
-        <a href="https://www.palmgroveschool.com/Schedule-Tour/" class="btn-dark">Schedule a Tour</a>
+        <a href="https://www.palmgroveschool.com/Schedule-Tour/" class="btn-primary">Schedule a Tour</a>
         <a href="tel:+14094035040" class="btn-ghost">Call (409) 403-5040</a>
       </div>
     </div>
@@ -1929,7 +1996,7 @@ section.cta-box {
       </div>
       <div class="faq-item">
         <button class="faq-question" type="button" id="faq-question-2" aria-expanded="false" aria-controls="faq-answer-2">Is your infant program Montessori?</button>
-        <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" aria-hidden="true"><p>Our infant care is Montessori-inspired—the environment and caregiving approach support independence, calm, and natural development through respectful, responsive care rather than formal lessons. Learn more about our approach on the <a href="https://www.palmgroveschool.com/Our-Program/" class="body-link">Our Program</a> page.</p></div>
+        <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" aria-hidden="true"><p>Our infant care is Montessori-inspired—the environment and caregiving approach support independence, calm, and natural development through respectful, responsive care rather than formal lessons. Learn more about our approach on the <a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/" class="body-link">Our Program</a> page.</p></div>
       </div>
       <div class="faq-item">
         <button class="faq-question" type="button" id="faq-question-3" aria-expanded="false" aria-controls="faq-answer-3">Can you follow my baby's feeding and sleep schedule?</button>
@@ -1962,7 +2029,7 @@ section.cta-box {
     </div>
     <p class="cta-micro">Tour the infant rooms · No commitment required</p>
     <div class="cta-links">
-      <a href="https://www.palmgroveschool.com/Our-Program/">Learn more about our programs →</a>
+      <a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/">Learn more about our programs →</a>
     </div>
     <div class="trust-note">
       <p>"Tour first, ask everything, then decide. We want you to feel as confident as your baby will."</p>
@@ -2004,7 +2071,63 @@ section.cta-box {
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
 
-<div class="rainbow-stripe"></div>
-
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
+      <div class="footer-contact-lines">
+        <div>
+          <div class="footer-contact-label">Visit</div>
+          <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Contact</div>
+          <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a></div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Call</div>
+          <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul class="footer-links footer-links--explore">
+        <li><a href="/">Home</a></li>
+        <li><a href="/preschool-programs-plano-tx/">Our Program</a></li>
+        <li><a href="/infant-care-plano-tx/">Infant Care</a></li>
+        <li><a href="/summer-camps-plano-tx/">Summer Camp</a></li>
+        <li><a href="/montessori-education-philosophy-plano/">Our Promise</a></li>
+        <li><a href="/montessori-curriculum-plano/">Curriculum</a></li>
+        <li><a href="/montessori-classroom-plano/">Classroom</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/Contact-Us/">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Plan Your Visit</h4>
+      <div class="footer-action-card">
+        <p>Ready to tour Palm Grove in person and ask questions face to face?</p>
+        <a href="/Schedule-Tour/" class="footer-cta-btn">Schedule a Tour</a>
+      </div>
+      <h4>Follow + Legal</h4>
+      <ul class="footer-links">
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
+    <span>Montessori preschool and daycare in Plano, TX.</span>
+  </div>
+</footer>
+<script src="/js/nav.js"></script>
 </body>
 </html>

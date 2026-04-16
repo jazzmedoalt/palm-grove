@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Summer Camp Plano TX (Ages 5-12) | Palm Grove Montessori</title>
-<meta name="description" content="Summer camp in Plano, TX for ages 5-12. Montessori-based fun with STEM, field trips, and water days. Tour Palm Grove and enroll today.">
+<meta name="description" content="Summer camp in Plano, TX for ages 5-12. Montessori-based fun with STEAM, field trips, and water days. Tour Palm Grove and enroll today.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.palmgroveschool.com/summer-camps-plano-tx/">
 <meta property="og:title" content="Summer Camp Plano TX (Ages 5-12) | Palm Grove Montessori">
-<meta property="og:description" content="Summer camp in Plano, TX for ages 5-12. Montessori-based fun with STEM, field trips, and water days. Tour Palm Grove and enroll today.">
+<meta property="og:description" content="Summer camp in Plano, TX for ages 5-12. Montessori-based fun with STEAM, field trips, and water days. Tour Palm Grove and enroll today.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.palmgroveschool.com/summer-camps-plano-tx/">
 <meta property="og:site_name" content="Palm Grove Montessori Academy">
 <meta property="og:image" content="https://www.palmgroveschool.com/summer-camps-plano-tx/summer-hero.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Summer Camp Plano TX (Ages 5-12) | Palm Grove Montessori">
-<meta name="twitter:description" content="Summer camp in Plano, TX for ages 5-12. Montessori-based fun with STEM, field trips, and water days. Tour Palm Grove and enroll today.">
+<meta name="twitter:description" content="Summer camp in Plano, TX for ages 5-12. Montessori-based fun with STEAM, field trips, and water days. Tour Palm Grove and enroll today.">
 <meta name="twitter:image" content="https://www.palmgroveschool.com/summer-camps-plano-tx/summer-hero.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1693,7 +1693,7 @@ section.cta-box {
   "@id": "https://www.palmgroveschool.com/summer-camps-plano-tx/",
   "url": "https://www.palmgroveschool.com/summer-camps-plano-tx/",
   "name": "Summer Camp Plano TX (Ages 5-12) | Palm Grove Montessori",
-  "description": "Summer camp in Plano, TX for ages 5-12.Montessori-based fun with STEM, field trips, and water days.Tour Palm Grove and enroll today.",
+  "description": "Summer camp in Plano, TX for ages 5-12.Montessori-based fun with STEAM, field trips, and water days.Tour Palm Grove and enroll today.",
   "isPartOf": {
     "@type": "WebSite",
     "name": "Palm Grove Montessori Academy",
@@ -1769,8 +1769,338 @@ section.cta-box {
   ]
 }
 </script>
+<link rel="stylesheet" href="/css/nav-foot.css">
+
+<style>
+.hero { margin-top: 72px; }
+@media (max-width: 720px) {
+  .hero {
+    height: auto;
+    min-height: 0;
+    overflow: hidden;
+    background: #173a46;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+  }
+  .hero-bg img {
+    object-position: 58% top;
+    filter: saturate(0.96);
+  }
+  .hero-bg::after {
+    background:
+      linear-gradient(180deg, rgba(20,42,52,0.42) 0%, rgba(20,42,52,0.52) 24%, rgba(20,42,52,0.76) 58%, rgba(20,42,52,0.9) 100%),
+      radial-gradient(ellipse 90% 70% at 16% 88%, rgba(25,65,90,0.7) 0%, transparent 68%);
+  }
+  .hero-content {
+    height: auto;
+    min-height: 0;
+    justify-content: flex-start;
+    padding: calc(76px + env(safe-area-inset-top)) 18px 34px;
+  }
+  .hero-content .section-tag {
+    margin-bottom: 10px;
+  }
+  .hero-content h1 {
+    max-width: 320px;
+    font-size: clamp(1.95rem, 9vw, 2.35rem);
+    line-height: 1.06;
+    margin-bottom: 12px;
+  }
+  .hero-content p {
+    max-width: 330px;
+    font-size: 0.98rem;
+    line-height: 1.62;
+    margin-bottom: 20px;
+  }
+  .hero-actions {
+    width: 100%;
+    max-width: 330px;
+    gap: 10px;
+  }
+  .hero-actions .btn,
+  .hero-actions .btn-ghost {
+    width: 100%;
+    min-height: 48px;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-offer {
+    max-width: 330px;
+    margin-top: 16px;
+    font-size: 0.84rem;
+  }
+  .quick-answers {
+    padding: 34px 16px 48px;
+  }
+  .quick-card {
+    padding: 28px 18px 26px;
+    border-radius: 26px;
+    box-shadow: 0 14px 30px rgba(45,45,66,0.08);
+  }
+  .quick-card::before {
+    top: -16px;
+    right: 20px;
+    font-size: 1.9rem;
+  }
+  .quick-card h2 {
+    font-size: 1.2rem;
+    line-height: 1.35;
+  }
+  .quick-facts li {
+    gap: 12px;
+    padding: 12px 0;
+  }
+  .quick-facts .fact-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+  .weekly-enjoy {
+    margin-top: 18px;
+    padding-top: 16px;
+  }
+  .weekly-enjoy-list {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+
+/* Footer Explore consistency: one column on desktop, two neat columns on mobile. */
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  max-width: 220px;
+}
+
+@media (max-width: 720px) {
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 320px;
+    column-gap: 18px;
+    row-gap: 2px;
+    text-align: left;
+  }
+}
+
+
+/* Mobile footer logo alignment consistency. */
+@media (max-width: 720px) {
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* Unified FAQ component: warm cards, consistent spacing, consistent plus/minus. */
+.faq-section .faq-grid,
+.faq-section .faq-list,
+.faq-wrap,
+.program-faq-list,
+.faq-card {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-section .faq-grid,
+.faq-section .faq-list,
+.faq-wrap,
+.program-faq-list,
+.faq-card {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.faq-section .faq-item,
+.faq-card .faq-item,
+.faq-wrap .faq-item,
+.program-faq-item {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(255,250,241,0.96) 100%);
+  border: 1px solid rgba(240,160,48,0.16);
+  border-radius: 22px;
+  box-shadow: 0 12px 26px rgba(45,45,66,0.06);
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.faq-section .faq-item:hover,
+.faq-section .faq-item.active,
+.faq-section .faq-item.open,
+.faq-card .faq-item:hover,
+.faq-card .faq-item.open,
+.faq-wrap .faq-item:hover,
+.faq-wrap .faq-item.active,
+.program-faq-item:hover,
+.program-faq-item[open] {
+  border-color: rgba(240,160,48,0.34);
+  box-shadow: 0 16px 34px rgba(45,45,66,0.08);
+}
+
+.faq-question,
+.faq-q,
+.program-faq-item summary {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  padding: 19px 56px 19px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--pg-heading, #2d2d42);
+  cursor: pointer;
+  position: relative;
+  min-height: 58px;
+}
+
+.program-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after,
+.faq-q::after,
+.program-faq-item summary::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(240,160,48,0.28);
+  background: rgba(240,160,48,0.12);
+  color: var(--pg-amber, #f0a030);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.faq-item.active .faq-question::after,
+.faq-item.open .faq-question::after,
+.faq-item.active .faq-q::after,
+.faq-item.open .faq-q::after,
+.program-faq-item[open] summary::after {
+  content: '\2212';
+}
+
+.faq-answer p,
+.faq-a p,
+.program-faq-item p {
+  font-size: 0.94rem;
+  line-height: 1.75;
+  color: var(--pg-text, #4a4a5a);
+}
+
+.faq-answer a,
+.faq-a a,
+.program-faq-item a {
+  color: var(--pg-heading, #2d2d42);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(240,160,48,0.38);
+}
+
+.faq-answer a:hover,
+.faq-a a:hover,
+.program-faq-item a:hover {
+  color: var(--pg-amber, #f0a030);
+  border-bottom-color: rgba(240,160,48,0.65);
+}
+
+@media (max-width: 720px) {
+  .faq-section .faq-grid,
+  .faq-section .faq-list,
+  .faq-wrap,
+  .program-faq-list,
+  .faq-card {
+    gap: 10px;
+  }
+
+  .faq-section .faq-item,
+  .faq-card .faq-item,
+  .faq-wrap .faq-item,
+  .program-faq-item {
+    border-radius: 20px;
+  }
+
+  .faq-question,
+  .faq-q,
+  .program-faq-item summary {
+    padding: 17px 50px 17px 16px;
+    font-size: 0.94rem;
+    min-height: 54px;
+  }
+
+  .faq-question::after,
+  .faq-q::after,
+  .program-faq-item summary::after {
+    right: 14px;
+    width: 26px;
+    height: 26px;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer-inner,
+  .faq-a > p,
+  .program-faq-item p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .faq-answer p,
+  .faq-a p,
+  .program-faq-item p {
+    font-size: 0.9rem;
+    line-height: 1.72;
+  }
+}
+</style>
 </head>
 <body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/preschool-programs-plano-tx/">Our Program</a></li>
+      <li><a href="/montessori-education-philosophy-plano/">Our Promise</a></li>
+      <li><a href="/montessori-classroom-plano/">Classroom</a></li>
+      <li><a href="/montessori-curriculum-plano/">Curriculum</a></li>
+      <li><a href="/summer-camps-plano-tx/">Summer Camp</a></li>
+      <li><a href="/Contact-Us/">Contact</a></li>
+      <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
+      <li><a href="/Schedule-Tour/" class="nav-cta">Schedule a Tour</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="rainbow-stripe"></div>
+
 
 <!-- ═══ NAVIGATION ═══ -->
 <!-- ═══ 1. HERO ═══ -->
@@ -1781,7 +2111,7 @@ section.cta-box {
   <div class="hero-content">
     <span class="section-tag">Summer Camp · Plano, TX</span>
     <h1>Summer Camp for<br>Ages 5–12</h1>
-    <p>A hands-on Montessori-aligned experience blending creativity, exploration, teamwork, and practical life skills in a relaxed, supportive setting.</p>
+    <p>Montessori-inspired summer fun with STEAM, Spanish, swim, and hands-on activities in a warm, structured environment.</p>
     <div class="hero-actions">
       <a href="https://www.palmgroveschool.com/Schedule-Tour/" class="btn btn-primary">Schedule a Tour</a>
       <a href="tel:+14094035040" class="btn-ghost">Call (409) 403-5040</a>
@@ -1808,7 +2138,7 @@ section.cta-box {
       </li>
       <li>
         <span class="fact-icon">🔬</span>
-        <div><span class="fact-label">Enrichment:</span> STEM Room, Spanish, Summer Swim</div>
+        <div><span class="fact-label">Enrichment:</span> STEAM Room, Spanish, Summer Swim</div>
       </li>
       <li>
         <span class="fact-icon">🌱</span>
@@ -1832,7 +2162,7 @@ section.cta-box {
         <li>Weekly themed programs</li>
         <li>Exciting field trips</li>
         <li>Fun water splash days</li>
-        <li>Hands-on STEM activities</li>
+        <li>Hands-on STEAM activities</li>
         <li>Sports and outdoor games</li>
         <li>Cooking activities</li>
         <li>Planting and nature exploration</li>
@@ -1897,7 +2227,7 @@ section.cta-box {
         </div>
       </div>
       <aside class="flyer-card" aria-label="Summer camp flyer">
-        <img src="2-2.PNG" alt="Palm Grove summer camp Plano TX schedule and enrollment flyer">
+        <img src="2-2.jpg" alt="Palm Grove summer camp Plano TX schedule and enrollment flyer">
       </aside>
     </div>
 
@@ -1978,7 +2308,7 @@ section.cta-box {
       <div class="timeline-item">
         <span class="timeline-dot"></span>
         <h4>Enrichment &amp; Specialty Classes</h4>
-        <p>STEM Room, Spanish, Summer Swim, and more</p>
+        <p>STEAM Room, Spanish, Summer Swim, and more</p>
       </div>
       <div class="timeline-item">
         <span class="timeline-dot"></span>
@@ -2019,10 +2349,10 @@ section.cta-box {
     <div class="enrichment-grid">
 
       <div class="enrichment-card fade-in">
-        <img class="enrichment-card-img" src="Science_lab.jpg" alt="Summer camp Plano TX STEM activity for school-age children at Palm Grove">
+        <img class="enrichment-card-img" src="Science_lab.jpg" alt="Summer camp Plano TX STEAM activity for school-age children at Palm Grove">
         <div class="enrichment-card-body">
-          <h3>STEM Room</h3>
-          <p>Our STEM Room includes science, technology, engineering, art, and music through hands-on projects, experimentation, and creative problem-solving.</p>
+          <h3>STEAM Room</h3>
+          <p>Our STEAM Room includes science, technology, engineering, art, and music through hands-on projects, experimentation, and creative problem-solving.</p>
         </div>
       </div>
 
@@ -2149,13 +2479,13 @@ section.cta-box {
 <section class="final-cta">
   <div class="section-inner fade-in">
     <h2>Ready to Make Summer Easy—and Meaningful?</h2>
-    <p>Explore one of the most engaging summer camps in Plano, TX for ages 5-12, with enrichment like STEM Room, Spanish, and Summer Swim.</p>
+    <p>Explore one of the most engaging summer camps in Plano, TX for ages 5-12, with enrichment like STEAM Room, Spanish, and Summer Swim.</p>
     <div class="cta-group">
       <a href="https://www.palmgroveschool.com/Schedule-Tour/" class="btn btn-primary btn-arrow">Schedule a Tour</a>
     </div>
     <p class="cta-micro">Tours are 30 min · No commitment required</p>
     <div class="cta-links">
-      <a href="https://www.palmgroveschool.com/Our-Program/">Learn more about our programs →</a>
+      <a href="https://www.palmgroveschool.com/preschool-programs-plano-tx/">Learn more about our programs →</a>
     </div>
   </div>
 </section>
@@ -2203,7 +2533,63 @@ section.cta-box {
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
 
-<div class="rainbow-stripe"></div>
-
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
+      <div class="footer-contact-lines">
+        <div>
+          <div class="footer-contact-label">Visit</div>
+          <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Contact</div>
+          <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a></div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Call</div>
+          <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul class="footer-links footer-links--explore">
+        <li><a href="/">Home</a></li>
+        <li><a href="/preschool-programs-plano-tx/">Our Program</a></li>
+        <li><a href="/infant-care-plano-tx/">Infant Care</a></li>
+        <li><a href="/summer-camps-plano-tx/">Summer Camp</a></li>
+        <li><a href="/montessori-education-philosophy-plano/">Our Promise</a></li>
+        <li><a href="/montessori-curriculum-plano/">Curriculum</a></li>
+        <li><a href="/montessori-classroom-plano/">Classroom</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/Contact-Us/">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Plan Your Visit</h4>
+      <div class="footer-action-card">
+        <p>Ready to tour Palm Grove in person and ask questions face to face?</p>
+        <a href="/Schedule-Tour/" class="footer-cta-btn">Schedule a Tour</a>
+      </div>
+      <h4>Follow + Legal</h4>
+      <ul class="footer-links">
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
+    <span>Montessori preschool and daycare in Plano, TX.</span>
+  </div>
+</footer>
+<script src="/js/nav.js"></script>
 </body>
 </html>

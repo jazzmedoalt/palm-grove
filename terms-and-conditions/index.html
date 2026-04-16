@@ -46,54 +46,6 @@
   a { color: var(--seed-blue); text-decoration: none; }
   a:hover { color: var(--pg-amber); }
   .container { width: min(100%, 1100px); margin: 0 auto; padding: 0 24px; }
-  .nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(0,0,0,0.06);
-  }
-  .nav-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 12px 24px;
-    width: min(100%, 1100px);
-    margin: 0 auto;
-  }
-  .nav-brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    color: var(--pg-heading);
-    font-weight: 800;
-  }
-  .nav-brand img { height: 48px; width: auto; }
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .nav-links a {
-    font-size: 0.92rem;
-    font-weight: 700;
-    color: var(--pg-text);
-  }
-  .nav-links .nav-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 999px;
-    padding: 12px 20px;
-    background: var(--pg-amber);
-    color: #fff;
-    box-shadow: 0 12px 24px rgba(240,160,48,0.22);
-  }
-  .nav-links .nav-cta:hover { background: var(--pg-amber-hover); color: #fff; }
   .hero {
     padding: 82px 0 34px;
   }
@@ -267,31 +219,71 @@
     .footer-inner { grid-template-columns: 1fr; gap: 28px; }
   }
   @media (max-width: 720px) {
-    .nav-inner { flex-direction: column; align-items: flex-start; }
-    .nav-links { justify-content: flex-start; }
     .hero { padding-top: 64px; }
     .hero-shell, .legal-main { padding: 30px 22px; }
     .footer { padding-left: 16px; padding-right: 16px; }
   }
 </style>
+<link rel="stylesheet" href="/css/nav-foot.css">
+
+<style>
+.hero { margin-top: 72px; }
+
+
+/* Footer Explore consistency: one column on desktop, two neat columns on mobile. */
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  max-width: 220px;
+}
+
+@media (max-width: 720px) {
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 320px;
+    column-gap: 18px;
+    row-gap: 2px;
+    text-align: left;
+  }
+}
+
+
+/* Mobile footer logo alignment consistency. */
+@media (max-width: 720px) {
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+</style>
 </head>
 <body>
-<nav class="nav">
+<nav class="nav" id="nav">
   <div class="nav-inner">
-    <a class="nav-brand" href="https://www.palmgroveschool.com/">
-      <img src="https://www.palmgroveschool.com/img/logo/logo.png" alt="Palm Grove Montessori Academy logo">
-      <span>Palm Grove Montessori Academy</span>
+    <a href="/" class="nav-logo">
+      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
     </a>
-    <div class="nav-links">
-      <a href="https://www.palmgroveschool.com/">Home</a>
-      <a href="https://www.palmgroveschool.com/Our-Program/">Our Program</a>
-      <a href="https://www.palmgroveschool.com/Contact-Us/">Contact Us</a>
-      <a href="https://www.palmgroveschool.com/Schedule-Tour/" class="nav-cta">Schedule a Tour</a>
-    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/preschool-programs-plano-tx/">Our Program</a></li>
+      <li><a href="/montessori-education-philosophy-plano/">Our Promise</a></li>
+      <li><a href="/montessori-classroom-plano/">Classroom</a></li>
+      <li><a href="/montessori-curriculum-plano/">Curriculum</a></li>
+      <li><a href="/summer-camps-plano-tx/">Summer Camp</a></li>
+      <li><a href="/Contact-Us/">Contact</a></li>
+      <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
+      <li><a href="/Schedule-Tour/" class="nav-cta">Schedule a Tour</a></li>
+    </ul>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
-<section class="hero">
+<div class="rainbow-stripe"></div><section class="hero">
   <div class="container">
     <div class="hero-shell">
       <span class="eyebrow">Terms &amp; Conditions</span>
@@ -428,29 +420,61 @@
 
 <footer class="footer">
   <div class="footer-inner">
-    <div>
-      <img src="https://www.palmgroveschool.com/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
-      <p>5900 Windhaven Parkway<br>Plano, Texas 75093</p>
-      <p><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a><br><a href="tel:+14094035040">(409) 403-5040</a></p>
+    <div class="footer-brand">
+      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
+      <div class="footer-contact-lines">
+        <div>
+          <div class="footer-contact-label">Visit</div>
+          <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Contact</div>
+          <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a></div>
+        </div>
+        <div>
+          <div class="footer-contact-label">Call</div>
+          <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
+        </div>
+      </div>
     </div>
     <div>
-      <h4>Quick Links</h4>
-      <ul class="footer-links">
-        <li><a href="https://www.palmgroveschool.com/">Home</a></li>
-        <li><a href="https://www.palmgroveschool.com/Our-Program/">Our Program</a></li>
-        <li><a href="https://www.palmgroveschool.com/Contact-Us/">Contact Us</a></li>
-        <li><a href="https://www.palmgroveschool.com/Schedule-Tour/">Schedule a Tour</a></li>
+      <h4>Explore</h4>
+      <ul class="footer-links footer-links--explore">
+        <li><a href="/">Home</a></li>
+        <li><a href="/preschool-programs-plano-tx/">Our Program</a></li>
+        <li><a href="/infant-care-plano-tx/">Infant Care</a></li>
+        <li><a href="/summer-camps-plano-tx/">Summer Camp</a></li>
+        <li><a href="/montessori-education-philosophy-plano/">Our Promise</a></li>
+        <li><a href="/montessori-curriculum-plano/">Curriculum</a></li>
+        <li><a href="/montessori-classroom-plano/">Classroom</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/Contact-Us/">Contact Us</a></li>
       </ul>
     </div>
     <div>
-      <h4>Legal</h4>
+      <h4>Plan Your Visit</h4>
+      <div class="footer-action-card">
+        <p>Ready to tour Palm Grove in person and ask questions face to face?</p>
+        <a href="/Schedule-Tour/" class="footer-cta-btn">Schedule a Tour</a>
+      </div>
+      <h4>Follow + Legal</h4>
       <ul class="footer-links">
-        <li><a href="https://www.palmgroveschool.com/privacy-policy/">Privacy Policy</a></li>
-        <li><a href="https://www.palmgroveschool.com/terms-and-conditions/">Terms &amp; Conditions</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
       </ul>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
     </div>
   </div>
-  <div class="footer-bottom">Copyright 2026 Palm Grove Montessori Academy. All rights reserved.</div>
+  <div class="footer-bottom">
+    <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
+    <span>Montessori preschool and daycare in Plano, TX.</span>
+  </div>
 </footer>
+<script src="/js/nav.js"></script>
 </body>
 </html>

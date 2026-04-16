@@ -318,13 +318,43 @@
     margin-bottom: 14px;
   }
 }
+
+
+/* Footer Explore consistency: one column on desktop, two neat columns on mobile. */
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  max-width: 220px;
+}
+
+@media (max-width: 720px) {
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 320px;
+    column-gap: 18px;
+    row-gap: 2px;
+    text-align: left;
+  }
+}
+
+
+/* Mobile footer logo alignment consistency. */
+@media (max-width: 720px) {
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 </style><script type="application/ld+json">
 { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [ { "@type": "Question", "name": "What is preschool plano tx?", "acceptedAnswer": { "@type": "Answer", "text": "It refers to early childhood education programs in Plano serving children typically ages 2–5.Programs vary in philosophy, structure, and daily rhythm." } }, { "@type": "Question", "name": "What age is best for preschool plano tx?", "acceptedAnswer": { "@type": "Answer", "text": "Most children begin between ages 2–4.The best age depends on readiness — curiosity, basic independence, and comfort separating from caregivers." } }, { "@type": "Question", "name": "How do I choose preschool plano tx in Plano, TX?", "acceptedAnswer": { "@type": "Answer", "text": "Visit classrooms, observe interactions, and consider your child&#x27;s temperament.Look for alignment between teaching style and your family values." } }, { "@type": "Question", "name": "What questions should I ask on a tour for preschool plano tx?", "acceptedAnswer": { "@type": "Answer", "text": "Ask about daily schedule, classroom ratios, behavior guidance, communication with parents, and kindergarten readiness outcomes." } }, { "@type": "Question", "name": "How do I know my child is ready for preschool plano tx?", "acceptedAnswer": { "@type": "Answer", "text": "If your child shows curiosity, can follow simple routines, and begins seeking independence, they&#x27;re likely ready.Emotional readiness matters more than age alone." } }, { "@type": "Question", "name": "Is Montessori better than traditional preschool?", "acceptedAnswer": { "@type": "Answer", "text": "Neither is universally better.Montessori emphasizes independence and concentration.Traditional programs emphasize group structure and guided instruction." } }, { "@type": "Question", "name": "Does preschool graduation matter?", "acceptedAnswer": { "@type": "Answer", "text": "The ceremony can be sweet, but long-term confidence and love of learning matter more than the milestone." } } ] }
 </script></head><body>
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="https://www.palmgroveschool.com/" class="nav-logo">
-      <img src="https://www.palmgroveschool.com/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="https://www.palmgroveschool.com/">Home</a></li>
@@ -347,7 +377,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="https://www.palmgroveschool.com/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
       <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
       <div class="footer-contact-lines">
         <div>

@@ -1303,7 +1303,7 @@
   background: var(--pg-white);
   display: grid;
   place-items: center;
-  font-size: 1.02rem
+  font-size: 1.02rem;
   font-weight: 400;
   line-height: 1;
 }
@@ -1725,6 +1725,213 @@
       max-width: 290px;
     }
   }
+
+
+/* Footer Explore consistency: one column on desktop, two neat columns on mobile. */
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  max-width: 220px;
+}
+
+@media (max-width: 720px) {
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 320px;
+    column-gap: 18px;
+    row-gap: 2px;
+    text-align: left;
+  }
+}
+
+
+/* Mobile footer logo alignment consistency. */
+@media (max-width: 720px) {
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* Unified FAQ component: warm cards, consistent spacing, consistent plus/minus. */
+.faq-section .faq-grid,
+.faq-section .faq-list,
+.faq-wrap,
+.program-faq-list,
+.faq-card {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-section .faq-grid,
+.faq-section .faq-list,
+.faq-wrap,
+.program-faq-list,
+.faq-card {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.faq-section .faq-item,
+.faq-card .faq-item,
+.faq-wrap .faq-item,
+.program-faq-item {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(255,250,241,0.96) 100%);
+  border: 1px solid rgba(240,160,48,0.16);
+  border-radius: 22px;
+  box-shadow: 0 12px 26px rgba(45,45,66,0.06);
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.faq-section .faq-item:hover,
+.faq-section .faq-item.active,
+.faq-section .faq-item.open,
+.faq-card .faq-item:hover,
+.faq-card .faq-item.open,
+.faq-wrap .faq-item:hover,
+.faq-wrap .faq-item.active,
+.program-faq-item:hover,
+.program-faq-item[open] {
+  border-color: rgba(240,160,48,0.34);
+  box-shadow: 0 16px 34px rgba(45,45,66,0.08);
+}
+
+.faq-question,
+.faq-q,
+.program-faq-item summary {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  padding: 19px 56px 19px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--pg-heading, #2d2d42);
+  cursor: pointer;
+  position: relative;
+  min-height: 58px;
+}
+
+.program-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after,
+.faq-q::after,
+.program-faq-item summary::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(240,160,48,0.28);
+  background: rgba(240,160,48,0.12);
+  color: var(--pg-amber, #f0a030);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.faq-item.active .faq-question::after,
+.faq-item.open .faq-question::after,
+.faq-item.active .faq-q::after,
+.faq-item.open .faq-q::after,
+.program-faq-item[open] summary::after {
+  content: '\2212';
+}
+
+.faq-answer p,
+.faq-a p,
+.program-faq-item p {
+  font-size: 0.94rem;
+  line-height: 1.75;
+  color: var(--pg-text, #4a4a5a);
+}
+
+.faq-answer a,
+.faq-a a,
+.program-faq-item a {
+  color: var(--pg-heading, #2d2d42);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(240,160,48,0.38);
+}
+
+.faq-answer a:hover,
+.faq-a a:hover,
+.program-faq-item a:hover {
+  color: var(--pg-amber, #f0a030);
+  border-bottom-color: rgba(240,160,48,0.65);
+}
+
+@media (max-width: 720px) {
+  .faq-section .faq-grid,
+  .faq-section .faq-list,
+  .faq-wrap,
+  .program-faq-list,
+  .faq-card {
+    gap: 10px;
+  }
+
+  .faq-section .faq-item,
+  .faq-card .faq-item,
+  .faq-wrap .faq-item,
+  .program-faq-item {
+    border-radius: 20px;
+  }
+
+  .faq-question,
+  .faq-q,
+  .program-faq-item summary {
+    padding: 17px 50px 17px 16px;
+    font-size: 0.94rem;
+    min-height: 54px;
+  }
+
+  .faq-question::after,
+  .faq-q::after,
+  .program-faq-item summary::after {
+    right: 14px;
+    width: 26px;
+    height: 26px;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer-inner,
+  .faq-a > p,
+  .program-faq-item p {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .faq-answer p,
+  .faq-a p,
+  .program-faq-item p {
+    font-size: 0.9rem;
+    line-height: 1.72;
+  }
+}
 </style>
 </head>
 <body>
@@ -1733,7 +1940,7 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="https://www.palmgroveschool.com/" class="nav-logo">
-      <img src="https://www.palmgroveschool.com/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
+      <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo in Plano TX">
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="https://www.palmgroveschool.com/">Home</a></li>
@@ -1757,19 +1964,19 @@
   <div class="hero-layout">
     <div class="hero-rail hero-rail--left" aria-hidden="true">
       <div class="hero-rail-track">
-        <figure class="hero-card hero-card--lg"><img src="hero-rails/IMG_3855.jpeg" alt=""></figure>
-        <figure class="hero-card hero-card--sm"><img src="hero-rails/IMG_3490.jpeg" alt=""></figure>
-        <figure class="hero-card hero-card--md"><img src="hero-rails/IMG_3577.jpeg" alt=""></figure>
+        <figure class="hero-card hero-card--lg"><img src="/hero-rails/IMG_3855.jpeg" alt=""></figure>
+        <figure class="hero-card hero-card--sm"><img src="/hero-rails/IMG_3490.jpeg" alt=""></figure>
+        <figure class="hero-card hero-card--md"><img src="/hero-rails/IMG_3577.jpeg" alt=""></figure>
 
-        <figure class="hero-card hero-card--lg"><img src="hero-rails/IMG_3855.jpeg" alt=""></figure>
-        <figure class="hero-card hero-card--sm"><img src="hero-rails/IMG_3490.jpeg" alt=""></figure>
-        <figure class="hero-card hero-card--md"><img src="hero-rails/IMG_3577.jpeg" alt=""></figure>
+        <figure class="hero-card hero-card--lg"><img src="/hero-rails/IMG_3855.jpeg" alt=""></figure>
+        <figure class="hero-card hero-card--sm"><img src="/hero-rails/IMG_3490.jpeg" alt=""></figure>
+        <figure class="hero-card hero-card--md"><img src="/hero-rails/IMG_3577.jpeg" alt=""></figure>
       </div>
     </div>
 
     <div class="hero-copy">
       <div class="hero-logo-badge">
-        <img src="https://www.palmgroveschool.com/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo" class="hero-logo-mark">
+        <img src="/img/logo/pglogo.png" alt="Palm Grove Montessori Academy logo" class="hero-logo-mark">
       </div>
       <h1>Montessori Preschool &amp; Daycare in <span>Plano, TX</span></h1>
       <p>Classical Montessori with warm teachers, calm classrooms, and clear communication&mdash;so you feel confident every day.</p>
@@ -1787,20 +1994,20 @@
       </div>
 
       <div class="hero-mobile-strip" aria-hidden="true">
-        <figure class="hero-mobile-card"><img src="hero-rails/IMG_3478.jpeg" alt=""></figure>
-        <figure class="hero-mobile-card"><img src="hero-rails/IMG_3479.jpeg" alt=""></figure>
+        <figure class="hero-mobile-card"><img src="/hero-rails/IMG_3478.jpeg" alt=""></figure>
+        <figure class="hero-mobile-card"><img src="/hero-rails/IMG_3479.jpeg" alt=""></figure>
       </div>
     </div>
 
     <div class="hero-rail hero-rail--right" aria-hidden="true">
       <div class="hero-rail-track">
-        <figure class="hero-card hero-card--md"><img src="hero-rails/IMG_3478.jpeg" alt=""></figure>
-        <figure class="hero-card hero-card--lg"><img src="hero-rails/IMG_3479.jpeg" alt=""></figure>
-        <figure class="hero-card hero-card--sm"><img src="hero-rails/img-classroom.jpg" alt=""></figure>
+        <figure class="hero-card hero-card--md"><img src="/hero-rails/IMG_3478.jpeg" alt=""></figure>
+        <figure class="hero-card hero-card--lg"><img src="/hero-rails/IMG_3479.jpeg" alt=""></figure>
+        <figure class="hero-card hero-card--sm"><img src="/hero-rails/img-classroom.jpg" alt=""></figure>
 
-        <figure class="hero-card hero-card--md"><img src="hero-rails/IMG_3478.jpeg" alt=""></figure>
-        <figure class="hero-card hero-card--lg"><img src="hero-rails/IMG_3479.jpeg" alt=""></figure>
-        <figure class="hero-card hero-card--sm"><img src="hero-rails/img-classroom.jpg" alt=""></figure>
+        <figure class="hero-card hero-card--md"><img src="/hero-rails/IMG_3478.jpeg" alt=""></figure>
+        <figure class="hero-card hero-card--lg"><img src="/hero-rails/IMG_3479.jpeg" alt=""></figure>
+        <figure class="hero-card hero-card--sm"><img src="/hero-rails/img-classroom.jpg" alt=""></figure>
       </div>
     </div>
   </div>
@@ -1814,7 +2021,7 @@
     Our school is far from traditional, but also very Classical Montessori. It embraces the Montessori Prepared Environment, but also exposes children to designated learning sessions that mimic that of the public schooling system.
   </blockquote>
   <div class="quote-cta">
-    <a href="https://www.palmgroveschool.com/Our-Curriculum/" class="btn btn-secondary">See the Full Curriculum</a>
+    <a href="https://www.palmgroveschool.com/montessori-curriculum-plano/" class="btn btn-secondary">See the Full Curriculum</a>
   </div>
 </section>
 
@@ -1853,7 +2060,7 @@
 <section class="educators">
   <div class="educators-inner">
     <div class="educators-image fade-in">
-      <img src="teachers-section.png" alt="Montessori teacher guiding children through hands-on learning at Palm Grove in Plano TX">
+      <img src="teachers-section.jpg" alt="Montessori teacher guiding children through hands-on learning at Palm Grove in Plano TX">
     </div>
     <div class="educators-copy fade-in">
       <span class="section-tag">Our Team</span>
@@ -1872,43 +2079,40 @@
   </div>
   <div class="gallery-grid" data-gallery-grid>
     <div class="gallery-item fade-in">
-      <img src="https://www.palmgroveschool.com/img/home/gallery/gallery1.jpg" alt="Montessori preschool classroom activities in Plano TX at Palm Grove" loading="lazy" decoding="async">
+      <img src="/img/home/gallery/gallery1.jpg" alt="Montessori preschool classroom activities in Plano TX at Palm Grove" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in">
-      <img src="https://www.palmgroveschool.com/img/home/gallery/gallery2.jpg" alt="Children engaged in hands-on Montessori learning in Plano TX" loading="lazy" decoding="async">
+      <img src="/img/home/gallery/gallery2.jpg" alt="Children engaged in hands-on Montessori learning in Plano TX" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in">
-      <img src="https://www.palmgroveschool.com/img/home/gallery/gallery3.jpg" alt="Preschool art and creative expression at Palm Grove Montessori in Plano TX" loading="lazy" decoding="async">
+      <img src="/img/home/gallery/gallery3.jpg" alt="Preschool art and creative expression at Palm Grove Montessori in Plano TX" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in">
-      <img src="https://www.palmgroveschool.com/img/home/gallery/gallery4.jpg" alt="Outdoor play and exploration at Palm Grove preschool in Plano TX" loading="lazy" decoding="async">
+      <img src="/img/home/gallery/gallery4.jpg" alt="Outdoor play and exploration at Palm Grove preschool in Plano TX" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in">
-      <img src="https://www.palmgroveschool.com/img/home/gallery/gallery5.jpg" alt="Group activities supporting social development in Plano childcare at Palm Grove" loading="lazy" decoding="async">
+      <img src="/img/home/gallery/gallery5.jpg" alt="Group activities supporting social development in Plano childcare at Palm Grove" loading="lazy" decoding="async">
     </div>
-<!--    <div class="gallery-item fade-in">
-      <img src="https://www.palmgroveschool.com/img/home/gallery/gallery6.jpg" alt="Practical life skills in the Palm Grove Montessori curriculum in Plano TX" loading="lazy" decoding="async">
-    </div>-->
-    <div class="gallery-item fade-in is-hidden">
-      <img src="gallery/IMG_3857.jpeg" alt="Palm Grove Plano preschool children showing colorful painted hands during creative art activity" loading="lazy" decoding="async">
+    <div class="gallery-item fade-in">
+      <img src="/img/home/gallery/gallery6.jpg" alt="Practical life skills in the Palm Grove Montessori curriculum in Plano TX" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in is-hidden">
-      <img src="gallery/IMG_3950.jpeg" alt="Palm Grove Montessori teacher guiding children through hands-on sensory mixing activity in Plano TX classroom" loading="lazy" decoding="async">
+      <img src="/gallery/IMG_3857.jpeg" alt="Palm Grove Plano preschool children showing colorful painted hands during creative art activity" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in is-hidden">
-      <img src="gallery/IMG_3490.jpeg" alt="Toddler smiling during outdoor play tunnel activity at Palm Grove preschool in Plano Texas" loading="lazy" decoding="async">
+      <img src="/gallery/IMG_3950.jpeg" alt="Palm Grove Montessori teacher guiding children through hands-on sensory mixing activity in Plano TX classroom" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in is-hidden">
-      <img src="gallery/IMG_3479.jpeg" alt="Child smiling in toy car during safe outdoor campus play at Palm Grove Montessori Plano" loading="lazy" decoding="async">
+      <img src="/gallery/IMG_3490.jpeg" alt="Toddler smiling during outdoor play tunnel activity at Palm Grove preschool in Plano Texas" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in is-hidden">
-      <img src="gallery/IMG_3392.jpeg" alt="Palm Grove child completing classroom world map and science activity in Montessori learning environment" loading="lazy" decoding="async">
+      <img src="/gallery/IMG_3479.jpeg" alt="Child smiling in toy car during safe outdoor campus play at Palm Grove Montessori Plano" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in is-hidden">
-      <img src="gallery/IMG_3133.jpeg" alt="Preschool classroom celebration and role-play activity supporting confidence at Palm Grove Plano" loading="lazy" decoding="async">
+      <img src="/gallery/IMG_3392.jpeg" alt="Palm Grove child completing classroom world map and science activity in Montessori learning environment" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in is-hidden">
-      <img src="gallery/IMG_3226.jpeg" alt="Children shaping playdough with classroom tools in hands-on Palm Grove Montessori activity" loading="lazy" decoding="async">
+      <img src="/gallery/IMG_3133.jpeg" alt="Preschool classroom celebration and role-play activity supporting confidence at Palm Grove Plano" loading="lazy" decoding="async">
     </div>
     <div class="gallery-item fade-in is-hidden">
       <img src="/gallery/IMG_3226.jpeg" alt="Children shaping playdough with classroom tools in hands-on Palm Grove Montessori activity" loading="lazy" decoding="async">
@@ -2051,7 +2255,7 @@
           How is Montessori different from a traditional preschool?
         </button>
         <div class="faq-answer"><div class="faq-answer-inner">
-          <p>Montessori focuses on <strong>hands-on learning, independence, and a prepared environment</strong> where children learn at their own pace through purposeful work — rather than a one-size-fits-all, teacher-led model. At Palm Grove, we blend Classical Montessori principles with modern adaptations including STEM integration, progress tracking, and collaborative learning to prepare children for the K–12 environment.</p>
+          <p>Montessori focuses on <strong>hands-on learning, independence, and a prepared environment</strong> where children learn at their own pace through purposeful work — rather than a one-size-fits-all, teacher-led model. At Palm Grove, we blend Classical Montessori principles with modern adaptations including STEAM integration, progress tracking, and collaborative learning to prepare children for the K–12 environment.</p>
         </div></div>
       </div>
 
@@ -2111,7 +2315,7 @@
       "name": "How is Montessori different from a traditional preschool?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Montessori focuses on hands-on learning, independence, and a prepared environment where children learn at their own pace through purposeful work — rather than a one-size-fits-all, teacher-led model.At Palm Grove, we blend Classical Montessori principles with modern adaptations including STEM integration, progress tracking, and collaborative learning to prepare children for the K–12 environment."
+        "text": "Montessori focuses on hands-on learning, independence, and a prepared environment where children learn at their own pace through purposeful work — rather than a one-size-fits-all, teacher-led model.At Palm Grove, we blend Classical Montessori principles with modern adaptations including STEAM integration, progress tracking, and collaborative learning to prepare children for the K–12 environment."
       }
     },
     {
@@ -2150,7 +2354,7 @@
 <section class="partners fade-in">
   <h2>Our Partners</h2>
   <a href="https://palmgroveschool.banzai.org/wellness" target="_blank" rel="noopener noreferrer">
-    <img src="https://www.palmgroveschool.com/img/partners/fub.png" alt="First Union Bank partner logo supporting Palm Grove families">
+    <img src="/img/partners/fub.png" alt="First Union Bank partner logo supporting Palm Grove families">
   </a>
 </section>
 
@@ -2158,7 +2362,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <img src="https://www.palmgroveschool.com/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
       <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
       <div class="footer-contact-lines">
         <div>

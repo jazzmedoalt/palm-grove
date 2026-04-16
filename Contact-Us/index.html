@@ -51,6 +51,7 @@
     background: var(--pg-bg);
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
   }
   body.nav-open { overflow: hidden; }
   img { max-width: 100%; display: block; }
@@ -292,8 +293,11 @@
   }
 
     .iframe-form{
+        display: block;
         height: 1200px;
-        width: 100%;
+        width: 1px;
+        min-width: 100%;
+        max-width: 100%;
         border: none;
         overflow: hidden;
     }
@@ -327,9 +331,20 @@
     }
     .contact-section {
       padding: 48px 16px 72px;
+      overflow-x: clip;
+    }
+    .contact-inner {
+      overflow-x: clip;
+    }
+    .contact-inner > * {
+      min-width: 0;
     }
     .contact-form-card {
       padding: 0;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      touch-action: pan-y;
     }
     .form-row {
       grid-template-columns: 1fr;
@@ -340,9 +355,43 @@
       position: static;
     }
     .iframe-form {
+      display: block;
+      width: 1px;
+      min-width: 100%;
+      max-width: 100%;
       height: 1200px;
     }
   }
+
+
+/* Footer Explore consistency: one column on desktop, two neat columns on mobile. */
+.footer-links.footer-links--explore {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 0;
+  row-gap: 2px;
+  max-width: 220px;
+}
+
+@media (max-width: 720px) {
+  .footer-links.footer-links--explore {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 320px;
+    column-gap: 18px;
+    row-gap: 2px;
+    text-align: left;
+  }
+}
+
+
+/* Mobile footer logo alignment consistency. */
+@media (max-width: 720px) {
+  .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 </style>
 </head>
 <body>
@@ -354,13 +403,14 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="/">Home</a></li>
-      <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
-      <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
-      <li><a href="/montessori-classroom-plano">Classroom</a></li>
-      <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
-      <li><a href="/Contact-Us">Contact</a></li>
+      <li><a href="/preschool-programs-plano-tx/">Our Program</a></li>
+      <li><a href="/montessori-education-philosophy-plano/">Our Promise</a></li>
+      <li><a href="/montessori-classroom-plano/">Classroom</a></li>
+      <li><a href="/montessori-curriculum-plano/">Curriculum</a></li>
+      <li><a href="/summer-camps-plano-tx/">Summer Camp</a></li>
+      <li><a href="/Contact-Us/">Contact</a></li>
       <li class="nav-phone-line"><a href="tel:+14094035040" class="nav-phone">(409) 403-5040</a></li>
-      <li><a href="/Schedule-Tour" class="nav-cta">Schedule a Tour</a></li>
+      <li><a href="/Schedule-Tour/" class="nav-cta">Schedule a Tour</a></li>
     </ul>
     <button class="mobile-toggle" id="mobileToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
@@ -368,7 +418,7 @@
   </div>
 </nav>
 
-<header class="page-header">
+<div class="rainbow-stripe"></div><header class="page-header">
   <h1>Get in Touch</h1>
   <p>We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.</p>
 </header>
@@ -424,88 +474,62 @@
 </main>
 
   <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
-        <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family
-          communication for Plano-area families.</p>
-        <div class="footer-contact-lines">
-          <div>
-            <div class="footer-contact-label">Visit</div>
-            <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
-          </div>
-          <div>
-            <div class="footer-contact-label">Contact</div>
-            <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a>
-            </div>
-          </div>
-          <div>
-            <div class="footer-contact-label">Call</div>
-            <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
-          </div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="/img/logo/whitelogo.png" alt="Palm Grove Montessori Academy white logo" class="footer-logo">
+      <p class="footer-brand-copy">Classical Montessori with warm teachers, calm classrooms, and clear family communication for Plano-area families.</p>
+      <div class="footer-contact-lines">
+        <div>
+          <div class="footer-contact-label">Visit</div>
+          <div class="footer-contact-value">5900 Windhaven Parkway<br>Plano, Texas 75093</div>
         </div>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul class="footer-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/preschool-programs-plano-tx">Our Program</a></li>
-          <li><a href="/montessori-education-philosophy-plano">Our Promise</a></li>
-          <li><a href="/montessori-curriculum-plano">Curriculum</a></li>
-          <li><a href="/montessori-classroom-plano">Classroom</a></li>
-          <li><a href="/resources">Resources</a></li>
-          <li><a href="/Contact-Us">Contact Us</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Plan Your Visit</h4>
-        <div class="footer-action-card">
-          <p>Ready to see the classrooms, meet the team, and ask questions in person?</p>
-          <a href="/Schedule-Tour" class="footer-cta-btn">Schedule a Tour</a>
+        <div>
+          <div class="footer-contact-label">Contact</div>
+          <div class="footer-contact-value"><a href="mailto:admin@palmgroveschool.com">admin@palmgroveschool.com</a></div>
         </div>
-        <h4>Follow + Legal</h4>
-        <ul class="footer-links">
-          <li><a href="/privacy-policy">Privacy Policy</a></li>
-          <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-        </ul>
-        <div class="footer-socials">
-          <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank"
-            rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank"
-            rel="noopener noreferrer">Facebook</a>
+        <div>
+          <div class="footer-contact-label">Call</div>
+          <div class="footer-contact-value"><a href="tel:+14094035040">(409) 403-5040</a></div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
-      <span>Montessori preschool and daycare in Plano, TX.</span>
+    <div>
+      <h4>Explore</h4>
+      <ul class="footer-links footer-links--explore">
+        <li><a href="/">Home</a></li>
+        <li><a href="/preschool-programs-plano-tx/">Our Program</a></li>
+        <li><a href="/infant-care-plano-tx/">Infant Care</a></li>
+        <li><a href="/summer-camps-plano-tx/">Summer Camp</a></li>
+        <li><a href="/montessori-education-philosophy-plano/">Our Promise</a></li>
+        <li><a href="/montessori-curriculum-plano/">Curriculum</a></li>
+        <li><a href="/montessori-classroom-plano/">Classroom</a></li>
+        <li><a href="/resources/">Resources</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/Contact-Us/">Contact Us</a></li>
+      </ul>
     </div>
-  </footer>
-
-<script>
-(function() {
-  var nav = document.getElementById('nav');
-  var toggle = document.getElementById('mobileToggle');
-  var links = document.getElementById('navLinks');
-
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 10) {
-      nav.classList.add('scrolled');
-    } else {
-      nav.classList.remove('scrolled');
-    }
-  });
-
-  if (toggle && links) {
-    toggle.addEventListener('click', function() {
-      var expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('open');
-      document.body.classList.toggle('nav-open');
-    });
-  }
-})();
-</script>
+    <div>
+      <h4>Plan Your Visit</h4>
+      <div class="footer-action-card">
+        <p>Ready to tour Palm Grove in person and ask questions face to face?</p>
+        <a href="/Schedule-Tour/" class="footer-cta-btn">Schedule a Tour</a>
+      </div>
+      <h4>Follow + Legal</h4>
+      <ul class="footer-links">
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions/">Terms &amp; Conditions</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/palmgrove_montessori_academy" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61576811911497" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Palm Grove Montessori Academy. All rights reserved.</span>
+    <span>Montessori preschool and daycare in Plano, TX.</span>
+  </div>
+</footer>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -515,5 +539,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5TML75DQ');</script>
 <!-- End Google Tag Manager -->
 
+<script src="/js/nav.js"></script>
 </body>
 </html>
